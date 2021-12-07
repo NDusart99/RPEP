@@ -115,6 +115,23 @@ var instruction = {
 
 timeline.push(instruction)
 
+// create feelings question
+var feelings = {
+  type: 'survey-likert',
+  questions: [{
+    prompt: "How are you feeling at this moment?",
+    labels: ["Bad", "Somewhat bad", "Somewhat good", "Good"],
+    required: true,
+  }, ],
+  on_finish: function(data) {
+    data.reverse = 0;
+    data.factor = "Feelings";
+    data.resp = get_resp(data, data.reverse);
+  }
+}
+
+timeline.push(feelings)
+
 // button to start the audio
 var before_audio = {
   type: 'html-button-response',
@@ -145,6 +162,17 @@ var start_neg_audio = {
     neg_audio.play();
   }
 }
+
+var valence = {
+  if (profilic_ID == even){
+    return pos_audio,
+  } else {
+    return neg_audio,
+  }
+}
+
+timeline.push(valence)
+
 
 // create factorial design
 var factors = {
