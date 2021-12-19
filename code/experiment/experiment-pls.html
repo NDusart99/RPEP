@@ -1,187 +1,168 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8/">
-  <title>Gamble Task</title>
-  <script src="jspsych-6.0.5/jspsych.js"></script>
-  <script src="jspsych-6.0.5/plugins/jspsych-instructions.js"></script>
-  <script src="jspsych-6.0.5/plugins/jspsych-html-keyboard-response.js"></script>
-  <script src="jspsych-6.0.5/plugins/jspsych-survey-multi-choice.js"></script>
-  <script src="jspsych-6.0.5/plugins/jspsych-categorize-html.js"></script>
-  <script src="jspsych-6.0.5/plugins/jspsych-survey-text-beta-6.1.js"></script>
-  <script src="jspsych-6.0.5/plugins/jspsych-audio-keyboard-response.js"></script>
-  <script src="UPPSP.js"></script>
-  <script src="jspsych-6.0.5/plugins/jspsych-survey-likert.js"></script>
-  <script src="jspsych-6.0.5/plugins/jspsych-fullscreen.js"></script>
-  <script src="jspsych-6.0.5/plugins/jspsych-html-button-response.js"></script>
-  <script src="jspsych-6.0.5/plugins/jspsych-call-function.js"></script>
-  <link href="jspsych-6.0.5/css/jspsych.css" rel="stylesheet" type="text/css"></link>
+    <title>Decision task</title>
+    <script src="https://unpkg.com/jspsych@7.0.0"></script>
+    <script src="https://unpkg.com/@jspsych/plugin-html-keyboard-response@1.0.0"></script>
+    <script src="https://unpkg.com/@jspsych/plugin-image-keyboard-response@1.0.0"></script>
+    <script src="https://unpkg.com/@jspsych/plugin-preload@1.0.0"></script>
+    <script src="https://unpkg.com/@jspsych/plugin-survey-text@1.0.0"></script>
+    <script src="https://unpkg.com/@jspsych/plugin-survey-multi-choice@1.0.0"></script>
+    <script src="https://unpkg.com/@jspsych/plugin-survey-likert@1.0.0"></script>
+    <script src="https://unpkg.com/@jspsych/plugin-fullscreent@1.0.0"></script>
+    <script src="https://unpkg.com/@jspsych/plugin-instructions@1.0.0"></script>
+    <script src="https://unpkg.com/@jspsych/plugin-audio-keyboard-response@1.0.0"></script>
+    <link href="https://unpkg.com/jspsych@7.0.0/css/jspsych.css" rel="stylesheet" type="text/css" />
 </head>
 <body></body>
 <script>
 
-// create timeline
+/* initialize jsPsych */
+var jsPsych = initJsPsych();
+
+/* create timeline */
 var timeline = [];
 
-// saved on server? 
-if (document.location.host) {
+/* Preload images */
+var preload = {
+  type: jsPsychPreload,
+  images: ['images/blue5.png', 'images/blue25.png', 'images/blue50.png', 'images/green5.png', 'images/green25.png', 
+  'images/green50.png', 'images/orange5.png', 'images/orange25.png', 'images/orange50.png', 'images/yellow5.png', 
+  'images/yellow25.png', 'images/yellow50.png', 'images/instruction1.png', 'images/instruction2.png']
+};
+timeline.push(preload);
+
+// is the experiment running from a server or not? (this determines if data is saved on server or offline)
+if (document.location.host) { // returns your host or null
   online = true;
 } else {
   online = false;
 };
 
-// subject-number
-
-var prolific = {
-  type: 'survey-text',
-  questions: [{prompt: "please turn off music, cell phone and other devices that might be distracting. Enter your subject number below: ", required: true}],
-  on_finish: function(data) {
-    var responses = JSON.parse(data.responses);
-    var profilic_ID = responses.Q0;
-    jsPsych.data.addproperties({
-      prolific_ID: prolific_ID
-    })
-  }
-};
-
-timeline.push(profilic);
-
-// fullscreen mode
-var fullscreen_mode = {
-  type: 'fullscreen',
-  fullscreen_mode: true
-};
-
-timeline.push (fullscreen_mode)
-
-// participants age
-var age = {
-  type: 'survey-text',
-  questions: [{
-    prompt: "How old are you?",
-    required: true
-  },],
-  on_finish: function(data) {
-    var responses = JSON.parse(data.responses);
-    var code = responses.Q0;
-    jsPsych.data.addproperties({
-      age: code
-    });
-  }
-};
-
-// participants gender
-var gender = {
-  type: 'survey-multi-choice',
-  questions: [{
-    prompt:"Select your gender",
-    options:["male","female","X","I don't want to say"],
-    required: true
-  },],
-  on_finish: function(data) {
-    var responses = JSON.parse(data.responses);
-    var code = responses.Q0;
-    jsPsych.data.addproperties({
-      gender: code
-    });
-  }
-};
-
-// participants nationality
-var gender = {
-  type: 'survey-text',
-  questions: [{
-    prompt:"What's your nationality?",
-    required: true
-  },],
-  on_finish: function(data) {
-    var responses = JSON.parse(data.responses);
-    var code = responses.Q0;
-    jsPsych.data.addproperties({
-      nationality: code
-    });
-  }
-};
-
-timeline.push(age, gender, nationality)
-
-var instruction = {
-  type: 'instructions',
+// define welcome message trial */
+var welcome = {
+  type: jsPsychInstructions,
   pages: [
-    '<img src= "images/"instruction1.png"></img>',
-    '<img src= "images/"instruction2.png"></img>'
-  ]
+  '<p> Welcome to the experiment. </p>' +
+  '<p>Please turn off your phone and othere devices that might be distracting.</p>' +
+  '<p>Press space to begin.</p>'],
+  key_forward: ' '
+};
+timeline.push(welcome);
+
+var subject_number = {
+  type: jsPsychSurveyText,
+  questions: [
+    {prompt: "Please enter your subject number:", 
+    required: true,
+  }
+  ],
 };
 
-timeline.push(instruction)
+// informed consent trial. The informed_consent_text variable comes from /configuration/text_variables.js
+var consent = {
+  type: jsPsychInstructions,
+  pages: [
+    '<p>I understand that:</p> '+
+    '<p>Participation in this study is entirely voluntary, I can decline to answer any question at any time, and I can withdraw from the study at any time without giving a reason. </p>'+
+    '<p>Non-participation or withdrawal from the study will not be of any disadvantage to my university career.</p>'+
+    '<p>If I prematurely withdraw from the study, I will still be appropriately compensated for my participation. </p>'+
+    '<p>During the data-gathering phase, I can instruct the researchers carrying out this study to delete (part of) the data obtained from me from their records.  </p>'+
+    '<p>I am free to ask any questions at any time and I can arrange to discuss any concerns with the lead researcher (see below).</p>'+
+    '<p> The information and data provided by me in this experiment will be used for statistical research and research administration purposes only.</p>'+
+    '<p> No data or responses will be published in which I can be identified individually. </p>'+
+    '<p> My personal details will not be revealed to people outside the research project. Signed consent and payment forms will be securely stored and disposed of after a 5-year retention period. I can have access to my personal data on the consent forms within the 5-year retention period. </p>'+
+    '<p> Anonymized data from the study, which do not contain any personally identifying information, will be registered and archived at a trusted public data repository (e.g. OSF or Zenodo) in order to make them available to other researchers in line with current data sharing practices.</p>' +
+    '<p> If you require more information about this study, please contact Nathalie Dusart; Email: nathalie.dusart@ugent.be</p>'],
+  show_clickable_nav: true,
+  button_label_next: "I agree",
+  allow_backward: false
+};
 
-// create feelings question
+timeline.push(consent)
+
+var age = {
+  type: jsPsychSurveyText,
+  questions: [
+    {prompt: "How old are you?", required: true}
+  ],
+};
+
+var gender = {
+  type: jsPsychSurveyMultiChoice,
+  questions: [
+    {prompt: "Select your gender:",
+    options: ['Male', 'Female', 'X', "I'd rather not say"],
+    required: true
+  },
+  ],
+};
+
+var nationality = {
+  type: jsPsychSurveyText,
+  questions: [
+    {prompt: "What is your nationality?", required: true}
+  ],
+};
+
+timeline.push(subject_number, age, gender, nationality)
+
+var instructions1 = {
+  type: jsPsychHtmlKeyboardResponse,
+  stimulus:`
+    <div style='float: left;'><img src='images/instruction1.png'></img>
+    </div>
+    `,
+};
+
+var instructions2 = {
+  type: jsPsychHtmlKeyboardResponse,
+  stimulus:`
+    <div style='float: left;'><img src='images/instruction2.png'></img>
+    </div>
+    `,
+};
+
+timeline.push(instructions1, instructions2);
+
 var feelings = {
-  type: 'survey-likert',
-  questions: [{
-    prompt: "How are you feeling at this moment?",
-    labels: ["Bad", "Somewhat bad", "Somewhat good", "Good"],
-    required: true,
-  }, ],
-  on_finish: function(data) {
-    data.reverse = 0;
-    data.factor = "Feelings";
-    data.resp = get_resp(data, data.reverse);
-  }
-}
+  type: jsPsychSurveyLikert,
+  questions: [
+    {
+      prompt: "How are you feeling at this moment?", 
+      labels: [
+        "Unhappy", "Somewhat unhappy", "Somewhat happy", "Happy"],
+      required: true
+    }],
+};
 
 timeline.push(feelings)
 
-// button to start the audio
-var before_audio = {
-  type: 'html-button-response',
-  stimulus: 'Click to start',
-  choices: ['OK']
+var posvalence = {
+    type: jsPsychAudioKeyboardResponse,
+    stimulus: 'audio/positive-audio.mp3',
+    trial_duration: 30000,
+    choices: "NO_KEYS",
+    prompt: "<p>Let's take a little break.</p>",
+    response_ends_trial: false
 };
 
-// display positive audio stimuli
-var pos_audio = null;
+var negvalence = {
+    type: jsPsychAudioKeyboardResponse,
+    stimulus: 'audio/negative-audio.mp3',
+    trial_duration: 30000,
+    choices: "NO_KEYS",
+    prompt: "<p>Let's take a little break.</p>",
+    response_ends_trial: false
+};
 
-var start_pos_audio = {
-  type: 'call-function',
-  func: function(){
-    pos_audio = new Audio();
-    pos_audio.src = "audio/positive-audio.mp3";
-    pos_audio.play();
-  }
-}
-
-// display negative audio
-var neg_audio = null;
-
-var start_neg_audio = {
-  type: 'call-function',
-  func: function(){
-    neg_audio = new Audio();
-    neg_audio.src = "audio/negative-audio.mp3";
-    neg_audio.play();
-  }
-}
-
-var valence = {
-  if (profilic_ID == even){
-    return pos_audio,
-  } else {
-    return neg_audio,
-  }
-}
-
-timeline.push(valence)
-
-
-// create factorial design
 var factors = {
   amountPure: [5,25,50],
-  outcome:['nonGamble', 'gambleWin', 'gambleLoss'],
-  color: ['yellow','green','blue','orange']
+  outcome: ['nonGamble', 'gambleWin', 'gambleLoss'],
+  color: ['yellow', 'green', 'blue', 'orange']
 };
 
-var full_design = jsPsych.randomization.factorial(factors,8);
+var full_design = jsPsych.randomization.factorial(factors,1);
 
 // display stimuli depending on the design
 for (var i = 0; i < full_design.length; i++) {
@@ -189,126 +170,117 @@ for (var i = 0; i < full_design.length; i++) {
     full_design[i].promptGamble = 0;
     full_design[i].amount = 0;
     full_design[i].image = "<img src='images/purple0.png'></img>";
+
+
     // + 5 condition
   } else if (full_design[i].outcome == 'gambleWin' && full_design[i].color == 'yellow' && full_design[i].amountPure == 5) {
     full_design[i].amount = '+' + full_design[i].amountPure;
-    full_design[i].image = "<img scr='images/yellow5.png'></img>";
+    full_design[i].image = "<img src='images/yellow5.png'></img>";
   } else if (full_design[i].outcome == 'gambleWin' && full_design[i].color == 'green' && full_design[i].amountPure == 5) {
     full_design[i].amount = '+' + full_design[i].amountPure;
-    full_design[i].image = "<img scr='images/green5.png'></img>";
+    full_design[i].image = "<img src='images/green5.png'></img>";
   } else if (full_design[i].outcome == 'gambleWin' && full_design[i].color == 'blue' && full_design[i].amountPure == 5) {
     full_design[i].amount = '+' + full_design[i].amountPure;
-    full_design[i].image = "<img scr='images/blue5.png'></img>";
+    full_design[i].image = "<img src='images/blue5.png'></img>";
   } else if (full_design[i].outcome == 'gambleWin' && full_design[i].color == 'orange' && full_design[i].amountPure == 5) {
     full_design[i].amount = '+' + full_design[i].amountPure;
-    full_design[i].image = "<img scr='images/orange5.png'></img>";
+    full_design[i].image = "<img src='images/orange5.png'></img>";
 
   // + 25 condition
   } else if (full_design[i].outcome == 'gambleWin' && full_design[i].color == 'yellow' && full_design[i].amountPure == 25) {
     full_design[i].amount = '+' + full_design[i].amountPure;
-    full_design[i].image = "<img scr='images/yellow25.png'></img>";
+    full_design[i].image = "<img src='images/yellow25.png'></img>";
   } else if (full_design[i].outcome == 'gambleWin' && full_design[i].color == 'green' && full_design[i].amountPure == 25) {
     full_design[i].amount = '+' + full_design[i].amountPure;
-    full_design[i].image = "<img scr='images/green25.png'></img>";
+    full_design[i].image = "<img src='images/green25.png'></img>";
   } else if (full_design[i].outcome == 'gambleWin' && full_design[i].color == 'blue' && full_design[i].amountPure == 25) {
     full_design[i].amount = '+' + full_design[i].amountPure;
-    full_design[i].image = "<img scr='images/blue25.png'></img>";
+    full_design[i].image = "<img src='images/blue25.png'></img>";
   } else if (full_design[i].outcome == 'gambleWin' && full_design[i].color == 'orange' && full_design[i].amountPure == 25) {
     full_design[i].amount = '+' + full_design[i].amountPure;
-    full_design[i].image = "<img scr='images/orange25.png'></img>";
+    full_design[i].image = "<img src='images/orange25.png'></img>";
 
     // + 50 condition
   } else if (full_design[i].outcome == 'gambleWin' && full_design[i].color == 'yellow' && full_design[i].amountPure == 50) {
     full_design[i].amount = '+' + full_design[i].amountPure;
-    full_design[i].image = "<img scr='images/yellow50.png'></img>";
+    full_design[i].image = "<img src='images/yellow50.png'></img>";
   } else if (full_design[i].outcome == 'gambleWin' && full_design[i].color == 'green' && full_design[i].amountPure == 50) {
     full_design[i].amount = '+' + full_design[i].amountPure;
-    full_design[i].image = "<img scr='images/green50.png'></img>";
+    full_design[i].image = "<img src='images/green50.png'></img>";
   } else if (full_design[i].outcome == 'gambleWin' && full_design[i].color == 'blue' && full_design[i].amountPure == 50) {
     full_design[i].amount = '+' + full_design[i].amountPure;
-    full_design[i].image = "<img scr='images/blue50.png'></img>";
+    full_design[i].image = "<img src='images/blue50.png'></img>";
   } else if (full_design[i].outcome == 'gambleWin' && full_design[i].color == 'orange' && full_design[i].amountPure == 50) {
     full_design[i].amount = '+' + full_design[i].amountPure;
-    full_design[i].image = "<img scr='images/orange50.png'></img>";
+    full_design[i].image = "<img src='images/orange50.png'></img>";
 
     // - 5 condition
   } else if (full_design[i].outcome == 'gambleLoss' && full_design[i].color == 'yellow' && full_design[i].amountPure == 5) {
     full_design[i].amount = '-' + full_design[i].amountPure;
-    full_design[i].image = "<img scr='images/yellow5.png'></img>";
+    full_design[i].image = "<img src='images/yellow5.png'></img>";
   } else if (full_design[i].outcome == 'gambleLoss' && full_design[i].color == 'green' && full_design[i].amountPure == 5) {
     full_design[i].amount = '-' + full_design[i].amountPure;
-    full_design[i].image = "<img scr='images/green5.png'></img>";
+    full_design[i].image = "<img src='images/green5.png'></img>";
   } else if (full_design[i].outcome == 'gambleLoss' && full_design[i].color == 'blue' && full_design[i].amountPure == 5) {
     full_design[i].amount = '-' + full_design[i].amountPure;
-    full_design[i].image = "<img scr='images/blue5.png'></img>";
+    full_design[i].image = "<img src='images/blue5.png'></img>";
   } else if (full_design[i].outcome == 'gambleLoss' && full_design[i].color == 'orange' && full_design[i].amountPure == 5) {
     full_design[i].amount = '-' + full_design[i].amountPure;
-    full_design[i].image = "<img scr='images/orange5.png'></img>";
-
+    full_design[i].image = "<img src='images/orange5.png'></img>";
+    
     // - 25 condition
   } else if (full_design[i].outcome == 'gambleLoss' && full_design[i].color == 'yellow' && full_design[i].amountPure == 25) {
     full_design[i].amount = '-' + full_design[i].amountPure;
-    full_design[i].image = "<img scr='images/yellow25.png'></img>";
+    full_design[i].image = "<img src='images/yellow25.png'></img>";
   } else if (full_design[i].outcome == 'gambleLoss' && full_design[i].color == 'green' && full_design[i].amountPure == 25) {
     full_design[i].amount = '-' + full_design[i].amountPure;
-    full_design[i].image = "<img scr='images/green25.png'></img>";
+    full_design[i].image = "<img src='images/green25.png'></img>";
   } else if (full_design[i].outcome == 'gambleLoss' && full_design[i].color == 'blue' && full_design[i].amountPure == 25) {
     full_design[i].amount = '-' + full_design[i].amountPure;
-    full_design[i].image = "<img scr='images/blue25.png'></img>";
+    full_design[i].image = "<img src='images/blue25.png'></img>";
   } else if (full_design[i].outcome == 'gambleLoss' && full_design[i].color == 'orange' && full_design[i].amountPure == 25) {
     full_design[i].amount = '-' + full_design[i].amountPure;
-    full_design[i].image = "<img scr='images/orange25.png'></img>";
+    full_design[i].image = "<img src='images/orange25.png'></img>";
 
     // - 50 condition
   } else if (full_design[i].outcome == 'gambleLoss' && full_design[i].color == 'yellow' && full_design[i].amountPure == 50) {
     full_design[i].amount = '-' + full_design[i].amountPure;
-    full_design[i].image = "<img scr='images/yellow50.png'></img>";
+    full_design[i].image = "<img src='images/yellow50.png'></img>";
   } else if (full_design[i].outcome == 'gambleLoss' && full_design[i].color == 'green' && full_design[i].amountPure == 50) {
     full_design[i].amount = '-' + full_design[i].amountPure;
-    full_design[i].image = "<img scr='images/green50.png'></img>";
+    full_design[i].image = "<img src='images/green50.png'></img>";
   } else if (full_design[i].outcome == 'gambleLoss' && full_design[i].color == 'blue' && full_design[i].amountPure == 50) {
     full_design[i].amount = '-' + full_design[i].amountPure;
-    full_design[i].image = "<img scr='images/blue50.png'></img>";
+    full_design[i].image = "<img src='images/blue50.png'></img>";
   } else if (full_design[i].outcome == 'gambleLoss' && full_design[i].color == 'orange' && full_design[i].amountPure == 50) {
     full_design[i].amount = '-' + full_design[i].amountPure;
-    full_design[i].image = "<img scr='images/orange50.png'></img>";
+    full_design[i].image = "<img src='images/orange50.png'></img>";
   }
 };
 
 var start = {
-  type:'html-keyboard-response',
-  stimulus: 'Press a key to start the next gamble',
-  choices: ['leftarrow', 'rightarrow', 'downarrow', 'uparrow'],
+  type: jsPsychHtmlKeyboardResponse,
+  stimulus: 'Press one of the arrow keys to go to the next gamble',
+  choices: ['ArrowLeft', 'ArrowRight', 'ArrowDown', 'ArrowUp'],
 };
 
-// display cards
+timeline.push(start);
+
 var cards = {
-  type: "html-keyboard-response",
-  stimulus: function(){return jsPsych.timelineVariable('image', true)},
+  type: jsPsychHtmlKeyboardResponse,
+  stimulus: function() {return jsPsych.timelineVariable('image', true)},
   choices: function() {
-    if (jsPsych.timelineVariable('outcome', true)== 'nonGamble') {
-      return ['downarrow', 'uparrow'];
+    if (jsPsych.timelineVariable('outcome', true) == 'nonGamble') {
+      return ['ArrowDown', 'ArrowUp'];
     } else {
-      return ['leftarrow', 'rightarrow'];
+      return ['ArrowLeft', 'ArrowRight'];
     }
   },
-  on_finish: function(data) {
-    var last_rt = jsPsych.data.get().last(2).values()[0];
-    data.startRT = last_rt.rt;
-    startRT = data.startRT;
-    console.log(startRT);
-    responseTime = data.rt;
-    console.log(responseTime);
-    data.outcome = jsPsych.timelineVariable('outcome', true);
-    data.amount = jsPsych.timelineVariable('amountPure', true);
-    data.trial_type = 'task';
-    data_trial_number = (data.trial_index-5)/3;
-  }
 };
 
 var feedback = {
-  type: "html-keyboard-response",
-  stimulus: function(){
+  type: jsPsychHtmlKeyboardResponse,
+  stimulus: function() {
     return jsPsych.timelineVariable('amount', true)},
     trial_duration: 1000,
     choices: jsPsych.NO_KEYS,
@@ -316,88 +288,42 @@ var feedback = {
   var trial_procedure = {
     timeline: [start, cards, feedback],
     timeline_variables: full_design,
-  };
-  timeline.push(trial_procedure)
-
-  // create block feedback 
-  var block_feedback = {
-    type: 'html-keyboard-response',
-    stimulus: 'You won 200 points',
-  };
-  timeline.push(block_feedback)
-
-  // Audio + vragenlijst toevoegen!!!
-  var block_procedure = {
-    timeline: [consent, age, gender, nationality, instruction, trial_procedure, block_feedback],
 };
 
-// UPPS-P questionnaire
-var instructions_UPPSP = {
-  type: 'instructions',
-  pages: [
-    "In the last part of this study, you will see a number of statements that describe ways in which" +
-    "people think and act. For each statement, please indicate how much you agree or disagree with the statement by selecting Agree Strongly," +
-    "Agree somewhat, Disagree Somewhat or Disagree Strongly. Be sure to indicate your agreement or disagreement for every statement." +
-    "Press the arrow key to start the task."
-  ],
-  key_forward: 'rightarrow',
-  on_start: function() {
-    document.body.style.cursor = 'auto';
-  }
+timeline.push(trial_procedure)
+
+var block_feedback = {
+  type: jsPsychHtmlKeyboardResponse,
+  stimulus: 'You won 200 points',
+  choices: [' ']
 };
+//timeline.push(block_feedback)
 
-timeline.push(instructions_UPPSP);
+var full_design = jsPsych.randomization.factorial(factors,1);
+timeline.push(negvalence)
+timeline.push(feelings)
+timeline.push(start)
+timeline.push(trial_procedure)
+//timeline.push(block_feedback)
 
-//show UPPSP questionnaire
-timeline.push(...UPPSP_items);
+var full_design = jsPsych.randomization.factorial(factors,1);
 
-//function that appends data to an existing file (or creates the file if it does not exist)
-function appendData(filename,filedata) {
-  $.ajax({
-    type: 'post',
-    cache: false,
-    url: 'data-save/save_data_append.php',
-    data: {
-      filename: filename,
-      filedata: filedata
-    },
-  });
-};
+timeline.push(posvalence)
+timeline.push(feelings)
+timeline.push(start)
+timeline.push(trial_procedure)
+timeline.push(block_feedback) 
 
 var goodbye = {
-  type: 'html-keyboard-response',
-  stimulus: "<p> Thank you for participating! In this study we want to look at the influence of emotions on impulsive actions." +
-    "More specifically, we will look at how fast you started the next trial after a loss versus a win. </p>"
+  type: jsPsychInstructions,
+  pages: [ "<p> Thank you for participating! In this study we want to look at the influence of emotions on impulsive actions.</p>" +
+    "<p>More specifically, we will look at how fast you started the next trial after a loss versus a win. </p>"],
 };
 
 timeline.push(goodbye)
 
-//function to add participant info and trial number to data file
-
-//start the experiment and save data
-jsPsych.init ({
-  timeline: timeline,
-  on_data_update: function(data) {
-    if(online) {
-      var subjID = jsPsych.data.get().last(1).values()[0]['profilic_ID'];
-      if (data.trial_index ==1) {
-        data_row = 
-        "profilic_ID, Age, Gender,Nationality, stimulus, trial_number, outcome, amount, startRT, RT, key_press,resp,factor,color,time_elapsed\n"
-        appendData ('CardsData_' + subjID + '.csv', data_row)
-      } else if (data.trial_type == 'task'|| data.trial_type == 'survey-likert'){
-        data_row = data.prolific_ID + ',' + data.age + ',' + data.gender + ',' + data.nationality + ',' + data.stimulus + ',' + data.trial_number + ',' +
-                      data.outcome + ',' + data.amount + ',' +
-                      data.startRT + ','  + data.rt + ',' + data.key_press + ',' + data.resp + ',' + data.factor + ',' + data.color + ',' + data.time_elapsed  + '\n'
-        appendData('CardsData_'+ subjID +'.csv',data_row)
-      }
-    }
-  },
-  on_finish: function(){
-    if (!online) {
-      jsPsych.data.get().filter({trial_type:'task'|| trial_type = 'survey-likert'}).localSave('csv', 'mydata.csv');
-    }
-  }
-})
+/* start the experiment */
+jsPsych.run(timeline);
 
 </script>
 </html>
