@@ -314,6 +314,191 @@ timeline.push(start)
 timeline.push(trial_procedure)
 timeline.push(block_feedback) 
 
+//UPPS questionnaire
+var scale_1 = ["Agree strongly", "Agree some", "Disagree some", "Disagree strongly"];
+
+var Question1 = {
+  type: jsPsychSurveyLikert,
+  questions: [{
+      prompt: "I usually like to see things through to the end.", 
+      labels: scale_1,
+      required: true
+    }],
+};
+
+var Question2 = {
+  type: jsPsychSurveyLikert,
+  questions: [{
+      prompt: "My thinking is usually careful and purposeful.", 
+      labels: scale_1,
+      required: true
+    }],
+};
+
+var Question3 = {
+  type: jsPsychSurveyLikert,
+  questions: [{
+      prompt: "When I am in great mood, I tend to get into situations that could cause me problems.", 
+      labels: scale_1,
+      required: true
+    }],
+};
+
+var Question4 = {
+  type: jsPsychSurveyLikert,
+  questions: [{
+      prompt: "Unfinished tasks really bother me.", 
+      labels: scale_1,
+      required: true
+    }],
+};
+
+var Question5 = {
+  type: jsPsychSurveyLikert,
+  questions: [{
+      prompt:"I like to stop and think things over before I do them.", 
+      labels: scale_1,
+      required: true
+    }],
+};
+
+var Question6 = {
+  type: jsPsychSurveyLikert,
+  questions: [{
+      prompt: "When I feel bad, I quite often do things I later regret in order to make myself feel better now.", 
+      labels: scale_1,
+      required: true
+    }],
+};
+
+var Question7 = {
+  type: jsPsychSurveyLikert,
+  questions: [{
+      prompt: "Once I get going on something I hate to stop.", 
+      labels: scale_1,
+      required: true
+    }],
+};
+
+var Question8 = {
+  type: jsPsychSurveyLikert,
+  questions: [{
+      prompt: "Sometimes when I feel bad, I can't seem to stop what I am doing even though it is making me feel worse.", 
+      labels: scale_1,
+      required: true
+    }],
+};
+
+var Question9 = {
+  type: jsPsychSurveyLikert,
+  questions: [{
+      prompt: "I quite enjoy taking risks.", 
+      labels: scale_1,
+      required: true
+    }],
+};
+
+var Question10 = {
+  type: jsPsychSurveyLikert,
+  questions: [{
+      prompt: "I tend to lose control when I am in a great mood.", 
+      labels: scale_1,
+      required: true
+    }],
+};
+
+var Question11 = {
+  type: jsPsychSurveyLikert,
+  questions: [{
+      prompt: "I finish what I start.", 
+      labels: scale_1,
+      required: true
+    }],
+};
+
+var Question12 = {
+  type: jsPsychSurveyLikert,
+  questions: [{
+      prompt: "I tend to value and follow a rational, 'sensible' approach to things .", 
+      labels: scale_1,
+      required: true
+    }],
+};
+
+var Question13 = {
+  type: jsPsychSurveyLikert,
+  questions: [{
+      prompt: "When I am upset I often act without thinking.", 
+      labels: scale_1,
+      required: true
+    }],
+};
+
+var Question14 = {
+  type: jsPsychSurveyLikert,
+  questions: [{
+      prompt: "I welcome new and exciting experiences and sensations, even if they are a little frightening and unconventional.", 
+      labels: scale_1,
+      required: true
+    }],
+};
+
+var Question15 = {
+  type: jsPsychSurveyLikert,
+  questions: [{
+      prompt: "When I feel rejected, I will often say things that I later regret.", 
+      labels: scale_1,
+      required: true
+    }],
+};
+
+var Question16 = {
+  type: jsPsychSurveyLikert,
+  questions: [{
+      prompt: "I would like to learn to fly an airplane.", 
+      labels: scale_1,
+      required: true
+    }],
+};
+
+var Question17 = {
+  type: jsPsychSurveyLikert,
+  questions: [{
+      prompt: "Others are shocked or worried about the things I do when I am feeling very excited.", 
+      labels: scale_1,
+      required: true
+    }],
+};
+
+var Question18 = {
+  type: jsPsychSurveyLikert,
+  questions: [{
+      prompt: "I would enjoy the sensation of skiing very fast down a high mountain slope.", 
+      labels: scale_1,
+      required: true
+    }],
+};
+
+var Question19 = {
+  type: jsPsychSurveyLikert,
+  questions: [{
+      prompt: "I usually think carefully before doing anything.", 
+      labels: scale_1,
+      required: true
+    }],
+};
+
+var Question20 = {
+  type: jsPsychSurveyLikert,
+  questions: [{
+      prompt: "I tend to act without thinking when I am really excited .", 
+      labels: scale_1,
+      required: true
+    }],
+};
+
+timeline.push(Question1,Question2,Question3,Question4,Question5,Question6,Question7,Question8,Question9,Question10,Question11,Question12,Question13,Question14,Question15,Question16,Question17,Question18,Question19,Question20)
+
 var goodbye = {
   type: jsPsychInstructions,
   pages: [ "<p> Thank you for participating! In this study we want to look at the influence of emotions on impulsive actions.</p>" +
