@@ -23,6 +23,13 @@ var jsPsych = initJsPsych();
 /* create timeline */
 var timeline = [];
 
+// create empty variables for on_finish
+var choiceRT = []
+var choiceKey = []
+var trial_ind = []
+var startRT = []
+var startKey = []
+
 // is the experiment running from a server or not? (this determines if data is saved on server or offline)
 if (document.location.host) { // returns your host or null
   online = true;
@@ -66,7 +73,7 @@ var subject_number = {
     var responses = JSON.parse(data.responses);
     var prolific_ID = responses.Q0;
     jsPsych.data.addProperties({
-      prolific_ID: subject_number
+    prolific_ID: subject_number
     });
   }
 };
@@ -720,12 +727,12 @@ jsPsych.init({
       var subjID = jsPsych.data.get().last(1).values()[0]['prolific_ID'];
       if (data.trial_index == 1){ // write header at first event
         data_row = "subject_number,Age,Gender,Nationality,stimulus,trial_number,outcome,amount,startRT,RT,key_press,resp,factor,color,time_elapsed\n"
-        appendData('CardsData_'+ subjID +'.csv',data_row)
+        appendData('RPEPData_'+ subjID +'.csv',data_row)
       } else if (data.trial_type == 'task' || data.trial_type == 'survey-likert'){ // append data each stimulus when a categorize-html occurs
         data_row = data.prolific_ID + ',' + data.age + ',' + data.gender + ',' + data.nationality + ',' + data.stimulus + ',' + data.trial_number + ',' +
                       data.outcome + ',' + data.amount + ',' +
                       data.startRT + ','  + data.rt + ',' + data.key_press + ',' + data.resp + ',' + data.factor + ',' + data.color + ',' + data.time_elapsed  + '\n'
-        appendData('CardsData_'+ subjID +'.csv',data_row)
+        appendData('RPEPData_'+ subjID +'.csv',data_row)
       }
     }
   },
