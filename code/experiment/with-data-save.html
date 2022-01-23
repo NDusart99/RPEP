@@ -1,34 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Decision task</title>
-    <script src="https://unpkg.com/jspsych@7.0.0"></script>
-    <script src="https://unpkg.com/@jspsych/plugin-html-keyboard-response@1.0.0"></script>
-    <script src="https://unpkg.com/@jspsych/plugin-image-keyboard-response@1.0.0"></script>
-    <script src="https://unpkg.com/@jspsych/plugin-preload@1.0.0"></script>
-    <script src="https://unpkg.com/@jspsych/plugin-survey-text@1.0.0"></script>
-    <script src="https://unpkg.com/@jspsych/plugin-survey-multi-choice@1.0.0"></script>
-    <script src="https://unpkg.com/@jspsych/plugin-survey-likert@1.0.0"></script>
-    <script src="https://unpkg.com/@jspsych/plugin-fullscreent@1.0.0"></script>
-    <script src="https://unpkg.com/@jspsych/plugin-instructions@1.0.0"></script>
-    <script src="https://unpkg.com/@jspsych/plugin-audio-keyboard-response@1.0.0"></script>
-    <link href="https://unpkg.com/jspsych@7.0.0/css/jspsych.css" rel="stylesheet" type="text/css" />
+  <meta charset="utf-8"/> <!-- import the jsPsych core library, specific plugins, jquery and some custom scripts-->
+  <title>Decision Making Task</title> <!-- defines a title in the browser tab -->
+  <script src="jspsych-6.0.5/jspsych.js"></script> <!-- jsPsych core library -->
+  <script src="jspsych-6.0.5/plugins/jspsych-instructions.js"></script> <!-- plugins define the specific tasks -->
+  <script src="jspsych-6.0.5/plugins/jspsych-html-keyboard-response.js"></script>
+  <script src="jspsych-6.0.5/plugins/jspsych-survey-multi-choice.js"></script>
+  <script src="jspsych-6.0.5/plugins/jspsych-categorize-html.js"></script>
+  <script src="jspsych-6.0.5/plugins/jspsych-survey-text-beta-6.1.js"></script> <!-- beta 6.1 version has the 'input required' function for text fields -->
+  <script src="jspsych-6.0.5/plugins/jspsych-survey-multi-choice.js"></script>
+  <script src="jspsych-6.0.5/plugins/jspsych-instructions.js"></script>
+  <script src="UPPSP.js"></script>
+  <script src="jspsych-6.0.5/plugins/jspsych-survey-likert.js"></script>
+  <script src="jspsych-6.0.5/plugins/jspsych-fullscreen.js"></script>
+  <script src="js/jquery-1.7.1.min.js"></script> <!-- the jquery library is used to communicate with the server (to store the data) through "AJAX" and PHP -->
+  <link href="jspsych-6.0.5/css/jspsych.css" rel="stylesheet" type="text/css"></link> <!-- jsPsych css stylesheet -->
 </head>
 <body></body>
 <script>
 
-/* initialize jsPsych */
-var jsPsych = initJsPsych();
-
 /* create timeline */
 var timeline = [];
 
-// create empty variables for on_finish
-var choiceRT = []
-var choiceKey = []
-var trial_ind = []
-var startRT = []
-var startKey = []
 
 // is the experiment running from a server or not? (this determines if data is saved on server or offline)
 if (document.location.host) { // returns your host or null
@@ -37,50 +31,33 @@ if (document.location.host) { // returns your host or null
   online = false;
 };
 
-/* Preload images */
-var preload = {
-  type: jsPsychPreload,
-  images: ['images/blue5.png', 'images/blue25.png', 'images/blue50.png', 'images/green5.png', 'images/green25.png', 
-  'images/green50.png', 'images/orange5.png', 'images/orange25.png', 'images/orange50.png', 'images/yellow5.png', 
-  'images/yellow25.png', 'images/yellow50.png', 'images/instruction1.png', 'images/instruction2.png']
-};
-timeline.push(preload);
-
-// is the experiment running from a server or not? (this determines if data is saved on server or offline)
-if (document.location.host) { // returns your host or null
-  online = true;
-} else {
-  online = false;
-};
-
-// define welcome message trial */
-var welcome = {
-  type: jsPsychInstructions,
-  pages: [
-  '<p> Welcome to the experiment. </p>' +
-  '<p>Please turn off your phone and othere devices that might be distracting.</p>' +
-  '<p>Press space to begin.</p>'],
-  key_forward: ' '
-};
-timeline.push(welcome);
-
-var subject_number = {
-  type: jsPsychSurveyText,
+/*********** prolific ID ***********/
+var prolific = {
+  type: 'survey-text',
   questions: [
-    {prompt: "Please enter your subject number:",
-    required: true}],
+    {prompt: "Prease turn off music, cell phone and other devices that might be distracting. Enter your prolific ID below: ", required: true}],
   on_finish: function(data) {
     var responses = JSON.parse(data.responses);
     var prolific_ID = responses.Q0;
     jsPsych.data.addProperties({
-    prolific_ID: subject_number
+      prolific_ID: prolific_ID
     });
   }
 };
 
+timeline.push(prolific);
+
+/*********** fullscreen mode ***********/
+var fullscreen_mode = {
+  type: 'fullscreen',
+  fullscreen_mode: true
+};
+
+timeline.push(fullscreen_mode);
+
 // informed consent trial. The informed_consent_text variable comes from /configuration/text_variables.js
 var consent = {
-  type: jsPsychInstructions,
+  type: 'instructions',
   pages: [
     '<p>I understand that:</p> '+
     '<p>Participation in this study is entirely voluntary, I can decline to answer any question at any time, and I can withdraw from the study at any time without giving a reason. </p>'+
@@ -100,11 +77,13 @@ var consent = {
 
 timeline.push(consent)
 
+// get participant's age and add it to the datafile
 var age = {
-  type: jsPsychSurveyText,
-  questions: [
-    {prompt: "How old are you?", required: true}
-  ],
+  type: 'survey-text',
+  questions: [{
+    prompt: "How old are you?",
+    required: true
+  }, ],
   on_finish: function(data) {
     var responses = JSON.parse(data.responses);
     var code = responses.Q0;
@@ -114,14 +93,14 @@ var age = {
   }
 };
 
+ // get participant's gender and add it to the datafile
 var gender = {
-  type: jsPsychSurveyMultiChoice,
-  questions: [
-    {prompt: "Select your gender:",
-    options: ['Male', 'Female', 'X', "I'd rather not say"],
+  type: 'survey-multi-choice',
+  questions: [{
+    prompt: "Select your gender",
+    options: ["male", "female", "I don't want to say"],
     required: true
-  },
-  ],
+  }, ],
   on_finish: function(data) {
     var responses = JSON.parse(data.responses);
     var code = responses.Q0;
@@ -131,11 +110,13 @@ var gender = {
   }
 };
 
+// get participant's nationality and add it to the datafile
 var nationality = {
-  type: jsPsychSurveyText,
-  questions: [
-    {prompt: "What is your nationality?", required: true}
-  ],
+  type: 'survey-text',
+  questions: [{
+    prompt: "What is your nationality",
+    required: true
+  }, ],
   on_finish: function(data) {
     var responses = JSON.parse(data.responses);
     var code = responses.Q0;
@@ -145,36 +126,14 @@ var nationality = {
   }
 };
 
-timeline.push(subject_number, age, gender, nationality)
-
-var instructions1 = {
-  type: jsPsychHtmlKeyboardResponse,
-  stimulus:`
-    <div style='float: left;'><img src='images/instruction1.png'></img>
-    </div>
-    `,
-};
-
-var instructions2 = {
-  type: jsPsychHtmlKeyboardResponse,
-  stimulus:`
-    <div style='float: left;'><img src='images/instruction2.png'></img>
-    </div>
-    `,
-};
-
-timeline.push(instructions1, instructions2);
-
 var feelings = {
-  type: jsPsychSurveyLikert,
-  questions: [
-    {
-      prompt: "How are you feeling at this moment?", 
-      labels: [
-        "Unhappy", "Somewhat unhappy", "Somewhat happy", "Happy"],
-      required: true
-    }],
-    on_finish: function(data) {
+  type: 'survey-multi-choice',
+  questions: [{
+    prompt: "How are you feeling at this moment?",
+    options: ["Unhappy", "Somwhat Unhappy", "Somewhat happy", "Happy"],
+    required: true
+  }, ],
+  on_finish: function(data) {
     var responses = JSON.parse(data.responses);
     var code = responses.Q0;
     jsPsych.data.addProperties({
@@ -183,33 +142,26 @@ var feelings = {
   }
 };
 
-timeline.push(feelings)
+timeline.push(age, gender, nationality, feelings)
 
-var posvalence = {
-    type: jsPsychAudioKeyboardResponse,
-    stimulus: 'audio/positive-audio.mp3',
-    trial_duration: 30000,
-    choices: "NO_KEYS",
-    prompt: "<p>Let's take a little break.</p>",
-    response_ends_trial: false
-};
 
-var negvalence = {
-    type: jsPsychAudioKeyboardResponse,
-    stimulus: 'audio/negative-audio.mp3',
-    trial_duration: 30000,
-    choices: "NO_KEYS",
-    prompt: "<p>Let's take a little break.</p>",
-    response_ends_trial: false
-};
+var instruction = {
+     type: 'instructions',
+     pages: [
+     '<img src="images/instruction1.png"></img>',
+     '<img src="images/instruction2.png"></img>'
+     ]
+ };
 
+timeline.push(instruction)
+
+// create factorial design
 var factors = {
-  amountPure: [5,25,50],
-  outcome: ['nonGamble', 'gambleWin', 'gambleLoss'],
-  color: ['yellow', 'green', 'blue', 'orange']
+    amountPure: [5, 25, 50],
+    outcome: ['nonGamble', 'gambleWin', 'gambleLoss'],
+    color: ['yellow', 'green', 'blue', 'orange']
 };
-
-var full_design = jsPsych.randomization.factorial(factors,1);
+var full_design = jsPsych.randomization.factorial(factors, 1); //todo: add no. of repetitions
 
 // display stimuli depending on the design
 for (var i = 0; i < full_design.length; i++) {
@@ -217,9 +169,6 @@ for (var i = 0; i < full_design.length; i++) {
     full_design[i].promptGamble = 0;
     full_design[i].amount = 0;
     full_design[i].image = "<img src='images/purple0.png'></img>";
-
-
-    // + 5 condition
   } else if (full_design[i].outcome == 'gambleWin' && full_design[i].color == 'yellow' && full_design[i].amountPure == 5) {
     full_design[i].amount = '+' + full_design[i].amountPure;
     full_design[i].image = "<img src='images/yellow5.png'></img>";
@@ -232,8 +181,18 @@ for (var i = 0; i < full_design.length; i++) {
   } else if (full_design[i].outcome == 'gambleWin' && full_design[i].color == 'orange' && full_design[i].amountPure == 5) {
     full_design[i].amount = '+' + full_design[i].amountPure;
     full_design[i].image = "<img src='images/orange5.png'></img>";
-
-  // + 25 condition
+  } else if (full_design[i].outcome == 'gambleLoss' && full_design[i].color == 'yellow' && full_design[i].amountPure == 5) {
+    full_design[i].amount = '-' + full_design[i].amountPure;
+    full_design[i].image = "<img src='images/yellow5.png'></img>";
+  } else if (full_design[i].outcome == 'gambleLoss' && full_design[i].color == 'green' && full_design[i].amountPure == 5) {
+    full_design[i].amount = '-' + full_design[i].amountPure;
+    full_design[i].image = "<img src='images/green5.png'></img>";
+  } else if (full_design[i].outcome == 'gambleLoss' && full_design[i].color == 'orange' && full_design[i].amountPure == 5) {
+    full_design[i].amount = '-' + full_design[i].amountPure;
+    full_design[i].image = "<img src='images/orange5.png'></img>";
+  } else if (full_design[i].outcome == 'gambleLoss' && full_design[i].color == 'blue' && full_design[i].amountPure == 5) {
+    full_design[i].amount = '-' + full_design[i].amountPure;
+    full_design[i].image = "<img src='images/blue5.png'></img>";
   } else if (full_design[i].outcome == 'gambleWin' && full_design[i].color == 'yellow' && full_design[i].amountPure == 25) {
     full_design[i].amount = '+' + full_design[i].amountPure;
     full_design[i].image = "<img src='images/yellow25.png'></img>";
@@ -246,8 +205,18 @@ for (var i = 0; i < full_design.length; i++) {
   } else if (full_design[i].outcome == 'gambleWin' && full_design[i].color == 'orange' && full_design[i].amountPure == 25) {
     full_design[i].amount = '+' + full_design[i].amountPure;
     full_design[i].image = "<img src='images/orange25.png'></img>";
-
-    // + 50 condition
+  } else if (full_design[i].outcome == 'gambleLoss' && full_design[i].color == 'yellow' && full_design[i].amountPure == 25) {
+    full_design[i].amount = '-' + full_design[i].amountPure;
+    full_design[i].image = "<img src='images/yellow25.png'></img>";
+  } else if (full_design[i].outcome == 'gambleLoss' && full_design[i].color == 'green' && full_design[i].amountPure == 25) {
+    full_design[i].amount = '-' + full_design[i].amountPure;
+    full_design[i].image = "<img src='images/green25.png'></img>";
+  } else if (full_design[i].outcome == 'gambleLoss' && full_design[i].color == 'orange' && full_design[i].amountPure == 25) {
+    full_design[i].amount = '-' + full_design[i].amountPure;
+    full_design[i].image = "<img src='images/orange25.png'></img>";
+  } else if (full_design[i].outcome == 'gambleLoss' && full_design[i].color == 'blue' && full_design[i].amountPure == 25) {
+    full_design[i].amount = '-' + full_design[i].amountPure;
+    full_design[i].image = "<img src='images/blue25.png'></img>";
   } else if (full_design[i].outcome == 'gambleWin' && full_design[i].color == 'yellow' && full_design[i].amountPure == 50) {
     full_design[i].amount = '+' + full_design[i].amountPure;
     full_design[i].image = "<img src='images/yellow50.png'></img>";
@@ -260,443 +229,138 @@ for (var i = 0; i < full_design.length; i++) {
   } else if (full_design[i].outcome == 'gambleWin' && full_design[i].color == 'orange' && full_design[i].amountPure == 50) {
     full_design[i].amount = '+' + full_design[i].amountPure;
     full_design[i].image = "<img src='images/orange50.png'></img>";
-
-    // - 5 condition
-  } else if (full_design[i].outcome == 'gambleLoss' && full_design[i].color == 'yellow' && full_design[i].amountPure == 5) {
-    full_design[i].amount = '-' + full_design[i].amountPure;
-    full_design[i].image = "<img src='images/yellow5.png'></img>";
-  } else if (full_design[i].outcome == 'gambleLoss' && full_design[i].color == 'green' && full_design[i].amountPure == 5) {
-    full_design[i].amount = '-' + full_design[i].amountPure;
-    full_design[i].image = "<img src='images/green5.png'></img>";
-  } else if (full_design[i].outcome == 'gambleLoss' && full_design[i].color == 'blue' && full_design[i].amountPure == 5) {
-    full_design[i].amount = '-' + full_design[i].amountPure;
-    full_design[i].image = "<img src='images/blue5.png'></img>";
-  } else if (full_design[i].outcome == 'gambleLoss' && full_design[i].color == 'orange' && full_design[i].amountPure == 5) {
-    full_design[i].amount = '-' + full_design[i].amountPure;
-    full_design[i].image = "<img src='images/orange5.png'></img>";
-    
-    // - 25 condition
-  } else if (full_design[i].outcome == 'gambleLoss' && full_design[i].color == 'yellow' && full_design[i].amountPure == 25) {
-    full_design[i].amount = '-' + full_design[i].amountPure;
-    full_design[i].image = "<img src='images/yellow25.png'></img>";
-  } else if (full_design[i].outcome == 'gambleLoss' && full_design[i].color == 'green' && full_design[i].amountPure == 25) {
-    full_design[i].amount = '-' + full_design[i].amountPure;
-    full_design[i].image = "<img src='images/green25.png'></img>";
-  } else if (full_design[i].outcome == 'gambleLoss' && full_design[i].color == 'blue' && full_design[i].amountPure == 25) {
-    full_design[i].amount = '-' + full_design[i].amountPure;
-    full_design[i].image = "<img src='images/blue25.png'></img>";
-  } else if (full_design[i].outcome == 'gambleLoss' && full_design[i].color == 'orange' && full_design[i].amountPure == 25) {
-    full_design[i].amount = '-' + full_design[i].amountPure;
-    full_design[i].image = "<img src='images/orange25.png'></img>";
-
-    // - 50 condition
   } else if (full_design[i].outcome == 'gambleLoss' && full_design[i].color == 'yellow' && full_design[i].amountPure == 50) {
     full_design[i].amount = '-' + full_design[i].amountPure;
     full_design[i].image = "<img src='images/yellow50.png'></img>";
   } else if (full_design[i].outcome == 'gambleLoss' && full_design[i].color == 'green' && full_design[i].amountPure == 50) {
     full_design[i].amount = '-' + full_design[i].amountPure;
     full_design[i].image = "<img src='images/green50.png'></img>";
-  } else if (full_design[i].outcome == 'gambleLoss' && full_design[i].color == 'blue' && full_design[i].amountPure == 50) {
-    full_design[i].amount = '-' + full_design[i].amountPure;
-    full_design[i].image = "<img src='images/blue50.png'></img>";
   } else if (full_design[i].outcome == 'gambleLoss' && full_design[i].color == 'orange' && full_design[i].amountPure == 50) {
     full_design[i].amount = '-' + full_design[i].amountPure;
     full_design[i].image = "<img src='images/orange50.png'></img>";
+  } else if (full_design[i].outcome == 'gambleLoss' && full_design[i].color == 'blue' && full_design[i].amountPure == 50) {
+    full_design[i].amount = '-' + full_design[i].amountPure;
+    full_design[i].image = "<img src='images/blue50.png'></img>";
   }
 };
 
 var start = {
-  type: jsPsychHtmlKeyboardResponse,
-  stimulus: 'Press one of the arrow keys to go to the next gamble',
-  choices: ['ArrowLeft', 'ArrowRight', 'ArrowDown', 'ArrowUp'],
+  type: 'html-keyboard-response',
+  stimulus: 'Press one of the arrow keys to start the next gamble',
+  choices: ['leftarrow', 'rightarrow', 'downarrow', 'uparrow'],
 };
 
-timeline.push(start);
 
-var cards = {
-  type: jsPsychHtmlKeyboardResponse,
-  stimulus: function() {return jsPsych.timelineVariable('image', true)},
-  choices: function() {
-    if (jsPsych.timelineVariable('outcome', true) == 'nonGamble') {
-      return ['ArrowDown', 'ArrowUp'];
+// displaying doors; Data is logged
+var doors = {
+  type: "html-keyboard-response",
+  stimulus: function(){return jsPsych.timelineVariable('image', true)},
+  choices: function(){
+    if (jsPsych.timelineVariable('outcome', true) == 'nonGamble'){
+      return ['downarrow', 'uparrow'];
     } else {
-      return ['ArrowLeft', 'ArrowRight'];
+      return ['leftarrow', 'rightarrow'];
     }
   },
+  on_finish: function(data) {
+    var last_rt = jsPsych.data.get().last(2).values()[0];
+    data.startRT = last_rt.rt;
+    startRT = data.startRT;
+    console.log(startRT);
+    responseTime = data.rt;
+    console.log(responseTime);
+    data.outcome = jsPsych.timelineVariable('outcome', true);
+    data.amount = jsPsych.timelineVariable('amountPure', true);
+    data.trial_type = 'task';
+    data.trial_number = (data.trial_index-5)/3;
+  }
 };
 
 var feedback = {
-  type: jsPsychHtmlKeyboardResponse,
-  stimulus: function() {
+  type: "html-keyboard-response",
+  stimulus: function () {
     return jsPsych.timelineVariable('amount', true)},
-    trial_duration: 1000,
-    choices: jsPsych.NO_KEYS,
+  trial_duration: 1000,
+  choices: jsPsych.NO_KEYS,
+
 };
 
-var trial_procedure = { 
-    timeline: [start, cards, feedback],
-    timeline_variables: full_design,
-};
 
+var trial_procedure = {
+  timeline: [start, doors, feedback],
+  timeline_variables: full_design,
+};
 timeline.push(trial_procedure)
 
-var block_feedback = {
-  type: jsPsychHtmlKeyboardResponse,
-  stimulus: 'You won 200 points',
-  choices: [' ']
-};
-//timeline.push(block_feedback)
 
-var full_design = jsPsych.randomization.factorial(factors,1);
+//positive valence
+var posvalence = {
+    type: 'audio-keyboard-response',
+    stimulus: 'audio/positive-audio.mp3',
+    trial_duration: 30000,
+    choices: "NO_KEYS",
+    prompt: "<p>Let's take a little break.</p>",
+    response_ends_trial: false
+};
 timeline.push(posvalence)
 timeline.push(feelings)
-timeline.push(start)
 timeline.push(trial_procedure)
-//timeline.push(block_feedback)
 
-var full_design = jsPsych.randomization.factorial(factors,1);
-
+//negative valence
+var negvalence = {
+    type: 'audio-keyboard-response',
+    stimulus: 'audio/negative-audio.mp3',
+    trial_duration: 30000,
+    choices: "NO_KEYS",
+    prompt: "<p>Let's take a little break.</p>",
+    response_ends_trial: false
+};
 timeline.push(negvalence)
 timeline.push(feelings)
-timeline.push(start)
 timeline.push(trial_procedure)
-timeline.push(block_feedback) 
 
+
+// create block feedback
+var block_feedback = {
+  type: 'html-keyboard-response',
+  stimulus: 'You won 200 points.',
+};
+
+timeline.push(block_feedback)
+
+//no music
+var block_procedure0 = {
+  timeline: [consent, age, gender, nationality, instruction, feelings, trial_procedure],
+};
+
+//positive
+var block_procedure1 = {
+  timeline: [consent, age, gender, nationality, instruction, feelings, posvalence, trial_procedure],
+};
+
+//negative 
+var block_procedure2 = {
+  timeline: [consent, age, gender, nationality, instruction, feelings, negvalence, trial_procedure],
+};
+
+/*********** UPPS-P questionnaire ***********/
 var instructions_UPPSP = {
-  type: jsPsychInstructions,
+  type: 'instructions',
   pages: [
     'In the last part of this study, you will see a number of statements that describe ways in which people think and act. For each statement, please indicate how much you agree or disagree with the statement by selecting Agree Strongly, Agree Somewhat, Disagree Somewhat or Disagree Strongly. Be sure to indicate your agreement or disagreement for every statement. Press the arrow key to start the task.'
   ],
-  key_forward: 'ArrowRight',
+  key_forward: 'rightarrow',
   on_start: function() {
     document.body.style.cursor = 'auto'; // show the mouse cursor
   }
 };
 
-timeline.push.instructions_UPPSP
+timeline.push(instructions_UPPSP);
 
-// function for getting responses from the UPPS-P questionnaire
-var get_resp = function(data, reverse) {
-  var responses = JSON.parse(data.responses);
-  var resp = responses.Q0 + 1; // javaScript uses 0-based indexing. Change into 1-based indexing
-
-  // reverse coding
-  if (reverse === 1) {
-    resp = 5 - resp;
-  };
-
-  return resp;
-
-}
-
-var scale_1 = ["Agree strongly", "Agree some", "Disagree some", "Disagree strongly"];
-
- // questions
-var Question1 = {
-  type: jsPsychSurveyLikert,
-  questions: [{
-    prompt: "I usually like to see things through to the end.",
-    labels: scale_1,
-    required: true,
-  }, ],
-  on_finish: function(data) {
-    data.reverse = 0;
-    data.factor = "Perseverance";
-
-    data.resp = get_resp(data, data.reverse);
-  }
-}
-
-var Question2 = {
-  type: jsPsychSurveyLikert,
-  questions: [{
-    prompt: "My thinking is usually careful and purposeful.",
-    labels: scale_1,
-    required: true
-  }, ],
-  on_finish: function(data) {
-    data.reverse = 0;
-    data.factor = "Premeditation";
-
-    data.resp = get_resp(data, data.reverse);
-  }
-};
-
-var Question3 = {
-  type: jsPsychSurveyLikert,
-  questions: [{
-    prompt: "When I am in great mood, I tend to get into situations that could cause me problems.",
-    labels: scale_1,
-    required: true
-  }, ],
-  on_finish: function(data) {
-    data.reverse = 1;
-    data.factor = "Positive Urgency";
-
-    data.resp = get_resp(data, data.reverse);
-  }
-};
-
-var Question4 = {
-  type: jsPsychSurveyLikert,
-  questions: [{
-    prompt: "Unfinished tasks really bother me.",
-    labels: scale_1,
-    required: true
-  }, ],
-  on_finish: function(data) {
-    data.reverse = 0;
-    data.factor = "Perseverance";
-
-    data.resp = get_resp(data, data.reverse);
-  }
-};
-
-var Question5 = {
-  type: jsPsychSurveyLikert,
-  questions: [{
-    prompt: "I like to stop and think things over before I do them.",
-    labels: scale_1,
-    required: true
-  }, ],
-  on_finish: function(data) {
-    data.reverse = 0;
-    data.factor = "Premeditation";
-
-    data.resp = get_resp(data, data.reverse);
-  }
-};
+// show UPPSP questionnaire
+timeline.push(...UPPSP_items);
 
 
-var Question6 = {
-  type: jsPsychSurveyLikert,
-    questions: [{
-    prompt: "When I feel bad, I quite often do things I later regret in order to make myself feel better now.",
-    labels: scale_1,
-    required: true
-  }, ],
-  on_finish: function(data) {
-    data.reverse = 1;
-    data.factor = "Negative Urgency";
-
-    data.resp = get_resp(data, data.reverse);
-  }
-};
-
-
-var Question7 = {
-  type: jsPsychSurveyLikert,
-    questions: [{
-    prompt: "Once I get going on something I hate to stop.",
-    labels: scale_1,
-    required: true
-  }, ],
-  on_finish: function(data) {
-    data.reverse = 0;
-    data.factor = "Perseverance";
-
-    data.resp = get_resp(data, data.reverse);
-  }
-};
-
-var Question8 = {
-  type: jsPsychSurveyLikert,
-    questions: [{
-    prompt: "Sometimes when I feel bad, I can't seem to stop what I am doing even though it is making me feel worse.",
-    labels: scale_1,
-    required: true
-  }, ],
-  on_finish: function(data) {
-    data.reverse = 1;
-    data.factor = "Negative Urgency";
-
-    data.resp = get_resp(data, data.reverse);
-  }
-};
-
-var Question9 = {
-  type: jsPsychSurveyLikert,
-    questions: [{
-    prompt: "I quite enjoy taking risks.",
-    labels: scale_1,
-    required: true
-  }, ],
-  on_finish: function(data) {
-    data.reverse = 1;
-    data.factor = "Sensation Seeking";
-
-    data.resp = get_resp(data, data.reverse);
-  }
-};
-
-var Question10 = {
-  type: jsPsychSurveyLikert,
-    questions: [{
-    prompt: "I tend to lose control when I am in a great mood.",
-    labels: scale_1,
-    required: true
-  }, ],
-  on_finish: function(data) {
-    data.reverse = 1;
-    data.factor = "Positive Urgency";
-
-    data.resp = get_resp(data, data.reverse);
-  }
-};
-
-
-var Question11 = {
-  type: jsPsychSurveyLikert,
-    questions: [{
-    prompt: "I finish what I start.",
-    labels: scale_1,
-    required: true
-  }, ],
-  on_finish: function(data) {
-    data.reverse = 0;
-    data.factor = "Perseverance";
-
-    data.resp = get_resp(data, data.reverse);
-  }
-};
-
-var Question12 = {
-  type: jsPsychSurveyLikert,
-    questions: [{
-    prompt: "I tend to value and follow a rational, 'sensible' approach to things .",
-    labels: scale_1,
-    required: true
-  }, ],
-  on_finish: function(data) {
-    data.reverse = 0;
-    data.factor = "Premeditation";
-
-    data.resp = get_resp(data, data.reverse);
-  }
-};
-
-var Question13 = {
-  type: jsPsychSurveyLikert,
-    questions: [{
-    prompt: "When I am upset I often act without thinking.",
-    labels: scale_1,
-    required: true
-  }, ],
-  on_finish: function(data) {
-    data.reverse = 1;
-    data.factor = "Negative Urgency";
-
-    data.resp = get_resp(data, data.reverse);
-  }
-};
-
-var Question14 = {
-  type: jsPsychSurveyLikert,
-    questions: [{
-    prompt: "I welcome new and exciting experiences and sensations, even if they are a little frightening and unconventional.",
-    labels: scale_1,
-    required: true
-  }, ],
-  on_finish: function(data) {
-    data.reverse = 1;
-    data.factor = "Sensation Seeking";
-
-    data.resp = get_resp(data, data.reverse);
-  }
-};
-
-var Question15 = {
-  type: jsPsychSurveyLikert,
-    questions: [{
-    prompt: "When I feel rejected, I will often say things that I later regret.",
-    labels: scale_1,
-    required: true
-  }, ],
-  on_finish: function(data) {
-    data.reverse = 1;
-    data.factor = "Negative Urgency";
-
-    data.resp = get_resp(data, data.reverse);
-  }
-};
-
-var Question16 = {
-  type: jsPsychSurveyLikert,
-    questions: [{
-    prompt: "I would like to learn to fly an airplane.",
-    labels: scale_1,
-    required: true
-  }, ],
-  on_finish: function(data) {
-    data.reverse = 1;
-    data.factor = "Sensation Seeking";
-
-    data.resp = get_resp(data, data.reverse);
-  }
-};
-
-var Question17 = {
-  type: jsPsychSurveyLikert,
-    questions: [{
-    prompt: "Others are shocked or worried about the things I do when I am feeling very excited.",
-    labels: scale_1,
-    required: true
-  }, ],
-  on_finish: function(data) {
-    data.reverse = 1;
-    data.factor = "Positive Urgency";
-
-    data.resp = get_resp(data, data.reverse);
-  }
-};
-
-var Question18 = {
-  type: jsPsychSurveyLikert,
-    questions: [{
-    prompt: "I would enjoy the sensation of skiing very fast down a high mountain slope.",
-    labels: scale_1,
-    required: true
-  }, ],
-  on_finish: function(data) {
-    data.reverse = 1;
-    data.factor = "Sensation Seeking";
-
-    data.resp = get_resp(data, data.reverse);
-  }
-};
-
-var Question19 = {
-  type: jsPsychSurveyLikert,
-    questions: [{
-    prompt: "I usually think carefully before doing anything.",
-    labels: scale_1,
-    required: true
-  }, ],
-  on_finish: function(data) {
-    data.reverse = 0;
-    data.factor = "Premeditation";
-
-    data.resp = get_resp(data, data.reverse);
-  }
-};
-
-var Question20 = {
-  type: jsPsychSurveyLikert,
-    questions: [{
-    prompt: "I tend to act without thinking when I am really excited .",
-    labels: scale_1,
-    required: true
-  }, ],
-  on_finish: function(data) {
-    data.reverse = 1;
-    data.factor = "Positive Urgency";
-
-    data.resp = get_resp(data, data.reverse);
-  }
-};
-
-var UPPSP_items = [Question1, Question2, Question3, Question4, Question5, Question6, Question7, Question8, Question9, Question10,
-  Question11, Question12, Question13, Question14, Question15, Question16, Question17, Question18, Question19, Question20];
 
 // function that appends data to an existing file (or creates the file if it does not exist)
 function appendData(filename, filedata) {
@@ -711,28 +375,35 @@ function appendData(filename, filedata) {
   });
 };
 
-var goodbye = {
-  type: jsPsychInstructions,
-  pages: [ "<p> Thank you for participating! In this study we want to look at the influence of emotions on impulsive actions.</p>" +
-    "<p>More specifically, we will look at how fast you started the next trial after a loss versus a win. </p>"],
+var final_debrief = {
+  type: 'html-keyboard-response',
+  stimulus:"<p> Thank you for participating! In this study we want to look at the influence of emotions on impulsive actions.</p>" +
+    "<p>More specifically, we will look at how fast you started the next trial after a loss versus a win. </p>" +
+    "<p>If you have any questions, you can contact the researcher at nathalie.dusart@ugent.be.</p>"
 };
 
-timeline.push(goodbye)
+timeline.push(final_debrief);
 
-/* start the experiment */
+
+// function to add participant info and trial no. to data file
+  /* #########################################################################
+  the functions that save the data and initiates the experiment
+  ######################################################################### */
+
+  /* start the experiment and save data*/
 jsPsych.init({
   timeline: timeline,
   on_data_update: function(data){
     if (online){
       var subjID = jsPsych.data.get().last(1).values()[0]['prolific_ID'];
       if (data.trial_index == 1){ // write header at first event
-        data_row = "subject_number,Age,Gender,Nationality,stimulus,trial_number,outcome,amount,startRT,RT,key_press,resp,factor,color,time_elapsed\n"
-        appendData('RPEPData_'+ subjID +'.csv',data_row)
+        data_row = "prolific_ID,Age,Gender,Nationality,Feelings, valence, stimulus,trial_number,outcome,amount,startRT,RT,key_press,resp,factor,color,time_elapsed\n"
+        appendData('CardsData_'+ subjID +'.csv',data_row)
       } else if (data.trial_type == 'task' || data.trial_type == 'survey-likert'){ // append data each stimulus when a categorize-html occurs
-        data_row = data.prolific_ID + ',' + data.age + ',' + data.gender + ',' + data.nationality + ',' + data.stimulus + ',' + data.trial_number + ',' +
+        data_row = data.prolific_ID + ',' + data.age + ',' + data.gender + ',' + data.nationality + ',' + data.feelings + ','+ data.stimulus + ',' + data.trial_number + ',' +
                       data.outcome + ',' + data.amount + ',' +
                       data.startRT + ','  + data.rt + ',' + data.key_press + ',' + data.resp + ',' + data.factor + ',' + data.color + ',' + data.time_elapsed  + '\n'
-        appendData('RPEPData_'+ subjID +'.csv',data_row)
+        appendData('CardsData_'+ subjID +'.csv',data_row)
       }
     }
   },
