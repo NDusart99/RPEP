@@ -11,6 +11,7 @@
   <script src="jspsych-6.0.5/plugins/jspsych-survey-text-beta-6.1.js"></script> <!-- beta 6.1 version has the 'input required' function for text fields -->
   <script src="jspsych-6.0.5/plugins/jspsych-survey-multi-choice.js"></script>
   <script src="jspsych-6.0.5/plugins/jspsych-instructions.js"></script>
+  <script src="jspsych-6.0.5/plugins/jspsych-audio-keyboard-response.js"></script>
   <script src="UPPSP.js"></script>
   <script src="jspsych-6.0.5/plugins/jspsych-survey-likert.js"></script>
   <script src="jspsych-6.0.5/plugins/jspsych-fullscreen.js"></script>
@@ -23,6 +24,8 @@
 /* create timeline */
 var timeline = [];
 
+// create trial_counter
+var trial_ind = 1;
 
 // is the experiment running from a server or not? (this determines if data is saved on server or offline)
 if (document.location.host) { // returns your host or null
@@ -130,7 +133,7 @@ var feelings = {
   type: 'survey-multi-choice',
   questions: [{
     prompt: "How are you feeling at this moment?",
-    options: ["Unhappy", "Somwhat Unhappy", "Somewhat happy", "Happy"],
+    options: ["Unhappy", "Somwhat Unhappy", "Somewhat happy", "Happy"], //CE: please correct typos
     required: true
   }, ],
   on_finish: function(data) {
@@ -157,7 +160,7 @@ timeline.push(instruction)
 
 // create factorial design
 var factors = {
-    amountPure: [5, 25, 50],
+    amountPure: [5, 25, 50], //CE: Do you need different amounts? If not, you can deete this factor, makes it easier to analyses whe the amount is always 25 points.
     outcome: ['nonGamble', 'gambleWin', 'gambleLoss'],
     color: ['yellow', 'green', 'blue', 'orange']
 };
@@ -272,7 +275,8 @@ var doors = {
     data.outcome = jsPsych.timelineVariable('outcome', true);
     data.amount = jsPsych.timelineVariable('amountPure', true);
     data.trial_type = 'task';
-    data.trial_number = (data.trial_index-5)/3;
+    data.trial_ind = trial_ind; // register trial number
+
   }
 };
 
@@ -282,6 +286,9 @@ var feedback = {
     return jsPsych.timelineVariable('amount', true)},
   trial_duration: 1000,
   choices: jsPsych.NO_KEYS,
+  on_finish: function(data){
+    trial_ind = trial_ind + 1; // now add one to the trial number
+  }
 
 };
 
@@ -290,26 +297,26 @@ var trial_procedure = {
   timeline: [start, doors, feedback],
   timeline_variables: full_design,
 };
-timeline.push(trial_procedure)
+timeline.push(trial_procedure) // CE: DO you want the trial procedure to be before the pos valence? At the moment it once goes through the entire full_desogn (so 3x3x4 trials before presenting the pos valence)
 
 
 //positive valence
-var posvalence = {
-    type: 'audio-keyboard-response',
-    stimulus: 'audio/positive-audio.mp3',
+var posvalence = { //CE: I would not play it for so long. 10 seconds maximum. Also: I would shorten the audio files to 10 seconds just to be sure.
+    type: 'audio-keyboard-response', //CE: make sure you load this plugin, otherwise you cannot use it. (see beginning)
+    stimulus: 'positive.mp3',
     trial_duration: 30000,
-    choices: "NO_KEYS",
+    choices: jsPsych.NO_KEYS,
     prompt: "<p>Let's take a little break.</p>",
-    response_ends_trial: false
+    trial_ends_after_audio: true,
 };
 timeline.push(posvalence)
 timeline.push(feelings)
 timeline.push(trial_procedure)
 
 //negative valence
-var negvalence = {
+var negvalence = { //CE: see comments above
     type: 'audio-keyboard-response',
-    stimulus: 'audio/negative-audio.mp3',
+    stimulus: 'negative.mp3',
     trial_duration: 30000,
     choices: "NO_KEYS",
     prompt: "<p>Let's take a little break.</p>",
@@ -328,7 +335,7 @@ var block_feedback = {
 
 timeline.push(block_feedback)
 
-//no music
+//no music //CE: what are these for? At the moment these lines do not add anything
 var block_procedure0 = {
   timeline: [consent, age, gender, nationality, instruction, feelings, trial_procedure],
 };
@@ -338,7 +345,7 @@ var block_procedure1 = {
   timeline: [consent, age, gender, nationality, instruction, feelings, posvalence, trial_procedure],
 };
 
-//negative 
+//negative
 var block_procedure2 = {
   timeline: [consent, age, gender, nationality, instruction, feelings, negvalence, trial_procedure],
 };
@@ -375,7 +382,7 @@ function appendData(filename, filedata) {
   });
 };
 
-var final_debrief = {
+var final_debrief = {  //CE: this needs some extra work. HEre you want du explain to the student the purpose and research question. THis is very important when you work with Credit students!
   type: 'html-keyboard-response',
   stimulus:"<p> Thank you for participating! In this study we want to look at the influence of emotions on impulsive actions.</p>" +
     "<p>More specifically, we will look at how fast you started the next trial after a loss versus a win. </p>" +
@@ -397,10 +404,10 @@ jsPsych.init({
     if (online){
       var subjID = jsPsych.data.get().last(1).values()[0]['prolific_ID'];
       if (data.trial_index == 1){ // write header at first event
-        data_row = "prolific_ID,Age,Gender,Nationality,Feelings, valence, stimulus,trial_number,outcome,amount,startRT,RT,key_press,resp,factor,color,time_elapsed\n"
+        data_row = "prolific_ID,Age,Gender,Nationality,Feelings, valence, stimulus,trial_number,outcome,amount,startRT,RT,key_press,resp,factor,color,time_elapsed\n" //CE: the valence data is missing
         appendData('CardsData_'+ subjID +'.csv',data_row)
       } else if (data.trial_type == 'task' || data.trial_type == 'survey-likert'){ // append data each stimulus when a categorize-html occurs
-        data_row = data.prolific_ID + ',' + data.age + ',' + data.gender + ',' + data.nationality + ',' + data.feelings + ','+ data.stimulus + ',' + data.trial_number + ',' +
+        data_row = data.prolific_ID + ',' + data.age + ',' + data.gender + ',' + data.nationality + ',' + data.feelings + ','+ data.stimulus + ',' + data.trial_ind + ',' +
                       data.outcome + ',' + data.amount + ',' +
                       data.startRT + ','  + data.rt + ',' + data.key_press + ',' + data.resp + ',' + data.factor + ',' + data.color + ',' + data.time_elapsed  + '\n'
         appendData('CardsData_'+ subjID +'.csv',data_row)
