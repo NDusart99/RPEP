@@ -65,14 +65,14 @@ var consent = {
     '<p>I understand that:</p> '+
     '<p>Participation in this study is entirely voluntary, I can decline to answer any question at any time, and I can withdraw from the study at any time without giving a reason. </p>'+
     '<p>Non-participation or withdrawal from the study will not be of any disadvantage to my university career.</p>'+
-    '<p>If I prematurely withdraw from the study, I will still be appropriately compensated for my participation. </p>'+
+    '<p>If I prematurely withdraw from the study, I will still get my credit. </p>'+
     '<p>During the data-gathering phase, I can instruct the researchers carrying out this study to delete (part of) the data obtained from me from their records.  </p>'+
     '<p>I am free to ask any questions at any time and I can arrange to discuss any concerns with the lead researcher (see below).</p>'+
-    '<p> The information and data provided by me in this experiment will be used for statistical research and research administration purposes only.</p>'+
-    '<p> No data or responses will be published in which I can be identified individually. </p>'+
-    '<p> My personal details will not be revealed to people outside the research project. Signed consent and payment forms will be securely stored and disposed of after a 5-year retention period. I can have access to my personal data on the consent forms within the 5-year retention period. </p>'+
-    '<p> Anonymized data from the study, which do not contain any personally identifying information, will be registered and archived at a trusted public data repository (e.g. OSF or Zenodo) in order to make them available to other researchers in line with current data sharing practices.</p>' +
-    '<p> If you require more information about this study, please contact Nathalie Dusart; Email: nathalie.dusart@ugent.be</p>'],
+    '<p>The information and data provided by me in this experiment will be used for statistical research and research administration purposes only.</p>'+
+    '<p>No data or responses will be published in which I can be identified individually. </p>'+
+    '<p>My personal details will not be revealed to people outside the research project. Signed consent will be securely stored and disposed of after a 5-year retention period. I can have access to my personal data on the consent forms within the 5-year retention period. </p>'+
+    '<p>Anonymized data from the study, which do not contain any personally identifying information, will be registered and archived at a trusted public data repository (e.g. OSF or Zenodo) in order to make them available to other researchers in line with current data sharing practices.</p>' +
+    '<p>If you require more information about this study, please contact Nathalie Dusart; Email: nathalie.dusart@ugent.be</p>'],
   show_clickable_nav: true,
   button_label_next: "I agree",
   allow_backward: false
@@ -101,7 +101,7 @@ var gender = {
   type: 'survey-multi-choice',
   questions: [{
     prompt: "Select your gender",
-    options: ["male", "female", "I don't want to say"],
+    options: ["male", "female", "non-binary", "I don't want to say"],
     required: true
   }, ],
   on_finish: function(data) {
@@ -133,7 +133,7 @@ var feelings = {
   type: 'survey-multi-choice',
   questions: [{
     prompt: "How are you feeling at this moment?",
-    options: ["Unhappy", "Somwhat Unhappy", "Somewhat happy", "Happy"], //CE: please correct typos
+    options: ["Unhappy", "Somewhat unhappy", "Somewhat happy", "Happy"],
     required: true
   }, ],
   on_finish: function(data) {
@@ -302,7 +302,7 @@ timeline.push(trial_procedure) // CE: DO you want the trial procedure to be befo
 
 //positive valence
 var posvalence = { //CE: I would not play it for so long. 10 seconds maximum. Also: I would shorten the audio files to 10 seconds just to be sure.
-    type: 'audio-keyboard-response', //CE: make sure you load this plugin, otherwise you cannot use it. (see beginning)
+    type: 'audio-keyboard-response',
     stimulus: 'positive.mp3',
     trial_duration: 30000,
     choices: jsPsych.NO_KEYS,
@@ -386,6 +386,8 @@ var final_debrief = {  //CE: this needs some extra work. HEre you want du explai
   type: 'html-keyboard-response',
   stimulus:"<p> Thank you for participating! In this study we want to look at the influence of emotions on impulsive actions.</p>" +
     "<p>More specifically, we will look at how fast you started the next trial after a loss versus a win. </p>" +
+    "<p>The music tried to influence your mood to see if you will be more impulsive in a happy mood or in a sad mood. </p>" +
+    "<p>I assume that a negative mood will increase impulsive actions more than when one is happy. </p>" +
     "<p>If you have any questions, you can contact the researcher at nathalie.dusart@ugent.be.</p>"
 };
 
