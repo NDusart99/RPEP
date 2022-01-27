@@ -32,7 +32,7 @@ var block_number = 1;
 
 //Make arrays of images and audio
 var images = ['images/instruction1.png', 'images/instruction2.png', 'images/purple0.png','images/yellow25.png', 'images/green25.png', 'images/blue25.png', 'images/orange25.png'];
-var audio = ['positive.mp3', 'positive.mp3'];
+var audio = ['negative.mp3', 'positive.mp3'];
 
 // is the experiment running from a server or not? (this determines if data is saved on server or offline)
 if (document.location.host) { // returns your host or null
@@ -45,7 +45,7 @@ if (document.location.host) { // returns your host or null
 var prolific = {
   type: 'survey-text',
   questions: [
-    {prompt: "Prease turn off your cell phone and other devices that might be distracting. Enter your prolific ID below: ", required: true}],
+    {prompt: "Prease turn off your cell phone and other devices that might be distracting. Enter your name below (your name will be anonymized): ", required: true}],
   on_finish: function(data) {
     var responses = JSON.parse(data.responses);
     var prolific_ID = responses.Q0;
@@ -79,7 +79,7 @@ var consent = {
     '<p>No data or responses will be published in which I can be identified individually. </p>'+
     '<p>My personal details will not be revealed to people outside the research project. Signed consent will be securely stored and disposed of after a 5-year retention period. I can have access to my personal data on the consent forms within the 5-year retention period. </p>'+
     '<p>Anonymized data from the study, which do not contain any personally identifying information, will be registered and archived at a trusted public data repository (e.g. OSF or Zenodo) in order to make them available to other researchers in line with current data sharing practices.</p>' +
-    '<p>If you require more information about this study, please contact Nathalie Dusart; Email: nathalie.dusart@ugent.be</p>'],
+    '<p>If you require more information about this study, please contact Charlotte Eben; Email: charlotte.eben@ugent.be</p>'],
   show_clickable_nav: true,
   button_label_next: "I agree",
   allow_backward: false
