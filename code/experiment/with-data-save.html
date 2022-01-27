@@ -12,7 +12,6 @@
   <script src="jspsych-6.0.5/plugins/jspsych-survey-multi-choice.js"></script>
   <script src="jspsych-6.0.5/plugins/jspsych-instructions.js"></script>
   <script src="jspsych-6.0.5/plugins/jspsych-audio-keyboard-response.js"></script>
-  <script src="https://unpkg.com/@jspsych/plugin-preload@1.0.0"></script> <!-- Preload media -->
   <script src="UPPSP.js"></script>
   <script src="jspsych-6.0.5/plugins/jspsych-survey-likert.js"></script>
   <script src="jspsych-6.0.5/plugins/jspsych-fullscreen.js"></script>
@@ -27,20 +26,13 @@ var timeline = [];
 
 // create trial_counter
 var trial_ind = 1;
-  
+
 //create block number
 var block_number = 1;
-  
+
 //Make arrays of images and audio
 var images = ['images/instruction1.png', 'images/instruction2.png', 'images/purple0.png','images/yellow25.png', 'images/green25.png', 'images/blue25.png', 'images/orange25.png'];
 var audio = ['positive.mp3', 'positive.mp3'];
-
-//Preload images and audio
-var preload = {
-    type: jsPsychPreload,
-    images: images,
-    audio: audio
-};
 
 // is the experiment running from a server or not? (this determines if data is saved on server or offline)
 if (document.location.host) { // returns your host or null
@@ -173,8 +165,8 @@ var instruction = {
 
 //timeline.push(preload) -> doesn't work $
 timeline.push(instruction)
-  
-var posvalence = { 
+
+var posvalence = {
     type: 'audio-keyboard-response',
     stimulus: 'positive.mp3',
     trial_duration: 10000,
@@ -263,7 +255,7 @@ var cards = {
     data.amount = jsPsych.timelineVariable('amountPure', true);
     data.trial_type = 'task';
     data.trial_ind = trial_ind; // register trial number
-    data.block_number = block_number //register block number $ 
+    data.block_number = block_number //register block number $
   }
 };
 
@@ -376,6 +368,8 @@ timeline.push(final_debrief);
   /* start the experiment and save data*/
 jsPsych.init({
   timeline: timeline,
+  preload_images: images,
+  preload_audio: audio,
   on_data_update: function(data){
     if (online){
       var subjID = jsPsych.data.get().last(1).values()[0]['prolific_ID'];
