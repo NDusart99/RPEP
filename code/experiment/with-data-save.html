@@ -12,6 +12,7 @@
   <script src="jspsych-6.0.5/plugins/jspsych-survey-multi-choice.js"></script>
   <script src="jspsych-6.0.5/plugins/jspsych-instructions.js"></script>
   <script src="jspsych-6.0.5/plugins/jspsych-audio-keyboard-response.js"></script>
+  <script src="https://unpkg.com/@jspsych/plugin-preload@1.0.0"></script> <!-- Preload media -->
   <script src="UPPSP.js"></script>
   <script src="jspsych-6.0.5/plugins/jspsych-survey-likert.js"></script>
   <script src="jspsych-6.0.5/plugins/jspsych-fullscreen.js"></script>
@@ -26,6 +27,20 @@ var timeline = [];
 
 // create trial_counter
 var trial_ind = 1;
+  
+//create block number
+var block_number = 1;
+  
+//Make arrays of images and audio
+var images = ['images/instruction1.png', 'images/instruction2.png', 'images/purple0.png','images/yellow25.png', 'images/green25.png', 'images/blue25.png', 'images/orange25.png'];
+var audio = ['positive.mp3', 'positive.mp3'];
+
+//Preload images and audio
+var preload = {
+    type: jsPsychPreload,
+    images: images,
+    audio: audio
+};
 
 // is the experiment running from a server or not? (this determines if data is saved on server or offline)
 if (document.location.host) { // returns your host or null
@@ -38,7 +53,7 @@ if (document.location.host) { // returns your host or null
 var prolific = {
   type: 'survey-text',
   questions: [
-    {prompt: "Prease turn off music, cell phone and other devices that might be distracting. Enter your prolific ID below: ", required: true}],
+    {prompt: "Prease turn off your cell phone and other devices that might be distracting. Enter your prolific ID below: ", required: true}],
   on_finish: function(data) {
     var responses = JSON.parse(data.responses);
     var prolific_ID = responses.Q0;
@@ -101,7 +116,7 @@ var gender = {
   type: 'survey-multi-choice',
   questions: [{
     prompt: "Select your gender",
-    options: ["male", "female", "non-binary", "I don't want to say"],
+    options: ["Male", "Female", "Non-binary", "I don't want to say"],
     required: true
   }, ],
   on_finish: function(data) {
@@ -156,11 +171,31 @@ var instruction = {
      ]
  };
 
+//timeline.push(preload) -> doesn't work $
 timeline.push(instruction)
+  
+var posvalence = { 
+    type: 'audio-keyboard-response',
+    stimulus: 'positive.mp3',
+    trial_duration: 10000,
+    choices: jsPsych.NO_KEYS,
+    prompt: "<p>Let's take a little break.</p>",
+    trial_ends_after_audio: true,
+};
+
+//negative valence
+var negvalence = {
+    type: 'audio-keyboard-response',
+    stimulus: 'negative.mp3',
+    trial_duration: 10000,
+    choices: jsPsych.NO_KEYS,
+    prompt: "<p>Let's take a little break.</p>",
+    response_ends_trial: false
+};
 
 // create factorial design
 var factors = {
-    amountPure: [5, 25, 50], //CE: Do you need different amounts? If not, you can deete this factor, makes it easier to analyses whe the amount is always 25 points.
+    amountPure: [25],
     outcome: ['nonGamble', 'gambleWin', 'gambleLoss'],
     color: ['yellow', 'green', 'blue', 'orange']
 };
@@ -172,30 +207,6 @@ for (var i = 0; i < full_design.length; i++) {
     full_design[i].promptGamble = 0;
     full_design[i].amount = 0;
     full_design[i].image = "<img src='images/purple0.png'></img>";
-  } else if (full_design[i].outcome == 'gambleWin' && full_design[i].color == 'yellow' && full_design[i].amountPure == 5) {
-    full_design[i].amount = '+' + full_design[i].amountPure;
-    full_design[i].image = "<img src='images/yellow5.png'></img>";
-  } else if (full_design[i].outcome == 'gambleWin' && full_design[i].color == 'green' && full_design[i].amountPure == 5) {
-    full_design[i].amount = '+' + full_design[i].amountPure;
-    full_design[i].image = "<img src='images/green5.png'></img>";
-  } else if (full_design[i].outcome == 'gambleWin' && full_design[i].color == 'blue' && full_design[i].amountPure == 5) {
-    full_design[i].amount = '+' + full_design[i].amountPure;
-    full_design[i].image = "<img src='images/blue5.png'></img>";
-  } else if (full_design[i].outcome == 'gambleWin' && full_design[i].color == 'orange' && full_design[i].amountPure == 5) {
-    full_design[i].amount = '+' + full_design[i].amountPure;
-    full_design[i].image = "<img src='images/orange5.png'></img>";
-  } else if (full_design[i].outcome == 'gambleLoss' && full_design[i].color == 'yellow' && full_design[i].amountPure == 5) {
-    full_design[i].amount = '-' + full_design[i].amountPure;
-    full_design[i].image = "<img src='images/yellow5.png'></img>";
-  } else if (full_design[i].outcome == 'gambleLoss' && full_design[i].color == 'green' && full_design[i].amountPure == 5) {
-    full_design[i].amount = '-' + full_design[i].amountPure;
-    full_design[i].image = "<img src='images/green5.png'></img>";
-  } else if (full_design[i].outcome == 'gambleLoss' && full_design[i].color == 'orange' && full_design[i].amountPure == 5) {
-    full_design[i].amount = '-' + full_design[i].amountPure;
-    full_design[i].image = "<img src='images/orange5.png'></img>";
-  } else if (full_design[i].outcome == 'gambleLoss' && full_design[i].color == 'blue' && full_design[i].amountPure == 5) {
-    full_design[i].amount = '-' + full_design[i].amountPure;
-    full_design[i].image = "<img src='images/blue5.png'></img>";
   } else if (full_design[i].outcome == 'gambleWin' && full_design[i].color == 'yellow' && full_design[i].amountPure == 25) {
     full_design[i].amount = '+' + full_design[i].amountPure;
     full_design[i].image = "<img src='images/yellow25.png'></img>";
@@ -220,30 +231,6 @@ for (var i = 0; i < full_design.length; i++) {
   } else if (full_design[i].outcome == 'gambleLoss' && full_design[i].color == 'blue' && full_design[i].amountPure == 25) {
     full_design[i].amount = '-' + full_design[i].amountPure;
     full_design[i].image = "<img src='images/blue25.png'></img>";
-  } else if (full_design[i].outcome == 'gambleWin' && full_design[i].color == 'yellow' && full_design[i].amountPure == 50) {
-    full_design[i].amount = '+' + full_design[i].amountPure;
-    full_design[i].image = "<img src='images/yellow50.png'></img>";
-  } else if (full_design[i].outcome == 'gambleWin' && full_design[i].color == 'green' && full_design[i].amountPure == 50) {
-    full_design[i].amount = '+' + full_design[i].amountPure;
-    full_design[i].image = "<img src='images/green50.png'></img>";
-  } else if (full_design[i].outcome == 'gambleWin' && full_design[i].color == 'blue' && full_design[i].amountPure == 50) {
-    full_design[i].amount = '+' + full_design[i].amountPure;
-    full_design[i].image = "<img src='images/blue50.png'></img>";
-  } else if (full_design[i].outcome == 'gambleWin' && full_design[i].color == 'orange' && full_design[i].amountPure == 50) {
-    full_design[i].amount = '+' + full_design[i].amountPure;
-    full_design[i].image = "<img src='images/orange50.png'></img>";
-  } else if (full_design[i].outcome == 'gambleLoss' && full_design[i].color == 'yellow' && full_design[i].amountPure == 50) {
-    full_design[i].amount = '-' + full_design[i].amountPure;
-    full_design[i].image = "<img src='images/yellow50.png'></img>";
-  } else if (full_design[i].outcome == 'gambleLoss' && full_design[i].color == 'green' && full_design[i].amountPure == 50) {
-    full_design[i].amount = '-' + full_design[i].amountPure;
-    full_design[i].image = "<img src='images/green50.png'></img>";
-  } else if (full_design[i].outcome == 'gambleLoss' && full_design[i].color == 'orange' && full_design[i].amountPure == 50) {
-    full_design[i].amount = '-' + full_design[i].amountPure;
-    full_design[i].image = "<img src='images/orange50.png'></img>";
-  } else if (full_design[i].outcome == 'gambleLoss' && full_design[i].color == 'blue' && full_design[i].amountPure == 50) {
-    full_design[i].amount = '-' + full_design[i].amountPure;
-    full_design[i].image = "<img src='images/blue50.png'></img>";
   }
 };
 
@@ -255,7 +242,7 @@ var start = {
 
 
 // displaying doors; Data is logged
-var doors = {
+var cards = {
   type: "html-keyboard-response",
   stimulus: function(){return jsPsych.timelineVariable('image', true)},
   choices: function(){
@@ -276,7 +263,7 @@ var doors = {
     data.amount = jsPsych.timelineVariable('amountPure', true);
     data.trial_type = 'task';
     data.trial_ind = trial_ind; // register trial number
-
+    data.block_number = block_number //register block number $ 
   }
 };
 
@@ -289,43 +276,46 @@ var feedback = {
   on_finish: function(data){
     trial_ind = trial_ind + 1; // now add one to the trial number
   }
-
 };
 
-
-var trial_procedure = {
-  timeline: [start, doors, feedback],
+//No music block
+var block1 = {
+  timeline: [start, cards, feedback], //Preload -> doesn't work $
   timeline_variables: full_design,
+  on_finish: function(data){
+    block_number = block_number; // now add one to the trial number
+  }
 };
-timeline.push(trial_procedure) // CE: DO you want the trial procedure to be before the pos valence? At the moment it once goes through the entire full_desogn (so 3x3x4 trials before presenting the pos valence)
+timeline.push(block1) // CE: DO you want the trial procedure to be before the pos valence? At the moment it once goes through the entire full_desogn (so 3x3x4 trials before presenting the pos valence)
 
-
-//positive valence
-var posvalence = { //CE: I would not play it for so long. 10 seconds maximum. Also: I would shorten the audio files to 10 seconds just to be sure.
-    type: 'audio-keyboard-response',
-    stimulus: 'positive.mp3',
-    trial_duration: 30000,
-    choices: jsPsych.NO_KEYS,
-    prompt: "<p>Let's take a little break.</p>",
-    trial_ends_after_audio: true,
+//Positive valence block
+var posblock = {
+  timeline: [posvalence, feelings],
 };
-timeline.push(posvalence)
-timeline.push(feelings)
-timeline.push(trial_procedure)
+timeline.push(posblock)
 
-//negative valence
-var negvalence = { //CE: see comments above
-    type: 'audio-keyboard-response',
-    stimulus: 'negative.mp3',
-    trial_duration: 30000,
-    choices: "NO_KEYS",
-    prompt: "<p>Let's take a little break.</p>",
-    response_ends_trial: false
+var block2 = {
+  timeline: [start, cards, feedback],
+  timeline_variables: full_design,
+  on_finish: function(data){
+  block_number = block_number + 1; // now add one to the block number
+  }
 };
-timeline.push(negvalence)
-timeline.push(feelings)
-timeline.push(trial_procedure)
+timeline.push(block2)
 
+//Negative valence block
+var negblock = {
+  timeline: [negvalence, feelings],
+};
+
+var block3 = {
+  timeline: [start, cards, feedback],
+  timeline_variables: full_design,
+  on_finish: function(data){
+    block_number = block_number + 1; // now add one to the block number
+  }
+};
+timeline.push(block3)
 
 // create block feedback
 var block_feedback = {
@@ -334,21 +324,6 @@ var block_feedback = {
 };
 
 timeline.push(block_feedback)
-
-//no music //CE: what are these for? At the moment these lines do not add anything
-var block_procedure0 = {
-  timeline: [consent, age, gender, nationality, instruction, feelings, trial_procedure],
-};
-
-//positive
-var block_procedure1 = {
-  timeline: [consent, age, gender, nationality, instruction, feelings, posvalence, trial_procedure],
-};
-
-//negative
-var block_procedure2 = {
-  timeline: [consent, age, gender, nationality, instruction, feelings, negvalence, trial_procedure],
-};
 
 /*********** UPPS-P questionnaire ***********/
 var instructions_UPPSP = {
@@ -366,7 +341,6 @@ timeline.push(instructions_UPPSP);
 
 // show UPPSP questionnaire
 timeline.push(...UPPSP_items);
-
 
 
 // function that appends data to an existing file (or creates the file if it does not exist)
@@ -387,7 +361,7 @@ var final_debrief = {  //CE: this needs some extra work. HEre you want du explai
   stimulus:"<p> Thank you for participating! In this study we want to look at the influence of emotions on impulsive actions.</p>" +
     "<p>More specifically, we will look at how fast you started the next trial after a loss versus a win. </p>" +
     "<p>The music tried to influence your mood to see if you will be more impulsive in a happy mood or in a sad mood. </p>" +
-    "<p>I assume that a negative mood will increase impulsive actions more than when one is happy. </p>" +
+    "<p>The assumption that is made is that a negative mood will increase impulsive actions more than when one is happy. </p>" +
     "<p>If you have any questions, you can contact the researcher at nathalie.dusart@ugent.be.</p>"
 };
 
@@ -406,10 +380,10 @@ jsPsych.init({
     if (online){
       var subjID = jsPsych.data.get().last(1).values()[0]['prolific_ID'];
       if (data.trial_index == 1){ // write header at first event
-        data_row = "prolific_ID,Age,Gender,Nationality,Feelings, valence, stimulus,trial_number,outcome,amount,startRT,RT,key_press,resp,factor,color,time_elapsed\n" //CE: the valence data is missing
+        data_row = "prolific_ID,Age,Gender,Nationality,Feelings,stimulus,block_number,trial_number,outcome,amount,startRT,RT,key_press,resp,factor,color,time_elapsed\n" //CE: the valence data is missing
         appendData('CardsData_'+ subjID +'.csv',data_row)
       } else if (data.trial_type == 'task' || data.trial_type == 'survey-likert'){ // append data each stimulus when a categorize-html occurs
-        data_row = data.prolific_ID + ',' + data.age + ',' + data.gender + ',' + data.nationality + ',' + data.feelings + ','+ data.stimulus + ',' + data.trial_ind + ',' +
+        data_row = data.prolific_ID + ',' + data.age + ',' + data.gender + ',' + data.nationality + ',' + data.feelings + ','+ data.stimulus + ',' + data.block_number + ',' + data.trial_ind + ',' +
                       data.outcome + ',' + data.amount + ',' +
                       data.startRT + ','  + data.rt + ',' + data.key_press + ',' + data.resp + ',' + data.factor + ',' + data.color + ',' + data.time_elapsed  + '\n'
         appendData('CardsData_'+ subjID +'.csv',data_row)
