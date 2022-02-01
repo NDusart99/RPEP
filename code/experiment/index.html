@@ -242,7 +242,7 @@ var start = {
 };
 
 
-// displaying doors; Data is logged
+// displaying cards; Data is logged
 var cards = {
   type: "html-keyboard-response",
   stimulus: function(){return jsPsych.timelineVariable('image', true)},
@@ -287,7 +287,7 @@ var block1 = {
     block_number = block_number; // now add one to the trial number
   }
 };
-timeline.push(block1) // CE: DO you want the trial procedure to be before the pos valence? At the moment it once goes through the entire full_desogn (so 3x3x4 trials before presenting the pos valence)
+timeline.push(block1) // 
 
 //Positive valence block
 var posblock = {
@@ -359,7 +359,7 @@ function appendData(filename, filedata) {
   });
 };
 
-var final_debrief = {  //CE: this needs some extra work. HEre you want du explain to the student the purpose and research question. THis is very important when you work with Credit students!
+var final_debrief = { 
   type: 'html-keyboard-response',
   stimulus:"<p> Thank you for participating! In this study we want to look at the influence of emotions on impulsive actions.</p>" +
     "<p>More specifically, we will look at how fast you started the next trial after a loss versus a win. </p>" +
