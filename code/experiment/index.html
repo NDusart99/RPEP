@@ -45,7 +45,7 @@ if (document.location.host) { // returns your host or null
 var prolific = {
   type: 'survey-text',
   questions: [
-    {prompt: "Prease turn off your cell phone and other devices that might be distracting. Enter your name below (your name will be anonymized): ", required: true}],
+    {prompt: "Please turn off your cell phone and other devices that might be distracting. Enter your first and last name below (your data will be anonymized the moment we approved your submission): ", required: true}],
   on_finish: function(data) {
     var responses = JSON.parse(data.responses);
     var prolific_ID = responses.Q0;
@@ -133,7 +133,7 @@ var gender = {
 var nationality = {
   type: 'survey-text',
   questions: [{
-    prompt: "What is your nationality",
+    prompt: "What is your nationality?",
     required: true
   }, ],
   on_finish: function(data) {
@@ -178,7 +178,7 @@ timeline.push(instruction)
 var posvalence = {
     type: 'audio-keyboard-response',
     stimulus: 'positive.mp3',
-    trial_duration: 15000,
+    trial_duration: 15000, // CE: I thought we said 10 seconds?
     choices: jsPsych.NO_KEYS,
     prompt: "<p>Let's take a little break.</p>",
     trial_ends_after_audio: true,
@@ -188,7 +188,7 @@ var posvalence = {
 var negvalence = {
     type: 'audio-keyboard-response',
     stimulus: 'negative.mp3',
-    trial_duration: 15000,
+    trial_duration: 15000, //CE: as above
     choices: jsPsych.NO_KEYS,
     prompt: "<p>Let's take a little break.</p>",
     response_ends_trial: false
@@ -200,7 +200,7 @@ var factors = {
     outcome: ['nonGamble', 'gambleWin', 'gambleLoss'],
     color: ['yellow', 'green', 'blue', 'orange']
 };
-var full_design = jsPsych.randomization.factorial(factors, 1); //todo: add no. of repetitions
+var full_design = jsPsych.randomization.factorial(factors, 1); //CE: todo: add no. of repetitions
 
 // display stimuli depending on the design
 for (var i = 0; i < full_design.length; i++) {
@@ -264,7 +264,7 @@ var cards = {
     data.amount = jsPsych.timelineVariable('amountPure', true);
     data.trial_type = 'task';
     data.trial_ind = trial_ind; // register trial number
-    data.block_number = block_number //register block number $
+    data.block_number = block_number //register block number
   }
 };
 
@@ -299,7 +299,7 @@ var block2 = {
   timeline: [start, cards, feedback],
   timeline_variables: full_design,
   on_finish: function(data){
-  block_number = 2; // now add one to the block number
+  block_number = block_number + 1; // now add one to the block number )CE: like this you can change around blocks in ther version without worrying that you record the wrong block_number
   }
 };
 timeline.push(block2)
@@ -315,7 +315,7 @@ var block3 = {
   timeline: [start, cards, feedback],
   timeline_variables: full_design,
   on_finish: function(data){
-    block_number = 3; // now add one to the block number
+    block_number = block_number + 1; // now add one to the block number
   }
 };
 timeline.push(block3)
@@ -323,7 +323,7 @@ timeline.push(block3)
 // create block feedback
 var block_feedback = {
   type: 'html-keyboard-response',
-  stimulus: 'You won 200 points.',
+  stimulus: 'Thanks for your participation. You won 200 points.',
 };
 
 timeline.push(block_feedback)
