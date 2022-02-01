@@ -200,7 +200,7 @@ var factors = {
     outcome: ['nonGamble', 'gambleWin', 'gambleLoss'],
     color: ['yellow', 'green', 'blue', 'orange']
 };
-var full_design = jsPsych.randomization.factorial(factors, 1); //CE: todo: add no. of repetitions
+var full_design = jsPsych.randomization.factorial(factors, 5); //CE: 180 trials in total
 
 // display stimuli depending on the design
 for (var i = 0; i < full_design.length; i++) {
