@@ -172,13 +172,12 @@ var instruction = {
      ]
  };
 
-//timeline.push(preload) -> doesn't work $
 timeline.push(instruction)
 
 var posvalence = {
     type: 'audio-keyboard-response',
     stimulus: 'positive.mp3',
-    trial_duration: 15000, // CE: I thought we said 10 seconds?
+    trial_duration: 15000, 
     choices: jsPsych.NO_KEYS,
     prompt: "<p>Let's take a little break.</p>",
     trial_ends_after_audio: true,
@@ -188,7 +187,7 @@ var posvalence = {
 var negvalence = {
     type: 'audio-keyboard-response',
     stimulus: 'negative.mp3',
-    trial_duration: 15000, //CE: as above
+    trial_duration: 15000, 
     choices: jsPsych.NO_KEYS,
     prompt: "<p>Let's take a little break.</p>",
     response_ends_trial: false
@@ -281,10 +280,10 @@ var feedback = {
 
 //No music block
 var block1 = {
-  timeline: [start, cards, feedback], //Preload -> doesn't work $
+  timeline: [start, cards, feedback],
   timeline_variables: full_design,
   on_finish: function(data){
-    block_number = block_number; // now add one to the trial number
+    block_number = block_number; 
   }
 };
 timeline.push(block1) // 
@@ -299,7 +298,7 @@ var block2 = {
   timeline: [start, cards, feedback],
   timeline_variables: full_design,
   on_finish: function(data){
-  block_number = block_number + 1; // now add one to the block number )CE: like this you can change around blocks in ther version without worrying that you record the wrong block_number
+  block_number = 2; 
   }
 };
 timeline.push(block2)
@@ -315,7 +314,7 @@ var block3 = {
   timeline: [start, cards, feedback],
   timeline_variables: full_design,
   on_finish: function(data){
-    block_number = block_number + 1; // now add one to the block number
+    block_number = 3
   }
 };
 timeline.push(block3)
