@@ -28,7 +28,7 @@ var timeline = [];
 var trial_ind = 1;
 
 //create block number
-var block_number = 1;
+var block_number = 'No music';
 
 //Make arrays of images and audio
 var images = ['images/instruction1.png', 'images/instruction2.png', 'images/purple0.png','images/yellow25.png', 'images/green25.png', 'images/blue25.png', 'images/orange25.png'];
@@ -298,7 +298,7 @@ var block2 = {
   timeline: [start, cards, feedback],
   timeline_variables: full_design,
   on_finish: function(data){
-  block_number = 2; 
+  block_number = 'Positive valence'; 
   }
 };
 timeline.push(block2)
@@ -314,7 +314,7 @@ var block3 = {
   timeline: [start, cards, feedback],
   timeline_variables: full_design,
   on_finish: function(data){
-    block_number = 3
+    block_number = 'Negative valence';
   }
 };
 timeline.push(block3)
