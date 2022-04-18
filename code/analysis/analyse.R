@@ -8,8 +8,8 @@ library(reshape2)
 library(tidyverse)
 library(dplyr)
 
-load(file = "/Users/nathaliedusart/Desktop/RPEP/experiment/data/processed/input.Rdata")
-load(file = "/Users/nathaliedusart/Desktop/RPEP/experiment/data/processed/UPPS.Rdata")
+load(file = "/Users/nathaliedusart/Desktop/RPEP/data/processed/input.Rdata")
+load(file = "/Users/nathaliedusart/Desktop/RPEP/data/processed/UPPS.Rdata")
 
 ##prepare the data, adjust choice value & create melted object variables
 #melt the data
@@ -64,7 +64,7 @@ Cardsplot
 
 summaryBy(startRT ~ prevOut, data= as.data.frame(start.cast), FUN = c(mean, sd))
 startRTplot <- Cardsplot
-save(startRTplot, file = "/Users/nathaliedusart/Desktop/RPEP/experiment/data/processed/prevOut_plot.Rdata")
+save(startRTplot, file = "/Users/nathaliedusart/Desktop/RPEP/data/processed/prevOut_plot.Rdata")
 
 #Do an ANOVA
 output <- ezANOVA(
@@ -81,7 +81,7 @@ library(xtable)
 print.xtable(xtable(output$ANOVA), table.placement = '!h')
 print.xtable(xtable(output$`Sphericity Corrections`), table.placement = '!h')
 
-source("/Users/nathaliedusart/Desktop/RPEP/experiment/code/analysis/Pairwise_comparison.R")
+source("/Users/nathaliedusart/Desktop/RPEP/code/analysis/Pairwise_comparison.R")
 start.pc <- dcast(start.cast, Participant ~ prevOut, mean, value.var = 'startRT') #long to wide
 pc1 <- TES(start.pc$nonGamble, start.pc$gambleLoss, paired = TRUE)
 pc2 <- TES(start.pc$nonGamble, start.pc$gambleWin, paired = TRUE)
@@ -95,7 +95,7 @@ print.xtable(xtable(output), table.placement = '!h')
 
 #write data to file for overview figure
 exp.start <- start.cast
-save(exp.start, file = "/Users/nathaliedusart/Desktop/RPEP/experiment/data/processed/start.Rdata")
+save(exp.start, file = "/Users/nathaliedusart/Desktop/RPEP/data/processed/start.Rdata")
 
 #### Latency of the choice RT ####
 rt.cast <- cast(input.melt, Participant * prevOut ~ ., mean, subset = variable == "RT")
@@ -127,7 +127,7 @@ library(xtable)
 print.xtable(xtable(output$ANOVA), table.placement = '!h')
 print.xtable(xtable(output$`Sphericity Corrections`), table.placement = '!h')
 
-source("/Users/nathaliedusart/Desktop/RPEP/experiment/code/analysis/Pairwise_comparison.R")
+source("/Users/nathaliedusart/Desktop/RPEP/code/analysis/Pairwise_comparison.R")
 rt.pc <- dcast(rt.cast, Participant ~ prevOut, mean, value.var = 'RT') #long to wide
 pc1 <- TES(rt.pc$nonGamble, rt.pc$gambleLoss, paired = TRUE)
 pc2 <- TES(rt.pc$nonGamble, rt.pc$gambleWin, paired = TRUE)
@@ -141,7 +141,7 @@ print.xtable(xtable(output), table.placement = '!h')
 
 #write data to file fo overview figure
 exp.rt <- rt.cast
-save(exp.rt, file = "/Users/nathaliedusart/Desktop/RPEP/experiment/data/processed/RT.Rdata")
+save(exp.rt, file = "/Users/nathaliedusart/Desktop/RPEP/data/processed/RT.Rdata")
 
 #### Analysis of start RT depending on the valence  ####
 startValence.cast <- cast(input.melt, Participant * valence ~ ., mean, subset = variable == "startRT")
@@ -170,7 +170,7 @@ output <- ezANOVA(
 
 output
 
-source("/Users/nathaliedusart/Desktop/RPEP/experiment/Code/Analysis/Pairwise_comparison.R")
+source("/Users/nathaliedusart/Desktop/RPEP/code/analysis/Pairwise_comparison.R")
 startValence.pc <- dcast(startValence.cast, Participant ~ valence,  mean, value.var = 'startRT') # long to wide
 pc1 <- TES(startValence.pc$'No music', startValence.pc$'Negative valence', paired = TRUE)
 pc2 <- TES(startValence.pc$'No music', startValence.pc$'Positive valence', paired = TRUE)
@@ -206,7 +206,7 @@ output <- ezANOVA(
 
 output
 
-source("/Users/nathaliedusart/Desktop/RPEP/experiment/Code/Analysis/Pairwise_comparison.R")
+source("/Users/nathaliedusart/Desktop/RPEP/code/analysis/Pairwise_comparison.R")
 rtValence.pc <- dcast(rtValence.cast, Participant ~ valence,  mean, value.var = 'RT') # long to wide
 pc1 <- TES(rtValence.pc$'No music', rtValence.pc$'Negative valence', paired = TRUE)
 pc2 <- TES(rtValence.pc$'No music', rtValence.pc$'Positive valence', paired = TRUE)
@@ -275,7 +275,7 @@ output <- ezANOVA(
 
 output
 
-source("/Users/nathaliedusart/Desktop/RPEP/experiment/Code/Analysis/Pairwise_comparison.R")
+source("/Users/nathaliedusart/Desktop/RPEP/code/analysis/Pairwise_comparison.R")
 rtValenceOut.pc <- dcast(rtValenceOut.cast, Participant ~ valence, mean, value.var = 'RT') #long to wide
 pc1 <- TES(rtValenceOut.pc$'No music', rtValenceOut.pc$'Negative valence', paired = TRUE)
 pc2 <- TES(rtValenceOut.pc$'No music', rtValenceOut.pc$'Positive valence', paired = TRUE)
