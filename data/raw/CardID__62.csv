@@ -1,0 +1,201 @@
+"","X.1","X","prolific_ID","Age","Gender","Nationality","Feelings","stimulus","block_number","trial_number","outcome","amount","startRT","RT","key_press","resp","factor","color","time_elapsed"
+"1",1,1,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/blue25.png'></img>","No music","1","gambleLoss","25","775",703,"37","undefined","undefined","undefined",50137
+"2",2,2,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/orange25.png'></img>","No music","2","gambleLoss","25","384",596,"39","undefined","undefined","undefined",52130
+"3",3,3,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/green25.png'></img>","No music","3","gambleLoss","25","272",572,"39","undefined","undefined","undefined",53987
+"4",4,4,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/purple0.png'></img>","No music","4","nonGamble","25","43",890,"38","undefined","undefined","undefined",55932
+"5",5,5,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/blue25.png'></img>","No music","5","gambleWin","25","407",498,"39","undefined","undefined","undefined",57850
+"6",6,6,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/green25.png'></img>","No music","6","gambleLoss","25","184",615,"37","undefined","undefined","undefined",59664
+"7",7,7,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/orange25.png'></img>","No music","7","gambleLoss","25","295",618,"39","undefined","undefined","undefined",61589
+"8",8,8,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/yellow25.png'></img>","No music","8","gambleLoss","25","157",531,"39","undefined","undefined","undefined",63291
+"9",9,9,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/purple0.png'></img>","No music","9","nonGamble","25","40",654,"38","undefined","undefined","undefined",64993
+"10",10,10,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/purple0.png'></img>","No music","10","nonGamble","25","3",1459,"40","undefined","undefined","undefined",67465
+"11",11,11,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/blue25.png'></img>","No music","11","gambleWin","25","86",649,"37","undefined","undefined","undefined",69212
+"12",12,12,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/purple0.png'></img>","No music","12","nonGamble","25","507",482,"38","undefined","undefined","undefined",71214
+"13",13,13,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/orange25.png'></img>","No music","13","gambleWin","25","211",460,"39","undefined","undefined","undefined",72898
+"14",14,14,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/orange25.png'></img>","No music","14","gambleLoss","25","222",517,"39","undefined","undefined","undefined",74649
+"15",15,15,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/orange25.png'></img>","No music","15","gambleWin","25","141",451,"39","undefined","undefined","undefined",76255
+"16",16,16,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/purple0.png'></img>","No music","16","nonGamble","25","239",572,"38","undefined","undefined","undefined",78071
+"17",17,17,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/green25.png'></img>","No music","17","gambleLoss","25","5",442,"39","undefined","undefined","undefined",79527
+"18",18,18,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/blue25.png'></img>","No music","18","gambleWin","25","50",526,"39","undefined","undefined","undefined",81109
+"19",19,19,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/yellow25.png'></img>","No music","19","gambleWin","25","226",642,"39","undefined","undefined","undefined",82984
+"20",20,20,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/blue25.png'></img>","No music","20","gambleLoss","25","156",477,"39","undefined","undefined","undefined",84625
+"21",21,21,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/orange25.png'></img>","No music","21","gambleWin","25","149",450,"39","undefined","undefined","undefined",86230
+"22",22,22,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/green25.png'></img>","No music","22","gambleWin","25","217",471,"39","undefined","undefined","undefined",87926
+"23",23,23,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/purple0.png'></img>","No music","23","nonGamble","25","194",566,"38","undefined","undefined","undefined",89694
+"24",24,24,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/green25.png'></img>","No music","24","gambleWin","25","363",418,"39","undefined","undefined","undefined",91481
+"25",25,25,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/purple0.png'></img>","No music","25","nonGamble","25","221",534,"38","undefined","undefined","undefined",93243
+"26",26,26,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/blue25.png'></img>","No music","26","gambleLoss","25","134",419,"39","undefined","undefined","undefined",94804
+"27",27,27,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/orange25.png'></img>","No music","27","gambleWin","25","315",557,"39","undefined","undefined","undefined",96686
+"28",28,28,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/orange25.png'></img>","No music","28","gambleWin","25","155",479,"39","undefined","undefined","undefined",98330
+"29",29,29,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/green25.png'></img>","No music","29","gambleWin","25","87",404,"39","undefined","undefined","undefined",99830
+"30",30,30,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/yellow25.png'></img>","No music","30","gambleWin","25","161",363,"39","undefined","undefined","undefined",101362
+"31",31,31,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/blue25.png'></img>","No music","31","gambleWin","25","292",274,"39","undefined","undefined","undefined",102936
+"32",32,32,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/green25.png'></img>","No music","32","gambleWin","25","41",313,"39","undefined","undefined","undefined",104300
+"33",33,33,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/purple0.png'></img>","No music","33","nonGamble","25","153",607,"38","undefined","undefined","undefined",106071
+"34",34,34,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/purple0.png'></img>","No music","34","nonGamble","25","325",595,"38","undefined","undefined","undefined",108002
+"35",35,35,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/green25.png'></img>","No music","35","gambleWin","25","209",503,"39","undefined","undefined","undefined",109722
+"36",36,36,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/green25.png'></img>","No music","36","gambleLoss","25","175",379,"39","undefined","undefined","undefined",111286
+"37",37,37,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/yellow25.png'></img>","No music","37","gambleWin","25","229",419,"39","undefined","undefined","undefined",112943
+"38",38,38,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/green25.png'></img>","No music","38","gambleLoss","25","249",535,"39","undefined","undefined","undefined",114735
+"39",39,39,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/yellow25.png'></img>","No music","39","gambleWin","25","144",450,"39","undefined","undefined","undefined",116339
+"40",40,40,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/blue25.png'></img>","No music","40","gambleLoss","25","261",657,"39","undefined","undefined","undefined",118269
+"41",41,41,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/purple0.png'></img>","No music","41","nonGamble","25","168",919,"38","undefined","undefined","undefined",120369
+"42",42,42,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/blue25.png'></img>","No music","42","gambleLoss","25","180",447,"39","undefined","undefined","undefined",122006
+"43",43,43,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/yellow25.png'></img>","No music","43","gambleLoss","25","226",406,"39","undefined","undefined","undefined",123650
+"44",44,44,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/purple0.png'></img>","No music","44","nonGamble","25","161",539,"38","undefined","undefined","undefined",125362
+"45",45,45,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/purple0.png'></img>","No music","45","nonGamble","25","81",716,"38","undefined","undefined","undefined",127169
+"46",46,46,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/blue25.png'></img>","No music","46","gambleWin","25","293",452,"39","undefined","undefined","undefined",128927
+"47",47,47,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/yellow25.png'></img>","No music","47","gambleWin","25","280",494,"39","undefined","undefined","undefined",130711
+"48",48,48,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/orange25.png'></img>","No music","48","gambleLoss","25","144",445,"39","undefined","undefined","undefined",132311
+"49",49,49,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/purple0.png'></img>","No music","49","nonGamble","25","231",431,"38","undefined","undefined","undefined",133983
+"50",50,50,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/purple0.png'></img>","No music","50","nonGamble","25","493",792,"38","undefined","undefined","undefined",136280
+"51",51,51,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/purple0.png'></img>","No music","51","nonGamble","25","74",714,"38","undefined","undefined","undefined",138079
+"52",52,52,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/yellow25.png'></img>","No music","52","gambleLoss","25","168",438,"39","undefined","undefined","undefined",139696
+"53",53,53,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/purple0.png'></img>","No music","53","nonGamble","25","391",716,"38","undefined","undefined","undefined",141815
+"54",54,54,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/purple0.png'></img>","No music","54","nonGamble","25","303",430,"38","undefined","undefined","undefined",143560
+"55",55,55,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/purple0.png'></img>","No music","55","nonGamble","25","367",396,"38","undefined","undefined","undefined",145334
+"56",56,56,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/purple0.png'></img>","No music","56","nonGamble","25","387",434,"38","undefined","undefined","undefined",147168
+"57",57,57,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/yellow25.png'></img>","No music","57","gambleLoss","25","307",421,"39","undefined","undefined","undefined",148910
+"58",58,58,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/orange25.png'></img>","No music","58","gambleLoss","25","302",402,"37","undefined","undefined","undefined",150627
+"59",59,59,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/yellow25.png'></img>","No music","59","gambleLoss","25","344",368,"37","undefined","undefined","undefined",152352
+"60",60,60,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/purple0.png'></img>","No music","60","nonGamble","25","293",623,"38","undefined","undefined","undefined",154282
+"61",61,61,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/blue25.png'></img>","Positive valence","61","gambleLoss","25","1149",536,"39","undefined","undefined","undefined",174146
+"62",62,62,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/orange25.png'></img>","Positive valence","62","gambleLoss","25","134",507,"39","undefined","undefined","undefined",175802
+"63",63,63,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/green25.png'></img>","Positive valence","63","gambleLoss","25","45",413,"39","undefined","undefined","undefined",177275
+"64",64,64,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/purple0.png'></img>","Positive valence","64","nonGamble","25","171",459,"38","undefined","undefined","undefined",178918
+"65",65,65,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/blue25.png'></img>","Positive valence","65","gambleWin","25","399",433,"39","undefined","undefined","undefined",180766
+"66",66,66,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/green25.png'></img>","Positive valence","66","gambleLoss","25","19784",532,"39","undefined","undefined","undefined",202093
+"67",67,67,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/orange25.png'></img>","Positive valence","67","gambleLoss","25","155",423,"39","undefined","undefined","undefined",203678
+"68",68,68,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/yellow25.png'></img>","Positive valence","68","gambleLoss","25","110",391,"37","undefined","undefined","undefined",205186
+"69",69,69,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/purple0.png'></img>","Positive valence","69","nonGamble","25","129",630,"38","undefined","undefined","undefined",206953
+"70",70,70,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/purple0.png'></img>","Positive valence","70","nonGamble","25","96",624,"38","undefined","undefined","undefined",208681
+"71",71,71,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/blue25.png'></img>","Positive valence","71","gambleWin","25","62",447,"37","undefined","undefined","undefined",210199
+"72",72,72,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/purple0.png'></img>","Positive valence","72","nonGamble","25","165",444,"38","undefined","undefined","undefined",211817
+"73",73,73,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/orange25.png'></img>","Positive valence","73","gambleWin","25","101",463,"39","undefined","undefined","undefined",213390
+"74",74,74,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/orange25.png'></img>","Positive valence","74","gambleLoss","25","88",369,"37","undefined","undefined","undefined",214856
+"75",75,75,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/orange25.png'></img>","Positive valence","75","gambleWin","25","116",339,"39","undefined","undefined","undefined",216321
+"76",76,76,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/purple0.png'></img>","Positive valence","76","nonGamble","25","229",485,"38","undefined","undefined","undefined",218043
+"77",77,77,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/green25.png'></img>","Positive valence","77","gambleLoss","25","60",247,"39","undefined","undefined","undefined",219357
+"78",78,78,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/blue25.png'></img>","Positive valence","78","gambleWin","25","65",197,"39","undefined","undefined","undefined",220628
+"79",79,79,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/yellow25.png'></img>","Positive valence","79","gambleWin","25","190",161,"39","undefined","undefined","undefined",221987
+"80",80,80,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/blue25.png'></img>","Positive valence","80","gambleLoss","25","2",172,"39","undefined","undefined","undefined",223167
+"81",81,81,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/orange25.png'></img>","Positive valence","81","gambleWin","25","116",175,"39","undefined","undefined","undefined",224466
+"82",82,82,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/green25.png'></img>","Positive valence","82","gambleWin","25","108",172,"39","undefined","undefined","undefined",225754
+"83",83,83,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/purple0.png'></img>","Positive valence","83","nonGamble","25","10",540,"38","undefined","undefined","undefined",227313
+"84",84,84,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/green25.png'></img>","Positive valence","84","gambleWin","25","369",425,"39","undefined","undefined","undefined",229117
+"85",85,85,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/purple0.png'></img>","Positive valence","85","nonGamble","25","416",514,"38","undefined","undefined","undefined",231055
+"86",86,86,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/blue25.png'></img>","Positive valence","86","gambleLoss","25","162",479,"39","undefined","undefined","undefined",232706
+"87",87,87,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/orange25.png'></img>","Positive valence","87","gambleWin","25","2671",482,"39","undefined","undefined","undefined",236869
+"88",88,88,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/orange25.png'></img>","Positive valence","88","gambleWin","25","391",457,"39","undefined","undefined","undefined",238725
+"89",89,89,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/green25.png'></img>","Positive valence","89","gambleWin","25","176",386,"39","undefined","undefined","undefined",240297
+"90",90,90,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/yellow25.png'></img>","Positive valence","90","gambleWin","25","244",355,"37","undefined","undefined","undefined",241905
+"91",91,91,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/blue25.png'></img>","Positive valence","91","gambleWin","25","279",340,"37","undefined","undefined","undefined",243536
+"92",92,92,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/green25.png'></img>","Positive valence","92","gambleWin","25","197",310,"39","undefined","undefined","undefined",245053
+"93",93,93,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/purple0.png'></img>","Positive valence","93","nonGamble","25","285",942,"38","undefined","undefined","undefined",247293
+"94",94,94,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/purple0.png'></img>","Positive valence","94","nonGamble","25","83",718,"38","undefined","undefined","undefined",249104
+"95",95,95,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/green25.png'></img>","Positive valence","95","gambleWin","25","39",318,"37","undefined","undefined","undefined",250474
+"96",96,96,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/green25.png'></img>","Positive valence","96","gambleLoss","25","217",236,"39","undefined","undefined","undefined",251938
+"97",97,97,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/yellow25.png'></img>","Positive valence","97","gambleWin","25","235",276,"39","undefined","undefined","undefined",253463
+"98",98,98,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/green25.png'></img>","Positive valence","98","gambleLoss","25","107",256,"37","undefined","undefined","undefined",254836
+"99",99,99,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/yellow25.png'></img>","Positive valence","99","gambleWin","25","188",209,"37","undefined","undefined","undefined",256244
+"100",100,100,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/blue25.png'></img>","Positive valence","100","gambleLoss","25","180",214,"37","undefined","undefined","undefined",257645
+"101",101,101,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/purple0.png'></img>","Positive valence","101","nonGamble","25","37",718,"38","undefined","undefined","undefined",259408
+"102",102,102,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/blue25.png'></img>","Positive valence","102","gambleLoss","25","130",296,"37","undefined","undefined","undefined",260845
+"103",103,103,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/yellow25.png'></img>","Positive valence","103","gambleLoss","25","83",375,"39","undefined","undefined","undefined",262315
+"104",104,104,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/purple0.png'></img>","Positive valence","104","nonGamble","25","166",633,"38","undefined","undefined","undefined",264127
+"105",105,105,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/purple0.png'></img>","Positive valence","105","nonGamble","25","41",743,"38","undefined","undefined","undefined",265923
+"106",106,106,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/blue25.png'></img>","Positive valence","106","gambleWin","25","28",330,"37","undefined","undefined","undefined",267293
+"107",107,107,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/yellow25.png'></img>","Positive valence","107","gambleWin","25","134",263,"39","undefined","undefined","undefined",268701
+"108",108,108,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/orange25.png'></img>","Positive valence","108","gambleLoss","25","235",264,"39","undefined","undefined","undefined",270212
+"109",109,109,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/purple0.png'></img>","Positive valence","109","nonGamble","25","117",579,"38","undefined","undefined","undefined",271921
+"110",110,110,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/purple0.png'></img>","Positive valence","110","nonGamble","25","283",662,"38","undefined","undefined","undefined",273877
+"111",111,111,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/purple0.png'></img>","Positive valence","111","nonGamble","25","54",671,"38","undefined","undefined","undefined",275615
+"112",112,112,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/yellow25.png'></img>","Positive valence","112","gambleLoss","25","294",471,"39","undefined","undefined","undefined",277393
+"113",113,113,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/purple0.png'></img>","Positive valence","113","nonGamble","25","223",473,"38","undefined","undefined","undefined",279101
+"114",114,114,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/purple0.png'></img>","Positive valence","114","nonGamble","25","242",450,"40","undefined","undefined","undefined",280807
+"115",115,115,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/purple0.png'></img>","Positive valence","115","nonGamble","25","161",417,"38","undefined","undefined","undefined",282399
+"116",116,116,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/purple0.png'></img>","Positive valence","116","nonGamble","25","234",328,"38","undefined","undefined","undefined",283975
+"117",117,117,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/yellow25.png'></img>","Positive valence","117","gambleLoss","25","84",332,"39","undefined","undefined","undefined",285405
+"118",118,118,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/orange25.png'></img>","Positive valence","118","gambleLoss","25","129",329,"39","undefined","undefined","undefined",286877
+"119",119,119,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/yellow25.png'></img>","Positive valence","119","gambleLoss","25","134",181,"39","undefined","undefined","undefined",288206
+"120",120,120,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/purple0.png'></img>","Positive valence","120","nonGamble","25","197",553,"38","undefined","undefined","undefined",289970
+"121",121,121,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/blue25.png'></img>","Negative valence","121","gambleLoss","25","765",536,"39","undefined","undefined","undefined",2273116
+"122",122,122,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/orange25.png'></img>","Negative valence","122","gambleLoss","25","245",422,"39","undefined","undefined","undefined",2274801
+"123",123,123,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/green25.png'></img>","Negative valence","123","gambleLoss","25","1987",12969,"37","undefined","undefined","undefined",2290764
+"124",124,124,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/purple0.png'></img>","Negative valence","124","nonGamble","25","426",788,"38","undefined","undefined","undefined",2292985
+"125",125,125,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/blue25.png'></img>","Negative valence","125","gambleWin","25","3",325,"39","undefined","undefined","undefined",2294320
+"126",126,126,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/green25.png'></img>","Negative valence","126","gambleLoss","25","300",377,"39","undefined","undefined","undefined",2296003
+"127",127,127,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/orange25.png'></img>","Negative valence","127","gambleLoss","25","269",433,"37","undefined","undefined","undefined",2297708
+"128",128,128,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/yellow25.png'></img>","Negative valence","128","gambleLoss","25","113",315,"39","undefined","undefined","undefined",2299141
+"129",129,129,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/purple0.png'></img>","Negative valence","129","nonGamble","25","100",691,"38","undefined","undefined","undefined",2300938
+"130",130,130,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/purple0.png'></img>","Negative valence","130","nonGamble","25","21",897,"38","undefined","undefined","undefined",2302863
+"131",131,131,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/blue25.png'></img>","Negative valence","131","gambleWin","25","247",406,"39","undefined","undefined","undefined",2304525
+"132",132,132,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/purple0.png'></img>","Negative valence","132","nonGamble","25","438",690,"38","undefined","undefined","undefined",2306660
+"133",133,133,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/orange25.png'></img>","Negative valence","133","gambleWin","25","549",305,"39","undefined","undefined","undefined",2308522
+"134",134,134,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/orange25.png'></img>","Negative valence","134","gambleLoss","25","528",376,"39","undefined","undefined","undefined",2310432
+"135",135,135,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/orange25.png'></img>","Negative valence","135","gambleWin","25","468",294,"37","undefined","undefined","undefined",2312204
+"136",136,136,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/purple0.png'></img>","Negative valence","136","nonGamble","25","327",487,"38","undefined","undefined","undefined",2314026
+"137",137,137,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/green25.png'></img>","Negative valence","137","gambleLoss","25","169",1247,"39","undefined","undefined","undefined",2316447
+"138",138,138,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/blue25.png'></img>","Negative valence","138","gambleWin","25","301",660,"37","undefined","undefined","undefined",2318417
+"139",139,139,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/yellow25.png'></img>","Negative valence","139","gambleWin","25","15735",978,"37","undefined","undefined","undefined",2336139
+"140",140,140,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/blue25.png'></img>","Negative valence","140","gambleLoss","25","1011",1106,"39","undefined","undefined","undefined",2339265
+"141",141,141,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/orange25.png'></img>","Negative valence","141","gambleWin","25","272",382,"39","undefined","undefined","undefined",2340929
+"142",142,142,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/green25.png'></img>","Negative valence","142","gambleWin","25","161",351,"39","undefined","undefined","undefined",2342450
+"143",143,143,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/purple0.png'></img>","Negative valence","143","nonGamble","25","30228",526,"40","undefined","undefined","undefined",2374214
+"144",144,144,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/green25.png'></img>","Negative valence","144","gambleWin","25","165",279,"39","undefined","undefined","undefined",2375669
+"145",145,145,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/purple0.png'></img>","Negative valence","145","nonGamble","25","137",428,"38","undefined","undefined","undefined",2377244
+"146",146,146,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/blue25.png'></img>","Negative valence","146","gambleLoss","25","420",306,"37","undefined","undefined","undefined",2378979
+"147",147,147,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/orange25.png'></img>","Negative valence","147","gambleWin","25","131",398,"39","undefined","undefined","undefined",2380521
+"148",148,148,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/orange25.png'></img>","Negative valence","148","gambleWin","25","226",346,"39","undefined","undefined","undefined",2382103
+"149",149,149,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/green25.png'></img>","Negative valence","149","gambleWin","25","230",318,"37","undefined","undefined","undefined",2383659
+"150",150,150,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/yellow25.png'></img>","Negative valence","150","gambleWin","25","262",272,"37","undefined","undefined","undefined",2385201
+"151",151,151,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/blue25.png'></img>","Negative valence","151","gambleWin","25","210",289,"37","undefined","undefined","undefined",2386705
+"152",152,152,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/green25.png'></img>","Negative valence","152","gambleWin","25","35",234,"39","undefined","undefined","undefined",2387985
+"153",153,153,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/purple0.png'></img>","Negative valence","153","nonGamble","25","164",672,"38","undefined","undefined","undefined",2389833
+"154",154,154,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/purple0.png'></img>","Negative valence","154","nonGamble","25","81",559,"38","undefined","undefined","undefined",2391487
+"155",155,155,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/green25.png'></img>","Negative valence","155","gambleWin","25","145",310,"37","undefined","undefined","undefined",2392951
+"156",156,156,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/green25.png'></img>","Negative valence","156","gambleLoss","25","22584",293,"39","undefined","undefined","undefined",2416836
+"157",157,157,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/yellow25.png'></img>","Negative valence","157","gambleWin","25","92",309,"39","undefined","undefined","undefined",2418246
+"158",158,158,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/green25.png'></img>","Negative valence","158","gambleLoss","25","296",401,"39","undefined","undefined","undefined",2419954
+"159",159,159,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/yellow25.png'></img>","Negative valence","159","gambleWin","25","67",338,"37","undefined","undefined","undefined",2421372
+"160",160,160,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/blue25.png'></img>","Negative valence","160","gambleLoss","25","317",345,"39","undefined","undefined","undefined",2423044
+"161",161,161,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/purple0.png'></img>","Negative valence","161","nonGamble","25","134",604,"38","undefined","undefined","undefined",2424795
+"162",162,162,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/blue25.png'></img>","Negative valence","162","gambleLoss","25","467",313,"39","undefined","undefined","undefined",2426591
+"163",163,163,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/yellow25.png'></img>","Negative valence","163","gambleLoss","25","254",266,"39","undefined","undefined","undefined",2428125
+"164",164,164,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/purple0.png'></img>","Negative valence","164","nonGamble","25","330",447,"38","undefined","undefined","undefined",2429917
+"165",165,165,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/purple0.png'></img>","Negative valence","165","nonGamble","25","299",591,"38","undefined","undefined","undefined",2431816
+"166",166,166,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/blue25.png'></img>","Negative valence","166","gambleWin","25","199",510,"39","undefined","undefined","undefined",2433538
+"167",167,167,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/yellow25.png'></img>","Negative valence","167","gambleWin","25","50",386,"39","undefined","undefined","undefined",2434982
+"168",168,168,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/orange25.png'></img>","Negative valence","168","gambleLoss","25","231",385,"39","undefined","undefined","undefined",2436610
+"169",169,169,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/purple0.png'></img>","Negative valence","169","nonGamble","25","181",463,"38","undefined","undefined","undefined",2438266
+"170",170,170,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/purple0.png'></img>","Negative valence","170","nonGamble","25","11012",863,"38","undefined","undefined","undefined",2451154
+"171",171,171,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/purple0.png'></img>","Negative valence","171","nonGamble","25","231",348,"40","undefined","undefined","undefined",2452746
+"172",172,172,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/yellow25.png'></img>","Negative valence","172","gambleLoss","25","176",577,"39","undefined","undefined","undefined",2454511
+"173",173,173,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/purple0.png'></img>","Negative valence","173","nonGamble","25","257",462,"38","undefined","undefined","undefined",2456244
+"174",174,174,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/purple0.png'></img>","Negative valence","174","nonGamble","25","221",438,"38","undefined","undefined","undefined",2457917
+"175",175,175,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/purple0.png'></img>","Negative valence","175","nonGamble","25","132",441,"38","undefined","undefined","undefined",2459503
+"176",176,176,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/purple0.png'></img>","Negative valence","176","nonGamble","25","263",539,"38","undefined","undefined","undefined",2461319
+"177",177,177,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/yellow25.png'></img>","Negative valence","177","gambleLoss","25","64",446,"39","undefined","undefined","undefined",2462844
+"178",178,178,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/orange25.png'></img>","Negative valence","178","gambleLoss","25","263",342,"37","undefined","undefined","undefined",2464466
+"179",179,179,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/yellow25.png'></img>","Negative valence","179","gambleLoss","25","332",255,"39","undefined","undefined","undefined",2466070
+"180",180,180,62,18,"Female","Belgian","Somewhat unhappy","<img src='images/purple0.png'></img>","Negative valence","180","nonGamble","25","242",605,"38","undefined","undefined","undefined",2467930
+"181",181,181,62,18,"Female","Belgian","Somewhat unhappy","undefined","undefined","undefined","undefined","undefined","undefined",4016,"undefined","2","Perseverance","undefined",2479893
+"182",182,182,62,18,"Female","Belgian","Somewhat unhappy","undefined","undefined","undefined","undefined","undefined","undefined",3537,"undefined","2","Premeditation","undefined",2483434
+"183",183,183,62,18,"Female","Belgian","Somewhat unhappy","undefined","undefined","undefined","undefined","undefined","undefined",5103,"undefined","1","Positive Urgency","undefined",2488541
+"184",184,184,62,18,"Female","Belgian","Somewhat unhappy","undefined","undefined","undefined","undefined","undefined","undefined",4666,"undefined","3","Perseverance","undefined",2493212
+"185",185,185,62,18,"Female","Belgian","Somewhat unhappy","undefined","undefined","undefined","undefined","undefined","undefined",3302,"undefined","2","Premeditation","undefined",2496519
+"186",186,186,62,18,"Female","Belgian","Somewhat unhappy","undefined","undefined","undefined","undefined","undefined","undefined",6813,"undefined","4","Negative Urgency","undefined",2503336
+"187",187,187,62,18,"Female","Belgian","Somewhat unhappy","undefined","undefined","undefined","undefined","undefined","undefined",4552,"undefined","3","Perseverance","undefined",2507893
+"188",188,188,62,18,"Female","Belgian","Somewhat unhappy","undefined","undefined","undefined","undefined","undefined","undefined",4270,"undefined","1","Negative Urgency","undefined",2512167
+"189",189,189,62,18,"Female","Belgian","Somewhat unhappy","undefined","undefined","undefined","undefined","undefined","undefined",2572,"undefined","3","Sensation Seeking","undefined",2514745
+"190",190,190,62,18,"Female","Belgian","Somewhat unhappy","undefined","undefined","undefined","undefined","undefined","undefined",3742,"undefined","1","Positive Urgency","undefined",2518491
+"191",191,191,62,18,"Female","Belgian","Somewhat unhappy","undefined","undefined","undefined","undefined","undefined","undefined",2761,"undefined","2","Perseverance","undefined",2521256
+"192",192,192,62,18,"Female","Belgian","Somewhat unhappy","undefined","undefined","undefined","undefined","undefined","undefined",53546,"undefined","2","Premeditation","undefined",2574806
+"193",193,193,62,18,"Female","Belgian","Somewhat unhappy","undefined","undefined","undefined","undefined","undefined","undefined",3754,"undefined","4","Negative Urgency","undefined",2578564
+"194",194,194,62,18,"Female","Belgian","Somewhat unhappy","undefined","undefined","undefined","undefined","undefined","undefined",3674,"undefined","3","Sensation Seeking","undefined",2582243
+"195",195,195,62,18,"Female","Belgian","Somewhat unhappy","undefined","undefined","undefined","undefined","undefined","undefined",2413,"undefined","4","Negative Urgency","undefined",2584660
+"196",196,196,62,18,"Female","Belgian","Somewhat unhappy","undefined","undefined","undefined","undefined","undefined","undefined",4453,"undefined","1","Sensation Seeking","undefined",2589116
+"197",197,197,62,18,"Female","Belgian","Somewhat unhappy","undefined","undefined","undefined","undefined","undefined","undefined",4957,"undefined","3","Positive Urgency","undefined",2594077
+"198",198,198,62,18,"Female","Belgian","Somewhat unhappy","undefined","undefined","undefined","undefined","undefined","undefined",4218,"undefined","3","Sensation Seeking","undefined",2598299
+"199",199,199,62,18,"Female","Belgian","Somewhat unhappy","undefined","undefined","undefined","undefined","undefined","undefined",4203,"undefined","2","Premeditation","undefined",2602506
+"200",200,200,62,18,"Female","Belgian","Somewhat unhappy","undefined","undefined","undefined","undefined","undefined","undefined",9814,"undefined","2","Positive Urgency","undefined",2612325

@@ -1,0 +1,201 @@
+"","X.1","X","prolific_ID","Age","Gender","Nationality","Feelings","stimulus","block_number","trial_number","outcome","amount","startRT","RT","key_press","resp","factor","color","time_elapsed"
+"1",1,1,78,19,"Female","Ukrainian","Somewhat unhappy","<img src='images/green25.png'></img>","No music","1","gambleLoss","25","1015",2753,"39","undefined","undefined","undefined",116831
+"2",2,2,78,19,"Female","Ukrainian","Somewhat unhappy","<img src='images/green25.png'></img>","No music","2","gambleLoss","25","788",415,"37","undefined","undefined","undefined",119042
+"3",3,3,78,19,"Female","Ukrainian","Somewhat unhappy","<img src='images/purple0.png'></img>","No music","3","nonGamble","25","510",1892,"40","undefined","undefined","undefined",122454
+"4",4,4,78,19,"Female","Ukrainian","Somewhat unhappy","<img src='images/orange25.png'></img>","No music","4","gambleLoss","25","1573",836,"37","undefined","undefined","undefined",125870
+"5",5,5,78,19,"Female","Ukrainian","Somewhat unhappy","<img src='images/orange25.png'></img>","No music","5","gambleLoss","25","621",409,"39","undefined","undefined","undefined",127909
+"6",6,6,78,19,"Female","Ukrainian","Somewhat unhappy","<img src='images/purple0.png'></img>","No music","6","nonGamble","25","517",1397,"40","undefined","undefined","undefined",130833
+"7",7,7,78,19,"Female","Ukrainian","Somewhat unhappy","<img src='images/orange25.png'></img>","No music","7","gambleLoss","25","1102",419,"39","undefined","undefined","undefined",133362
+"8",8,8,78,19,"Female","Ukrainian","Somewhat unhappy","<img src='images/green25.png'></img>","No music","8","gambleLoss","25","2646",603,"37","undefined","undefined","undefined",137619
+"9",9,9,78,19,"Female","Ukrainian","Somewhat unhappy","<img src='images/yellow25.png'></img>","No music","9","gambleWin","25","360",417,"37","undefined","undefined","undefined",139404
+"10",10,10,78,19,"Female","Ukrainian","Somewhat unhappy","<img src='images/green25.png'></img>","No music","10","gambleWin","25","299",443,"39","undefined","undefined","undefined",141154
+"11",11,11,78,19,"Female","Ukrainian","Somewhat unhappy","<img src='images/blue25.png'></img>","No music","11","gambleWin","25","348",782,"37","undefined","undefined","undefined",143293
+"12",12,12,78,19,"Female","Ukrainian","Somewhat unhappy","<img src='images/blue25.png'></img>","No music","12","gambleLoss","25","288",413,"39","undefined","undefined","undefined",145001
+"13",13,13,78,19,"Female","Ukrainian","Somewhat unhappy","<img src='images/yellow25.png'></img>","No music","13","gambleWin","25","400",581,"37","undefined","undefined","undefined",146990
+"14",14,14,78,19,"Female","Ukrainian","Somewhat unhappy","<img src='images/purple0.png'></img>","No music","14","nonGamble","25","524",1273,"40","undefined","undefined","undefined",149795
+"15",15,15,78,19,"Female","Ukrainian","Somewhat unhappy","<img src='images/purple0.png'></img>","No music","15","nonGamble","25","333",1263,"40","undefined","undefined","undefined",152400
+"16",16,16,78,19,"Female","Ukrainian","Somewhat unhappy","<img src='images/orange25.png'></img>","No music","16","gambleWin","25","599",489,"37","undefined","undefined","undefined",154495
+"17",17,17,78,19,"Female","Ukrainian","Somewhat unhappy","<img src='images/yellow25.png'></img>","No music","17","gambleWin","25","408",474,"37","undefined","undefined","undefined",156386
+"18",18,18,78,19,"Female","Ukrainian","Somewhat unhappy","<img src='images/blue25.png'></img>","No music","18","gambleWin","25","440",806,"39","undefined","undefined","undefined",158640
+"19",19,19,78,19,"Female","Ukrainian","Somewhat unhappy","<img src='images/orange25.png'></img>","No music","19","gambleWin","25","380",426,"37","undefined","undefined","undefined",160453
+"20",20,20,78,19,"Female","Ukrainian","Somewhat unhappy","<img src='images/green25.png'></img>","No music","20","gambleWin","25","392",405,"37","undefined","undefined","undefined",162257
+"21",21,21,78,19,"Female","Ukrainian","Somewhat unhappy","<img src='images/purple0.png'></img>","No music","21","nonGamble","25","329",1147,"40","undefined","undefined","undefined",164741
+"22",22,22,78,19,"Female","Ukrainian","Somewhat unhappy","<img src='images/purple0.png'></img>","No music","22","nonGamble","25","478",1177,"40","undefined","undefined","undefined",167404
+"23",23,23,78,19,"Female","Ukrainian","Somewhat unhappy","<img src='images/green25.png'></img>","No music","23","gambleWin","25","448",765,"39","undefined","undefined","undefined",169625
+"24",24,24,78,19,"Female","Ukrainian","Somewhat unhappy","<img src='images/purple0.png'></img>","No music","24","nonGamble","25","389",966,"40","undefined","undefined","undefined",171989
+"25",25,25,78,19,"Female","Ukrainian","Somewhat unhappy","<img src='images/purple0.png'></img>","No music","25","nonGamble","25","2702",1247,"38","undefined","undefined","undefined",176945
+"26",26,26,78,19,"Female","Ukrainian","Somewhat unhappy","<img src='images/yellow25.png'></img>","No music","26","gambleLoss","25","591",756,"37","undefined","undefined","undefined",179300
+"27",27,27,78,19,"Female","Ukrainian","Somewhat unhappy","<img src='images/green25.png'></img>","No music","27","gambleWin","25","302",351,"39","undefined","undefined","undefined",180960
+"28",28,28,78,19,"Female","Ukrainian","Somewhat unhappy","<img src='images/blue25.png'></img>","No music","28","gambleLoss","25","321",658,"37","undefined","undefined","undefined",182947
+"29",29,29,78,19,"Female","Ukrainian","Somewhat unhappy","<img src='images/blue25.png'></img>","No music","29","gambleWin","25","294",405,"39","undefined","undefined","undefined",184655
+"30",30,30,78,19,"Female","Ukrainian","Somewhat unhappy","<img src='images/purple0.png'></img>","No music","30","nonGamble","25","287",1014,"38","undefined","undefined","undefined",186964
+"31",31,31,78,19,"Female","Ukrainian","Somewhat unhappy","<img src='images/purple0.png'></img>","No music","31","nonGamble","25","876",987,"38","undefined","undefined","undefined",189833
+"32",32,32,78,19,"Female","Ukrainian","Somewhat unhappy","<img src='images/yellow25.png'></img>","No music","32","gambleWin","25","499",492,"39","undefined","undefined","undefined",191833
+"33",33,33,78,19,"Female","Ukrainian","Somewhat unhappy","<img src='images/yellow25.png'></img>","No music","33","gambleLoss","25","355",399,"37","undefined","undefined","undefined",193595
+"34",34,34,78,19,"Female","Ukrainian","Somewhat unhappy","<img src='images/orange25.png'></img>","No music","34","gambleLoss","25","287",378,"39","undefined","undefined","undefined",195268
+"35",35,35,78,19,"Female","Ukrainian","Somewhat unhappy","<img src='images/orange25.png'></img>","No music","35","gambleWin","25","284",404,"37","undefined","undefined","undefined",196963
+"36",36,36,78,19,"Female","Ukrainian","Somewhat unhappy","<img src='images/orange25.png'></img>","No music","36","gambleWin","25","300",414,"37","undefined","undefined","undefined",198685
+"37",37,37,78,19,"Female","Ukrainian","Somewhat unhappy","<img src='images/green25.png'></img>","No music","37","gambleLoss","25","251",924,"37","undefined","undefined","undefined",200868
+"38",38,38,78,19,"Female","Ukrainian","Somewhat unhappy","<img src='images/blue25.png'></img>","No music","38","gambleLoss","25","422",413,"39","undefined","undefined","undefined",202710
+"39",39,39,78,19,"Female","Ukrainian","Somewhat unhappy","<img src='images/yellow25.png'></img>","No music","39","gambleLoss","25","339",482,"37","undefined","undefined","undefined",204538
+"40",40,40,78,19,"Female","Ukrainian","Somewhat unhappy","<img src='images/purple0.png'></img>","No music","40","nonGamble","25","253",1003,"38","undefined","undefined","undefined",206801
+"41",41,41,78,19,"Female","Ukrainian","Somewhat unhappy","<img src='images/orange25.png'></img>","No music","41","gambleLoss","25","398",630,"37","undefined","undefined","undefined",208835
+"42",42,42,78,19,"Female","Ukrainian","Somewhat unhappy","<img src='images/blue25.png'></img>","No music","42","gambleWin","25","241",408,"39","undefined","undefined","undefined",210490
+"43",43,43,78,19,"Female","Ukrainian","Somewhat unhappy","<img src='images/yellow25.png'></img>","No music","43","gambleWin","25","396",426,"37","undefined","undefined","undefined",212319
+"44",44,44,78,19,"Female","Ukrainian","Somewhat unhappy","<img src='images/green25.png'></img>","No music","44","gambleWin","25","298",447,"39","undefined","undefined","undefined",214071
+"45",45,45,78,19,"Female","Ukrainian","Somewhat unhappy","<img src='images/yellow25.png'></img>","No music","45","gambleLoss","25","435",489,"37","undefined","undefined","undefined",216002
+"46",46,46,78,19,"Female","Ukrainian","Somewhat unhappy","<img src='images/purple0.png'></img>","No music","46","nonGamble","25","406",1234,"38","undefined","undefined","undefined",218648
+"47",47,47,78,19,"Female","Ukrainian","Somewhat unhappy","<img src='images/yellow25.png'></img>","No music","47","gambleLoss","25","357",479,"37","undefined","undefined","undefined",220491
+"48",48,48,78,19,"Female","Ukrainian","Somewhat unhappy","<img src='images/purple0.png'></img>","No music","48","nonGamble","25","691",1123,"38","undefined","undefined","undefined",223313
+"49",49,49,78,19,"Female","Ukrainian","Somewhat unhappy","<img src='images/purple0.png'></img>","No music","49","nonGamble","25","1250",1252,"38","undefined","undefined","undefined",226822
+"50",50,50,78,19,"Female","Ukrainian","Somewhat unhappy","<img src='images/blue25.png'></img>","No music","50","gambleLoss","25","524",622,"39","undefined","undefined","undefined",228976
+"51",51,51,78,19,"Female","Ukrainian","Somewhat unhappy","<img src='images/purple0.png'></img>","No music","51","nonGamble","25","443",982,"38","undefined","undefined","undefined",231409
+"52",52,52,78,19,"Female","Ukrainian","Somewhat unhappy","<img src='images/green25.png'></img>","No music","52","gambleLoss","25","382",858,"37","undefined","undefined","undefined",233655
+"53",53,53,78,19,"Female","Ukrainian","Somewhat unhappy","<img src='images/orange25.png'></img>","No music","53","gambleWin","25","488",590,"37","undefined","undefined","undefined",235740
+"54",54,54,78,19,"Female","Ukrainian","Somewhat unhappy","<img src='images/blue25.png'></img>","No music","54","gambleLoss","25","377",498,"37","undefined","undefined","undefined",237622
+"55",55,55,78,19,"Female","Ukrainian","Somewhat unhappy","<img src='images/purple0.png'></img>","No music","55","nonGamble","25","1352",1221,"38","undefined","undefined","undefined",241203
+"56",56,56,78,19,"Female","Ukrainian","Somewhat unhappy","<img src='images/purple0.png'></img>","No music","56","nonGamble","25","467",1371,"40","undefined","undefined","undefined",244049
+"57",57,57,78,19,"Female","Ukrainian","Somewhat unhappy","<img src='images/purple0.png'></img>","No music","57","nonGamble","25","1179",1116,"38","undefined","undefined","undefined",247352
+"58",58,58,78,19,"Female","Ukrainian","Somewhat unhappy","<img src='images/blue25.png'></img>","No music","58","gambleWin","25","487",821,"39","undefined","undefined","undefined",249666
+"59",59,59,78,19,"Female","Ukrainian","Somewhat unhappy","<img src='images/purple0.png'></img>","No music","59","nonGamble","25","320",1257,"38","undefined","undefined","undefined",252250
+"60",60,60,78,19,"Female","Ukrainian","Somewhat unhappy","<img src='images/purple0.png'></img>","No music","60","nonGamble","25","649",1121,"40","undefined","undefined","undefined",255028
+"61",61,61,78,19,"Female","Ukrainian","Somewhat happy","<img src='images/green25.png'></img>","Positive valence","61","gambleLoss","25","2140",526,"39","undefined","undefined","undefined",291855
+"62",62,62,78,19,"Female","Ukrainian","Somewhat happy","<img src='images/green25.png'></img>","Positive valence","62","gambleLoss","25","412",476,"37","undefined","undefined","undefined",293750
+"63",63,63,78,19,"Female","Ukrainian","Somewhat happy","<img src='images/purple0.png'></img>","Positive valence","63","nonGamble","25","258",1184,"38","undefined","undefined","undefined",296199
+"64",64,64,78,19,"Female","Ukrainian","Somewhat happy","<img src='images/orange25.png'></img>","Positive valence","64","gambleLoss","25","747",474,"39","undefined","undefined","undefined",298426
+"65",65,65,78,19,"Female","Ukrainian","Somewhat happy","<img src='images/orange25.png'></img>","Positive valence","65","gambleLoss","25","917",580,"37","undefined","undefined","undefined",300931
+"66",66,66,78,19,"Female","Ukrainian","Somewhat happy","<img src='images/purple0.png'></img>","Positive valence","66","nonGamble","25","359",1095,"38","undefined","undefined","undefined",303393
+"67",67,67,78,19,"Female","Ukrainian","Somewhat happy","<img src='images/orange25.png'></img>","Positive valence","67","gambleLoss","25","386",483,"37","undefined","undefined","undefined",305269
+"68",68,68,78,19,"Female","Ukrainian","Somewhat happy","<img src='images/green25.png'></img>","Positive valence","68","gambleLoss","25","1991",972,"39","undefined","undefined","undefined",309240
+"69",69,69,78,19,"Female","Ukrainian","Somewhat happy","<img src='images/yellow25.png'></img>","Positive valence","69","gambleWin","25","444",509,"39","undefined","undefined","undefined",311200
+"70",70,70,78,19,"Female","Ukrainian","Somewhat happy","<img src='images/green25.png'></img>","Positive valence","70","gambleWin","25","344",513,"37","undefined","undefined","undefined",313064
+"71",71,71,78,19,"Female","Ukrainian","Somewhat happy","<img src='images/blue25.png'></img>","Positive valence","71","gambleWin","25","252",641,"37","undefined","undefined","undefined",314964
+"72",72,72,78,19,"Female","Ukrainian","Somewhat happy","<img src='images/blue25.png'></img>","Positive valence","72","gambleLoss","25","291",433,"39","undefined","undefined","undefined",316696
+"73",73,73,78,19,"Female","Ukrainian","Somewhat happy","<img src='images/yellow25.png'></img>","Positive valence","73","gambleWin","25","272",458,"37","undefined","undefined","undefined",318433
+"74",74,74,78,19,"Female","Ukrainian","Somewhat happy","<img src='images/purple0.png'></img>","Positive valence","74","nonGamble","25","362",1381,"38","undefined","undefined","undefined",321184
+"75",75,75,78,19,"Female","Ukrainian","Somewhat happy","<img src='images/purple0.png'></img>","Positive valence","75","nonGamble","25","404",989,"38","undefined","undefined","undefined",323584
+"76",76,76,78,19,"Female","Ukrainian","Somewhat happy","<img src='images/orange25.png'></img>","Positive valence","76","gambleWin","25","1295",601,"37","undefined","undefined","undefined",326487
+"77",77,77,78,19,"Female","Ukrainian","Somewhat happy","<img src='images/yellow25.png'></img>","Positive valence","77","gambleWin","25","360",387,"39","undefined","undefined","undefined",328241
+"78",78,78,78,19,"Female","Ukrainian","Somewhat happy","<img src='images/blue25.png'></img>","Positive valence","78","gambleWin","25","365",821,"37","undefined","undefined","undefined",330434
+"79",79,79,78,19,"Female","Ukrainian","Somewhat happy","<img src='images/orange25.png'></img>","Positive valence","79","gambleWin","25","312",414,"39","undefined","undefined","undefined",332167
+"80",80,80,78,19,"Female","Ukrainian","Somewhat happy","<img src='images/green25.png'></img>","Positive valence","80","gambleWin","25","308",418,"37","undefined","undefined","undefined",333900
+"81",81,81,78,19,"Female","Ukrainian","Somewhat happy","<img src='images/purple0.png'></img>","Positive valence","81","nonGamble","25","308",1337,"38","undefined","undefined","undefined",336553
+"82",82,82,78,19,"Female","Ukrainian","Somewhat happy","<img src='images/purple0.png'></img>","Positive valence","82","nonGamble","25","486",983,"38","undefined","undefined","undefined",339028
+"83",83,83,78,19,"Female","Ukrainian","Somewhat happy","<img src='images/green25.png'></img>","Positive valence","83","gambleWin","25","365",483,"37","undefined","undefined","undefined",340883
+"84",84,84,78,19,"Female","Ukrainian","Somewhat happy","<img src='images/purple0.png'></img>","Positive valence","84","nonGamble","25","1681",1103,"38","undefined","undefined","undefined",344673
+"85",85,85,78,19,"Female","Ukrainian","Somewhat happy","<img src='images/purple0.png'></img>","Positive valence","85","nonGamble","25","461",968,"38","undefined","undefined","undefined",347110
+"86",86,86,78,19,"Female","Ukrainian","Somewhat happy","<img src='images/yellow25.png'></img>","Positive valence","86","gambleLoss","25","1132",475,"39","undefined","undefined","undefined",349725
+"87",87,87,78,19,"Female","Ukrainian","Somewhat happy","<img src='images/green25.png'></img>","Positive valence","87","gambleWin","25","346",549,"37","undefined","undefined","undefined",351626
+"88",88,88,78,19,"Female","Ukrainian","Somewhat happy","<img src='images/blue25.png'></img>","Positive valence","88","gambleLoss","25","380",650,"37","undefined","undefined","undefined",353663
+"89",89,89,78,19,"Female","Ukrainian","Somewhat happy","<img src='images/blue25.png'></img>","Positive valence","89","gambleWin","25","328",463,"39","undefined","undefined","undefined",355461
+"90",90,90,78,19,"Female","Ukrainian","Somewhat happy","<img src='images/purple0.png'></img>","Positive valence","90","nonGamble","25","406",1115,"38","undefined","undefined","undefined",357989
+"91",91,91,78,19,"Female","Ukrainian","Somewhat happy","<img src='images/purple0.png'></img>","Positive valence","91","nonGamble","25","315",1004,"38","undefined","undefined","undefined",360313
+"92",92,92,78,19,"Female","Ukrainian","Somewhat happy","<img src='images/yellow25.png'></img>","Positive valence","92","gambleWin","25","333",610,"39","undefined","undefined","undefined",362262
+"93",93,93,78,19,"Female","Ukrainian","Somewhat happy","<img src='images/yellow25.png'></img>","Positive valence","93","gambleLoss","25","447",501,"37","undefined","undefined","undefined",364216
+"94",94,94,78,19,"Female","Ukrainian","Somewhat happy","<img src='images/orange25.png'></img>","Positive valence","94","gambleLoss","25","330",513,"39","undefined","undefined","undefined",366065
+"95",95,95,78,19,"Female","Ukrainian","Somewhat happy","<img src='images/orange25.png'></img>","Positive valence","95","gambleWin","25","342",414,"37","undefined","undefined","undefined",367827
+"96",96,96,78,19,"Female","Ukrainian","Somewhat happy","<img src='images/orange25.png'></img>","Positive valence","96","gambleWin","25","362",410,"37","undefined","undefined","undefined",369604
+"97",97,97,78,19,"Female","Ukrainian","Somewhat happy","<img src='images/green25.png'></img>","Positive valence","97","gambleLoss","25","354",403,"37","undefined","undefined","undefined",371368
+"98",98,98,78,19,"Female","Ukrainian","Somewhat happy","<img src='images/blue25.png'></img>","Positive valence","98","gambleLoss","25","329",381,"39","undefined","undefined","undefined",373083
+"99",99,99,78,19,"Female","Ukrainian","Somewhat happy","<img src='images/yellow25.png'></img>","Positive valence","99","gambleLoss","25","338",381,"37","undefined","undefined","undefined",374808
+"100",100,100,78,19,"Female","Ukrainian","Somewhat happy","<img src='images/purple0.png'></img>","Positive valence","100","nonGamble","25","332",1262,"38","undefined","undefined","undefined",377407
+"101",101,101,78,19,"Female","Ukrainian","Somewhat happy","<img src='images/orange25.png'></img>","Positive valence","101","gambleLoss","25","450",500,"39","undefined","undefined","undefined",379365
+"102",102,102,78,19,"Female","Ukrainian","Somewhat happy","<img src='images/blue25.png'></img>","Positive valence","102","gambleWin","25","409",467,"37","undefined","undefined","undefined",381248
+"103",103,103,78,19,"Female","Ukrainian","Somewhat happy","<img src='images/yellow25.png'></img>","Positive valence","103","gambleWin","25","536",449,"37","undefined","undefined","undefined",383241
+"104",104,104,78,19,"Female","Ukrainian","Somewhat happy","<img src='images/green25.png'></img>","Positive valence","104","gambleWin","25","716",511,"39","undefined","undefined","undefined",385475
+"105",105,105,78,19,"Female","Ukrainian","Somewhat happy","<img src='images/yellow25.png'></img>","Positive valence","105","gambleLoss","25","319",441,"37","undefined","undefined","undefined",387242
+"106",106,106,78,19,"Female","Ukrainian","Somewhat happy","<img src='images/purple0.png'></img>","Positive valence","106","nonGamble","25","346",1123,"38","undefined","undefined","undefined",389717
+"107",107,107,78,19,"Female","Ukrainian","Somewhat happy","<img src='images/yellow25.png'></img>","Positive valence","107","gambleLoss","25","409",566,"39","undefined","undefined","undefined",391697
+"108",108,108,78,19,"Female","Ukrainian","Somewhat happy","<img src='images/purple0.png'></img>","Positive valence","108","nonGamble","25","428",977,"38","undefined","undefined","undefined",394108
+"109",109,109,78,19,"Female","Ukrainian","Somewhat happy","<img src='images/purple0.png'></img>","Positive valence","109","nonGamble","25","343",989,"38","undefined","undefined","undefined",396445
+"110",110,110,78,19,"Female","Ukrainian","Somewhat happy","<img src='images/blue25.png'></img>","Positive valence","110","gambleLoss","25","438",420,"37","undefined","undefined","undefined",398309
+"111",111,111,78,19,"Female","Ukrainian","Somewhat happy","<img src='images/purple0.png'></img>","Positive valence","111","nonGamble","25","1336",1135,"38","undefined","undefined","undefined",401785
+"112",112,112,78,19,"Female","Ukrainian","Somewhat happy","<img src='images/green25.png'></img>","Positive valence","112","gambleLoss","25","1125",496,"39","undefined","undefined","undefined",404412
+"113",113,113,78,19,"Female","Ukrainian","Somewhat happy","<img src='images/orange25.png'></img>","Positive valence","113","gambleWin","25","408",884,"37","undefined","undefined","undefined",406710
+"114",114,114,78,19,"Female","Ukrainian","Somewhat happy","<img src='images/blue25.png'></img>","Positive valence","114","gambleLoss","25","341",501,"37","undefined","undefined","undefined",408559
+"115",115,115,78,19,"Female","Ukrainian","Somewhat happy","<img src='images/purple0.png'></img>","Positive valence","115","nonGamble","25","750",1245,"38","undefined","undefined","undefined",411561
+"116",116,116,78,19,"Female","Ukrainian","Somewhat happy","<img src='images/purple0.png'></img>","Positive valence","116","nonGamble","25","488",1203,"38","undefined","undefined","undefined",414259
+"117",117,117,78,19,"Female","Ukrainian","Somewhat happy","<img src='images/purple0.png'></img>","Positive valence","117","nonGamble","25","1393",1199,"38","undefined","undefined","undefined",417856
+"118",118,118,78,19,"Female","Ukrainian","Somewhat happy","<img src='images/blue25.png'></img>","Positive valence","118","gambleWin","25","743",599,"39","undefined","undefined","undefined",420205
+"119",119,119,78,19,"Female","Ukrainian","Somewhat happy","<img src='images/purple0.png'></img>","Positive valence","119","nonGamble","25","439",1074,"38","undefined","undefined","undefined",422724
+"120",120,120,78,19,"Female","Ukrainian","Somewhat happy","<img src='images/purple0.png'></img>","Positive valence","120","nonGamble","25","507",1153,"38","undefined","undefined","undefined",425392
+"121",121,121,78,19,"Female","Ukrainian","Somewhat happy","<img src='images/green25.png'></img>","Negative valence","121","gambleLoss","25","1655",461,"39","undefined","undefined","undefined",447327
+"122",122,122,78,19,"Female","Ukrainian","Somewhat happy","<img src='images/green25.png'></img>","Negative valence","122","gambleLoss","25","301",377,"37","undefined","undefined","undefined",449012
+"123",123,123,78,19,"Female","Ukrainian","Somewhat happy","<img src='images/purple0.png'></img>","Negative valence","123","nonGamble","25","1217",995,"38","undefined","undefined","undefined",452230
+"124",124,124,78,19,"Female","Ukrainian","Somewhat happy","<img src='images/orange25.png'></img>","Negative valence","124","gambleLoss","25","427",429,"37","undefined","undefined","undefined",454093
+"125",125,125,78,19,"Female","Ukrainian","Somewhat happy","<img src='images/orange25.png'></img>","Negative valence","125","gambleLoss","25","313",387,"39","undefined","undefined","undefined",455799
+"126",126,126,78,19,"Female","Ukrainian","Somewhat happy","<img src='images/purple0.png'></img>","Negative valence","126","nonGamble","25","288",1143,"38","undefined","undefined","undefined",458236
+"127",127,127,78,19,"Female","Ukrainian","Somewhat happy","<img src='images/orange25.png'></img>","Negative valence","127","gambleLoss","25","377",488,"37","undefined","undefined","undefined",460108
+"128",128,128,78,19,"Female","Ukrainian","Somewhat happy","<img src='images/green25.png'></img>","Negative valence","128","gambleLoss","25","994",1079,"39","undefined","undefined","undefined",463189
+"129",129,129,78,19,"Female","Ukrainian","Somewhat happy","<img src='images/yellow25.png'></img>","Negative valence","129","gambleWin","25","546",591,"37","undefined","undefined","undefined",465331
+"130",130,130,78,19,"Female","Ukrainian","Somewhat happy","<img src='images/green25.png'></img>","Negative valence","130","gambleWin","25","542",485,"37","undefined","undefined","undefined",467364
+"131",131,131,78,19,"Female","Ukrainian","Somewhat happy","<img src='images/blue25.png'></img>","Negative valence","131","gambleWin","25","550",495,"39","undefined","undefined","undefined",469417
+"132",132,132,78,19,"Female","Ukrainian","Somewhat happy","<img src='images/blue25.png'></img>","Negative valence","132","gambleLoss","25","401",488,"39","undefined","undefined","undefined",471312
+"133",133,133,78,19,"Female","Ukrainian","Somewhat happy","<img src='images/yellow25.png'></img>","Negative valence","133","gambleWin","25","413",412,"37","undefined","undefined","undefined",473143
+"134",134,134,78,19,"Female","Ukrainian","Somewhat happy","<img src='images/purple0.png'></img>","Negative valence","134","nonGamble","25","1170",1011,"38","undefined","undefined","undefined",476331
+"135",135,135,78,19,"Female","Ukrainian","Somewhat happy","<img src='images/purple0.png'></img>","Negative valence","135","nonGamble","25","365",787,"38","undefined","undefined","undefined",478490
+"136",136,136,78,19,"Female","Ukrainian","Somewhat happy","<img src='images/orange25.png'></img>","Negative valence","136","gambleWin","25","462",961,"37","undefined","undefined","undefined",480920
+"137",137,137,78,19,"Female","Ukrainian","Somewhat happy","<img src='images/yellow25.png'></img>","Negative valence","137","gambleWin","25","587",498,"37","undefined","undefined","undefined",483013
+"138",138,138,78,19,"Female","Ukrainian","Somewhat happy","<img src='images/blue25.png'></img>","Negative valence","138","gambleWin","25","4298",661,"39","undefined","undefined","undefined",488978
+"139",139,139,78,19,"Female","Ukrainian","Somewhat happy","<img src='images/orange25.png'></img>","Negative valence","139","gambleWin","25","533",415,"37","undefined","undefined","undefined",490932
+"140",140,140,78,19,"Female","Ukrainian","Somewhat happy","<img src='images/green25.png'></img>","Negative valence","140","gambleWin","25","367",401,"37","undefined","undefined","undefined",492708
+"141",141,141,78,19,"Female","Ukrainian","Somewhat happy","<img src='images/purple0.png'></img>","Negative valence","141","nonGamble","25","302",1103,"38","undefined","undefined","undefined",495120
+"142",142,142,78,19,"Female","Ukrainian","Somewhat happy","<img src='images/purple0.png'></img>","Negative valence","142","nonGamble","25","363",927,"40","undefined","undefined","undefined",497417
+"143",143,143,78,19,"Female","Ukrainian","Somewhat happy","<img src='images/green25.png'></img>","Negative valence","143","gambleWin","25","560",1531,"37","undefined","undefined","undefined",500515
+"144",144,144,78,19,"Female","Ukrainian","Somewhat happy","<img src='images/purple0.png'></img>","Negative valence","144","nonGamble","25","621",1093,"40","undefined","undefined","undefined",503235
+"145",145,145,78,19,"Female","Ukrainian","Somewhat happy","<img src='images/purple0.png'></img>","Negative valence","145","nonGamble","25","338",929,"40","undefined","undefined","undefined",505509
+"146",146,146,78,19,"Female","Ukrainian","Somewhat happy","<img src='images/yellow25.png'></img>","Negative valence","146","gambleLoss","25","454",986,"39","undefined","undefined","undefined",507956
+"147",147,147,78,19,"Female","Ukrainian","Somewhat happy","<img src='images/green25.png'></img>","Negative valence","147","gambleWin","25","475",661,"37","undefined","undefined","undefined",510099
+"148",148,148,78,19,"Female","Ukrainian","Somewhat happy","<img src='images/blue25.png'></img>","Negative valence","148","gambleLoss","25","494",564,"37","undefined","undefined","undefined",512163
+"149",149,149,78,19,"Female","Ukrainian","Somewhat happy","<img src='images/blue25.png'></img>","Negative valence","149","gambleWin","25","441",447,"39","undefined","undefined","undefined",514057
+"150",150,150,78,19,"Female","Ukrainian","Somewhat happy","<img src='images/purple0.png'></img>","Negative valence","150","nonGamble","25","389",860,"38","undefined","undefined","undefined",516312
+"151",151,151,78,19,"Female","Ukrainian","Somewhat happy","<img src='images/purple0.png'></img>","Negative valence","151","nonGamble","25","390",1193,"40","undefined","undefined","undefined",518902
+"152",152,152,78,19,"Female","Ukrainian","Somewhat happy","<img src='images/yellow25.png'></img>","Negative valence","152","gambleWin","25","2254",718,"37","undefined","undefined","undefined",522880
+"153",153,153,78,19,"Female","Ukrainian","Somewhat happy","<img src='images/yellow25.png'></img>","Negative valence","153","gambleLoss","25","414",443,"39","undefined","undefined","undefined",524744
+"154",154,154,78,19,"Female","Ukrainian","Somewhat happy","<img src='images/orange25.png'></img>","Negative valence","154","gambleLoss","25","1210",723,"37","undefined","undefined","undefined",527685
+"155",155,155,78,19,"Female","Ukrainian","Somewhat happy","<img src='images/orange25.png'></img>","Negative valence","155","gambleWin","25","789",1195,"39","undefined","undefined","undefined",530676
+"156",156,156,78,19,"Female","Ukrainian","Somewhat happy","<img src='images/orange25.png'></img>","Negative valence","156","gambleWin","25","1794",504,"37","undefined","undefined","undefined",533980
+"157",157,157,78,19,"Female","Ukrainian","Somewhat happy","<img src='images/green25.png'></img>","Negative valence","157","gambleLoss","25","1964",681,"39","undefined","undefined","undefined",537632
+"158",158,158,78,19,"Female","Ukrainian","Somewhat happy","<img src='images/blue25.png'></img>","Negative valence","158","gambleLoss","25","1799",1302,"37","undefined","undefined","undefined",541739
+"159",159,159,78,19,"Female","Ukrainian","Somewhat happy","<img src='images/yellow25.png'></img>","Negative valence","159","gambleLoss","25","910",421,"39","undefined","undefined","undefined",544076
+"160",160,160,78,19,"Female","Ukrainian","Somewhat happy","<img src='images/purple0.png'></img>","Negative valence","160","nonGamble","25","929",1285,"40","undefined","undefined","undefined",547297
+"161",161,161,78,19,"Female","Ukrainian","Somewhat happy","<img src='images/orange25.png'></img>","Negative valence","161","gambleLoss","25","1541",1118,"37","undefined","undefined","undefined",550963
+"162",162,162,78,19,"Female","Ukrainian","Somewhat happy","<img src='images/blue25.png'></img>","Negative valence","162","gambleWin","25","606",335,"39","undefined","undefined","undefined",552910
+"163",163,163,78,19,"Female","Ukrainian","Somewhat happy","<img src='images/yellow25.png'></img>","Negative valence","163","gambleWin","25","382",363,"39","undefined","undefined","undefined",554662
+"164",164,164,78,19,"Female","Ukrainian","Somewhat happy","<img src='images/green25.png'></img>","Negative valence","164","gambleWin","25","1109",540,"39","undefined","undefined","undefined",557318
+"165",165,165,78,19,"Female","Ukrainian","Somewhat happy","<img src='images/yellow25.png'></img>","Negative valence","165","gambleLoss","25","524",793,"37","undefined","undefined","undefined",559642
+"166",166,166,78,19,"Female","Ukrainian","Somewhat happy","<img src='images/purple0.png'></img>","Negative valence","166","nonGamble","25","1157",1473,"40","undefined","undefined","undefined",563278
+"167",167,167,78,19,"Female","Ukrainian","Somewhat happy","<img src='images/yellow25.png'></img>","Negative valence","167","gambleLoss","25","538",547,"39","undefined","undefined","undefined",565369
+"168",168,168,78,19,"Female","Ukrainian","Somewhat happy","<img src='images/purple0.png'></img>","Negative valence","168","nonGamble","25","1379",1338,"40","undefined","undefined","undefined",569093
+"169",169,169,78,19,"Female","Ukrainian","Somewhat happy","<img src='images/purple0.png'></img>","Negative valence","169","nonGamble","25","658",986,"40","undefined","undefined","undefined",571744
+"170",170,170,78,19,"Female","Ukrainian","Somewhat happy","<img src='images/blue25.png'></img>","Negative valence","170","gambleLoss","25","968",737,"39","undefined","undefined","undefined",574454
+"171",171,171,78,19,"Female","Ukrainian","Somewhat happy","<img src='images/purple0.png'></img>","Negative valence","171","nonGamble","25","614",1000,"38","undefined","undefined","undefined",577074
+"172",172,172,78,19,"Female","Ukrainian","Somewhat happy","<img src='images/green25.png'></img>","Negative valence","172","gambleLoss","25","466",369,"37","undefined","undefined","undefined",578916
+"173",173,173,78,19,"Female","Ukrainian","Somewhat happy","<img src='images/orange25.png'></img>","Negative valence","173","gambleWin","25","890",541,"39","undefined","undefined","undefined",581354
+"174",174,174,78,19,"Female","Ukrainian","Somewhat happy","<img src='images/blue25.png'></img>","Negative valence","174","gambleLoss","25","1216",645,"39","undefined","undefined","undefined",584220
+"175",175,175,78,19,"Female","Ukrainian","Somewhat happy","<img src='images/purple0.png'></img>","Negative valence","175","nonGamble","25","525",999,"40","undefined","undefined","undefined",586751
+"176",176,176,78,19,"Female","Ukrainian","Somewhat happy","<img src='images/purple0.png'></img>","Negative valence","176","nonGamble","25","472",889,"40","undefined","undefined","undefined",589117
+"177",177,177,78,19,"Female","Ukrainian","Somewhat happy","<img src='images/purple0.png'></img>","Negative valence","177","nonGamble","25","437",846,"38","undefined","undefined","undefined",591406
+"178",178,178,78,19,"Female","Ukrainian","Somewhat happy","<img src='images/blue25.png'></img>","Negative valence","178","gambleWin","25","1606",1017,"37","undefined","undefined","undefined",595035
+"179",179,179,78,19,"Female","Ukrainian","Somewhat happy","<img src='images/purple0.png'></img>","Negative valence","179","nonGamble","25","1035",917,"40","undefined","undefined","undefined",597994
+"180",180,180,78,19,"Female","Ukrainian","Somewhat happy","<img src='images/purple0.png'></img>","Negative valence","180","nonGamble","25","949",923,"38","undefined","undefined","undefined",600871
+"181",181,181,78,19,"Female","Ukrainian","Somewhat happy","undefined","undefined","undefined","undefined","undefined","undefined",11162,"undefined","2","Perseverance","undefined",639377
+"182",182,182,78,19,"Female","Ukrainian","Somewhat happy","undefined","undefined","undefined","undefined","undefined","undefined",4937,"undefined","3","Premeditation","undefined",644317
+"183",183,183,78,19,"Female","Ukrainian","Somewhat happy","undefined","undefined","undefined","undefined","undefined","undefined",13064,"undefined","2","Positive Urgency","undefined",657386
+"184",184,184,78,19,"Female","Ukrainian","Somewhat happy","undefined","undefined","undefined","undefined","undefined","undefined",6118,"undefined","1","Perseverance","undefined",663508
+"185",185,185,78,19,"Female","Ukrainian","Somewhat happy","undefined","undefined","undefined","undefined","undefined","undefined",6688,"undefined","2","Premeditation","undefined",670199
+"186",186,186,78,19,"Female","Ukrainian","Somewhat happy","undefined","undefined","undefined","undefined","undefined","undefined",10148,"undefined","3","Negative Urgency","undefined",680350
+"187",187,187,78,19,"Female","Ukrainian","Somewhat happy","undefined","undefined","undefined","undefined","undefined","undefined",8296,"undefined","3","Perseverance","undefined",688650
+"188",188,188,78,19,"Female","Ukrainian","Somewhat happy","undefined","undefined","undefined","undefined","undefined","undefined",9184,"undefined","3","Negative Urgency","undefined",697838
+"189",189,189,78,19,"Female","Ukrainian","Somewhat happy","undefined","undefined","undefined","undefined","undefined","undefined",3835,"undefined","3","Sensation Seeking","undefined",701677
+"190",190,190,78,19,"Female","Ukrainian","Somewhat happy","undefined","undefined","undefined","undefined","undefined","undefined",5757,"undefined","3","Positive Urgency","undefined",707438
+"191",191,191,78,19,"Female","Ukrainian","Somewhat happy","undefined","undefined","undefined","undefined","undefined","undefined",2741,"undefined","2","Perseverance","undefined",710183
+"192",192,192,78,19,"Female","Ukrainian","Somewhat happy","undefined","undefined","undefined","undefined","undefined","undefined",4526,"undefined","2","Premeditation","undefined",714713
+"193",193,193,78,19,"Female","Ukrainian","Somewhat happy","undefined","undefined","undefined","undefined","undefined","undefined",5363,"undefined","3","Negative Urgency","undefined",720079
+"194",194,194,78,19,"Female","Ukrainian","Somewhat happy","undefined","undefined","undefined","undefined","undefined","undefined",7535,"undefined","4","Sensation Seeking","undefined",727617
+"195",195,195,78,19,"Female","Ukrainian","Somewhat happy","undefined","undefined","undefined","undefined","undefined","undefined",5725,"undefined","2","Negative Urgency","undefined",733344
+"196",196,196,78,19,"Female","Ukrainian","Somewhat happy","undefined","undefined","undefined","undefined","undefined","undefined",4550,"undefined","4","Sensation Seeking","undefined",737898
+"197",197,197,78,19,"Female","Ukrainian","Somewhat happy","undefined","undefined","undefined","undefined","undefined","undefined",7464,"undefined","2","Positive Urgency","undefined",745365
+"198",198,198,78,19,"Female","Ukrainian","Somewhat happy","undefined","undefined","undefined","undefined","undefined","undefined",6373,"undefined","4","Sensation Seeking","undefined",751742
+"199",199,199,78,19,"Female","Ukrainian","Somewhat happy","undefined","undefined","undefined","undefined","undefined","undefined",5774,"undefined","3","Premeditation","undefined",757520
+"200",200,200,78,19,"Female","Ukrainian","Somewhat happy","undefined","undefined","undefined","undefined","undefined","undefined",5108,"undefined","2","Positive Urgency","undefined",762631

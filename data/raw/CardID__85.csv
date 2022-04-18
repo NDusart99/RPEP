@@ -1,0 +1,201 @@
+"","X.1","X","prolific_ID","Age","Gender","Nationality","Feelings","stimulus","block_number","trial_number","outcome","amount","startRT","RT","key_press","resp","factor","color","time_elapsed"
+"1",1,1,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/green25.png'></img>","No music","1","gambleWin","25","1527",2007,"39","undefined","undefined","undefined",83432
+"2",2,2,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/green25.png'></img>","No music","2","gambleWin","25","1422",1056,"37","undefined","undefined","undefined",86912
+"3",3,3,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/orange25.png'></img>","No music","3","gambleWin","25","1726",600,"37","undefined","undefined","undefined",90240
+"4",4,4,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/green25.png'></img>","No music","4","gambleLoss","25","694",1935,"39","undefined","undefined","undefined",93872
+"5",5,5,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/yellow25.png'></img>","No music","5","gambleWin","25","598",567,"37","undefined","undefined","undefined",96039
+"6",6,6,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/purple0.png'></img>","No music","6","nonGamble","25","446",2311,"38","undefined","undefined","undefined",99799
+"7",7,7,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/blue25.png'></img>","No music","7","gambleWin","25","1798",2016,"37","undefined","undefined","undefined",104615
+"8",8,8,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/orange25.png'></img>","No music","8","gambleLoss","25","1686",912,"39","undefined","undefined","undefined",108215
+"9",9,9,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/green25.png'></img>","No music","9","gambleLoss","25","718",903,"39","undefined","undefined","undefined",110839
+"10",10,10,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/green25.png'></img>","No music","10","gambleLoss","25","270",1591,"37","undefined","undefined","undefined",113702
+"11",11,11,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/purple0.png'></img>","No music","11","nonGamble","25","230",1543,"40","undefined","undefined","undefined",116478
+"12",12,12,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/blue25.png'></img>","No music","12","gambleLoss","25","101",768,"39","undefined","undefined","undefined",118350
+"13",13,13,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/yellow25.png'></img>","No music","13","gambleWin","25","382",592,"37","undefined","undefined","undefined",120326
+"14",14,14,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/yellow25.png'></img>","No music","14","gambleLoss","25","298",400,"37","undefined","undefined","undefined",122030
+"15",15,15,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/blue25.png'></img>","No music","15","gambleWin","25","198",640,"37","undefined","undefined","undefined",123870
+"16",16,16,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/orange25.png'></img>","No music","16","gambleWin","25","430",647,"39","undefined","undefined","undefined",125950
+"17",17,17,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/blue25.png'></img>","No music","17","gambleLoss","25","390",1007,"39","undefined","undefined","undefined",128350
+"18",18,18,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/yellow25.png'></img>","No music","18","gambleWin","25","78",567,"37","undefined","undefined","undefined",129997
+"19",19,19,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/orange25.png'></img>","No music","19","gambleLoss","25","278",727,"37","undefined","undefined","undefined",132005
+"20",20,20,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/blue25.png'></img>","No music","20","gambleWin","25","199",783,"37","undefined","undefined","undefined",133989
+"21",21,21,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/green25.png'></img>","No music","21","gambleWin","25","270",791,"37","undefined","undefined","undefined",136053
+"22",22,22,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/purple0.png'></img>","No music","22","nonGamble","25","231",992,"40","undefined","undefined","undefined",138277
+"23",23,23,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/yellow25.png'></img>","No music","23","gambleLoss","25","37",648,"39","undefined","undefined","undefined",139965
+"24",24,24,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/orange25.png'></img>","No music","24","gambleWin","25","239",856,"37","undefined","undefined","undefined",142061
+"25",25,25,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/purple0.png'></img>","No music","25","nonGamble","25","205",680,"40","undefined","undefined","undefined",143949
+"26",26,26,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/purple0.png'></img>","No music","26","nonGamble","25","230",535,"40","undefined","undefined","undefined",145717
+"27",27,27,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/yellow25.png'></img>","No music","27","gambleLoss","25","237",543,"39","undefined","undefined","undefined",147501
+"28",28,28,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/yellow25.png'></img>","No music","28","gambleLoss","25","158",479,"39","undefined","undefined","undefined",149140
+"29",29,29,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/blue25.png'></img>","No music","29","gambleLoss","25","142",511,"37","undefined","undefined","undefined",150796
+"30",30,30,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/purple0.png'></img>","No music","30","nonGamble","25","39",768,"40","undefined","undefined","undefined",152604
+"31",31,31,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/purple0.png'></img>","No music","31","nonGamble","25","422",584,"40","undefined","undefined","undefined",154612
+"32",32,32,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/purple0.png'></img>","No music","32","nonGamble","25","143",432,"40","undefined","undefined","undefined",156188
+"33",33,33,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/green25.png'></img>","No music","33","gambleWin","25","479",480,"39","undefined","undefined","undefined",158148
+"34",34,34,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/yellow25.png'></img>","No music","34","gambleWin","25","311",1336,"37","undefined","undefined","undefined",160796
+"35",35,35,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/yellow25.png'></img>","No music","35","gambleLoss","25","241",3112,"37","undefined","undefined","undefined",165156
+"36",36,36,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/purple0.png'></img>","No music","36","nonGamble","25","190",623,"40","undefined","undefined","undefined",166971
+"37",37,37,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/purple0.png'></img>","No music","37","nonGamble","25","134",511,"40","undefined","undefined","undefined",168619
+"38",38,38,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/orange25.png'></img>","No music","38","gambleLoss","25","318",567,"39","undefined","undefined","undefined",170507
+"39",39,39,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/yellow25.png'></img>","No music","39","gambleWin","25","191",447,"37","undefined","undefined","undefined",172147
+"40",40,40,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/green25.png'></img>","No music","40","gambleWin","25","247",504,"37","undefined","undefined","undefined",173899
+"41",41,41,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/purple0.png'></img>","No music","41","nonGamble","25","278",560,"40","undefined","undefined","undefined",175739
+"42",42,42,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/purple0.png'></img>","No music","42","nonGamble","25","295",480,"40","undefined","undefined","undefined",177515
+"43",43,43,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/orange25.png'></img>","No music","43","gambleLoss","25","254",432,"37","undefined","undefined","undefined",179203
+"44",44,44,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/purple0.png'></img>","No music","44","nonGamble","25","247",536,"40","undefined","undefined","undefined",180987
+"45",45,45,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/blue25.png'></img>","No music","45","gambleLoss","25","276",880,"37","undefined","undefined","undefined",183147
+"46",46,46,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/purple0.png'></img>","No music","46","nonGamble","25","279",551,"40","undefined","undefined","undefined",184979
+"47",47,47,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/blue25.png'></img>","No music","47","gambleWin","25","351",623,"39","undefined","undefined","undefined",186955
+"48",48,48,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/blue25.png'></img>","No music","48","gambleLoss","25","207",423,"37","undefined","undefined","undefined",188586
+"49",49,49,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/blue25.png'></img>","No music","49","gambleWin","25","326",615,"37","undefined","undefined","undefined",190530
+"50",50,50,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/green25.png'></img>","No music","50","gambleLoss","25","231",576,"39","undefined","undefined","undefined",192338
+"51",51,51,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/purple0.png'></img>","No music","51","nonGamble","25","151",535,"40","undefined","undefined","undefined",194026
+"52",52,52,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/orange25.png'></img>","No music","52","gambleLoss","25","254",352,"37","undefined","undefined","undefined",195634
+"53",53,53,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/orange25.png'></img>","No music","53","gambleWin","25","79",408,"39","undefined","undefined","undefined",197122
+"54",54,54,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/purple0.png'></img>","No music","54","nonGamble","25","207",496,"40","undefined","undefined","undefined",198826
+"55",55,55,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/orange25.png'></img>","No music","55","gambleWin","25","334",440,"39","undefined","undefined","undefined",200602
+"56",56,56,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/purple0.png'></img>","No music","56","nonGamble","25","318",504,"40","undefined","undefined","undefined",202426
+"57",57,57,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/green25.png'></img>","No music","57","gambleLoss","25","326",584,"39","undefined","undefined","undefined",204346
+"58",58,58,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/purple0.png'></img>","No music","58","nonGamble","25","28",455,"40","undefined","undefined","undefined",205834
+"59",59,59,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/purple0.png'></img>","No music","59","nonGamble","25","295",463,"40","undefined","undefined","undefined",207593
+"60",60,60,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/purple0.png'></img>","No music","60","nonGamble","25","302",1087,"38","undefined","undefined","undefined",209985
+"61",61,61,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/green25.png'></img>","Positive valence","61","gambleWin","25","3142",648,"37","undefined","undefined","undefined",234321
+"62",62,62,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/green25.png'></img>","Positive valence","62","gambleWin","25","343",751,"39","undefined","undefined","undefined",236417
+"63",63,63,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/orange25.png'></img>","Positive valence","63","gambleWin","25","215",727,"39","undefined","undefined","undefined",238361
+"64",64,64,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/green25.png'></img>","Positive valence","64","gambleLoss","25","141",399,"39","undefined","undefined","undefined",239904
+"65",65,65,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/yellow25.png'></img>","Positive valence","65","gambleWin","25","198",623,"37","undefined","undefined","undefined",241728
+"66",66,66,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/purple0.png'></img>","Positive valence","66","nonGamble","25","111",480,"38","undefined","undefined","undefined",243320
+"67",67,67,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/blue25.png'></img>","Positive valence","67","gambleWin","25","205",424,"39","undefined","undefined","undefined",244952
+"68",68,68,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/orange25.png'></img>","Positive valence","68","gambleLoss","25","215",392,"39","undefined","undefined","undefined",246560
+"69",69,69,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/green25.png'></img>","Positive valence","69","gambleLoss","25","134",376,"37","undefined","undefined","undefined",248072
+"70",70,70,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/green25.png'></img>","Positive valence","70","gambleLoss","25","143",696,"37","undefined","undefined","undefined",249912
+"71",71,71,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/purple0.png'></img>","Positive valence","71","nonGamble","25","70",592,"38","undefined","undefined","undefined",251576
+"72",72,72,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/blue25.png'></img>","Positive valence","72","gambleLoss","25","206",480,"39","undefined","undefined","undefined",253264
+"73",73,73,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/yellow25.png'></img>","Positive valence","73","gambleWin","25","159",536,"37","undefined","undefined","undefined",254960
+"74",74,74,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/yellow25.png'></img>","Positive valence","74","gambleLoss","25","214",424,"37","undefined","undefined","undefined",256600
+"75",75,75,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/blue25.png'></img>","Positive valence","75","gambleWin","25","238",439,"37","undefined","undefined","undefined",258279
+"76",76,76,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/orange25.png'></img>","Positive valence","76","gambleWin","25","270",400,"39","undefined","undefined","undefined",259952
+"77",77,77,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/blue25.png'></img>","Positive valence","77","gambleLoss","25","356",839,"39","undefined","undefined","undefined",262151
+"78",78,78,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/yellow25.png'></img>","Positive valence","78","gambleWin","25","270",439,"37","undefined","undefined","undefined",263863
+"79",79,79,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/orange25.png'></img>","Positive valence","79","gambleLoss","25","255",440,"37","undefined","undefined","undefined",265559
+"80",80,80,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/blue25.png'></img>","Positive valence","80","gambleWin","25","238",416,"37","undefined","undefined","undefined",267215
+"81",81,81,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/green25.png'></img>","Positive valence","81","gambleWin","25","246",592,"39","undefined","undefined","undefined",269055
+"82",82,82,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/purple0.png'></img>","Positive valence","82","nonGamble","25","271",440,"38","undefined","undefined","undefined",270767
+"83",83,83,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/yellow25.png'></img>","Positive valence","83","gambleLoss","25","471",376,"39","undefined","undefined","undefined",272615
+"84",84,84,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/orange25.png'></img>","Positive valence","84","gambleWin","25","319",432,"37","undefined","undefined","undefined",274367
+"85",85,85,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/purple0.png'></img>","Positive valence","85","nonGamble","25","294",591,"40","undefined","undefined","undefined",276255
+"86",86,86,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/purple0.png'></img>","Positive valence","86","nonGamble","25","469",799,"40","undefined","undefined","undefined",278526
+"87",87,87,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/yellow25.png'></img>","Positive valence","87","gambleLoss","25","334",391,"37","undefined","undefined","undefined",280254
+"88",88,88,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/yellow25.png'></img>","Positive valence","88","gambleLoss","25","254",471,"39","undefined","undefined","undefined",281982
+"89",89,89,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/blue25.png'></img>","Positive valence","89","gambleLoss","25","254",416,"39","undefined","undefined","undefined",283654
+"90",90,90,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/purple0.png'></img>","Positive valence","90","nonGamble","25","214",1152,"40","undefined","undefined","undefined",286022
+"91",91,91,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/purple0.png'></img>","Positive valence","91","nonGamble","25","198",576,"40","undefined","undefined","undefined",287798
+"92",92,92,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/purple0.png'></img>","Positive valence","92","nonGamble","25","214",480,"40","undefined","undefined","undefined",289494
+"93",93,93,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/green25.png'></img>","Positive valence","93","gambleWin","25","239",400,"37","undefined","undefined","undefined",291134
+"94",94,94,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/yellow25.png'></img>","Positive valence","94","gambleWin","25","359",432,"39","undefined","undefined","undefined",292926
+"95",95,95,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/yellow25.png'></img>","Positive valence","95","gambleLoss","25","303",399,"37","undefined","undefined","undefined",294629
+"96",96,96,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/purple0.png'></img>","Positive valence","96","nonGamble","25","263",528,"38","undefined","undefined","undefined",296421
+"97",97,97,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/purple0.png'></img>","Positive valence","97","nonGamble","25","431",472,"38","undefined","undefined","undefined",298325
+"98",98,98,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/orange25.png'></img>","Positive valence","98","gambleLoss","25","330",439,"37","undefined","undefined","undefined",300109
+"99",99,99,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/yellow25.png'></img>","Positive valence","99","gambleWin","25","263",456,"37","undefined","undefined","undefined",301829
+"100",100,100,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/green25.png'></img>","Positive valence","100","gambleWin","25","287",559,"39","undefined","undefined","undefined",303676
+"101",101,101,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/purple0.png'></img>","Positive valence","101","nonGamble","25","245",567,"40","undefined","undefined","undefined",305492
+"102",102,102,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/purple0.png'></img>","Positive valence","102","nonGamble","25","246",592,"40","undefined","undefined","undefined",307332
+"103",103,103,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/orange25.png'></img>","Positive valence","103","gambleLoss","25","269",472,"39","undefined","undefined","undefined",309076
+"104",104,104,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/purple0.png'></img>","Positive valence","104","nonGamble","25","238",504,"40","undefined","undefined","undefined",310820
+"105",105,105,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/blue25.png'></img>","Positive valence","105","gambleLoss","25","311",472,"37","undefined","undefined","undefined",312604
+"106",106,106,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/purple0.png'></img>","Positive valence","106","nonGamble","25","273",376,"40","undefined","undefined","undefined",314268
+"107",107,107,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/blue25.png'></img>","Positive valence","107","gambleWin","25","279",320,"39","undefined","undefined","undefined",315868
+"108",108,108,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/blue25.png'></img>","Positive valence","108","gambleLoss","25","239",464,"39","undefined","undefined","undefined",317572
+"109",109,109,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/blue25.png'></img>","Positive valence","109","gambleWin","25","246",440,"37","undefined","undefined","undefined",319260
+"110",110,110,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/green25.png'></img>","Positive valence","110","gambleLoss","25","254",807,"37","undefined","undefined","undefined",321324
+"111",111,111,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/purple0.png'></img>","Positive valence","111","nonGamble","25","302",535,"38","undefined","undefined","undefined",323163
+"112",112,112,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/orange25.png'></img>","Positive valence","112","gambleLoss","25","318",671,"37","undefined","undefined","undefined",325155
+"113",113,113,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/orange25.png'></img>","Positive valence","113","gambleWin","25","278",391,"39","undefined","undefined","undefined",326827
+"114",114,114,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/purple0.png'></img>","Positive valence","114","nonGamble","25","286",448,"40","undefined","undefined","undefined",328563
+"115",115,115,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/orange25.png'></img>","Positive valence","115","gambleWin","25","303",728,"39","undefined","undefined","undefined",330595
+"116",116,116,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/purple0.png'></img>","Positive valence","116","nonGamble","25","270",528,"40","undefined","undefined","undefined",332395
+"117",117,117,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/green25.png'></img>","Positive valence","117","gambleLoss","25","422",384,"37","undefined","undefined","undefined",334203
+"118",118,118,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/purple0.png'></img>","Positive valence","118","nonGamble","25","391",408,"40","undefined","undefined","undefined",336003
+"119",119,119,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/purple0.png'></img>","Positive valence","119","nonGamble","25","398",424,"40","undefined","undefined","undefined",337827
+"120",120,120,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/purple0.png'></img>","Positive valence","120","nonGamble","25","255",368,"40","undefined","undefined","undefined",339451
+"121",121,121,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/green25.png'></img>","Negative valence","121","gambleWin","25","1328",575,"39","undefined","undefined","undefined",361402
+"122",122,122,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/green25.png'></img>","Negative valence","122","gambleWin","25","111",447,"37","undefined","undefined","undefined",362962
+"123",123,123,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/orange25.png'></img>","Negative valence","123","gambleWin","25","198",367,"37","undefined","undefined","undefined",364530
+"124",124,124,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/green25.png'></img>","Negative valence","124","gambleLoss","25","190",320,"37","undefined","undefined","undefined",366042
+"125",125,125,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/yellow25.png'></img>","Negative valence","125","gambleWin","25","143",424,"39","undefined","undefined","undefined",367610
+"126",126,126,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/purple0.png'></img>","Negative valence","126","nonGamble","25","159",544,"40","undefined","undefined","undefined",369314
+"127",127,127,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/blue25.png'></img>","Negative valence","127","gambleWin","25","222",392,"37","undefined","undefined","undefined",370930
+"128",128,128,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/orange25.png'></img>","Negative valence","128","gambleLoss","25","63",631,"39","undefined","undefined","undefined",372626
+"129",129,129,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/green25.png'></img>","Negative valence","129","gambleLoss","25","70",736,"37","undefined","undefined","undefined",374434
+"130",130,130,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/green25.png'></img>","Negative valence","130","gambleLoss","25","271",568,"37","undefined","undefined","undefined",376274
+"131",131,131,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/purple0.png'></img>","Negative valence","131","nonGamble","25","221",535,"40","undefined","undefined","undefined",378034
+"132",132,132,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/blue25.png'></img>","Negative valence","132","gambleLoss","25","190",343,"39","undefined","undefined","undefined",379570
+"133",133,133,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/yellow25.png'></img>","Negative valence","133","gambleWin","25","37",311,"37","undefined","undefined","undefined",380921
+"134",134,134,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/yellow25.png'></img>","Negative valence","134","gambleLoss","25","270",679,"37","undefined","undefined","undefined",382873
+"135",135,135,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/blue25.png'></img>","Negative valence","135","gambleWin","25","14",431,"39","undefined","undefined","undefined",384321
+"136",136,136,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/orange25.png'></img>","Negative valence","136","gambleWin","25","222",399,"39","undefined","undefined","undefined",385945
+"137",137,137,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/blue25.png'></img>","Negative valence","137","gambleLoss","25","229",344,"37","undefined","undefined","undefined",387521
+"138",138,138,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/yellow25.png'></img>","Negative valence","138","gambleWin","25","199",320,"39","undefined","undefined","undefined",389041
+"139",139,139,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/orange25.png'></img>","Negative valence","139","gambleLoss","25","119",352,"37","undefined","undefined","undefined",390513
+"140",140,140,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/blue25.png'></img>","Negative valence","140","gambleWin","25","135",320,"39","undefined","undefined","undefined",391969
+"141",141,141,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/green25.png'></img>","Negative valence","141","gambleWin","25","143",344,"39","undefined","undefined","undefined",393457
+"142",142,142,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/purple0.png'></img>","Negative valence","142","nonGamble","25","231",640,"40","undefined","undefined","undefined",395329
+"143",143,143,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/yellow25.png'></img>","Negative valence","143","gambleLoss","25","215",319,"37","undefined","undefined","undefined",396865
+"144",144,144,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/orange25.png'></img>","Negative valence","144","gambleWin","25","196",391,"37","undefined","undefined","undefined",398456
+"145",145,145,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/purple0.png'></img>","Negative valence","145","nonGamble","25","214",495,"40","undefined","undefined","undefined",400168
+"146",146,146,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/purple0.png'></img>","Negative valence","146","nonGamble","25","294",615,"40","undefined","undefined","undefined",402080
+"147",147,147,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/yellow25.png'></img>","Negative valence","147","gambleLoss","25","246",392,"37","undefined","undefined","undefined",403720
+"148",148,148,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/yellow25.png'></img>","Negative valence","148","gambleLoss","25","174",376,"37","undefined","undefined","undefined",405272
+"149",149,149,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/blue25.png'></img>","Negative valence","149","gambleLoss","25","166",504,"37","undefined","undefined","undefined",406944
+"150",150,150,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/purple0.png'></img>","Negative valence","150","nonGamble","25","270",584,"40","undefined","undefined","undefined",408800
+"151",151,151,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/purple0.png'></img>","Negative valence","151","nonGamble","25","303",456,"40","undefined","undefined","undefined",410560
+"152",152,152,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/purple0.png'></img>","Negative valence","152","nonGamble","25","559",752,"40","undefined","undefined","undefined",412872
+"153",153,153,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/green25.png'></img>","Negative valence","153","gambleWin","25","694",399,"39","undefined","undefined","undefined",414968
+"154",154,154,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/yellow25.png'></img>","Negative valence","154","gambleWin","25","238",360,"37","undefined","undefined","undefined",416568
+"155",155,155,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/yellow25.png'></img>","Negative valence","155","gambleLoss","25","286",343,"39","undefined","undefined","undefined",418199
+"156",156,156,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/purple0.png'></img>","Negative valence","156","nonGamble","25","142",623,"40","undefined","undefined","undefined",419967
+"157",157,157,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/purple0.png'></img>","Negative valence","157","nonGamble","25","262",463,"40","undefined","undefined","undefined",421695
+"158",158,158,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/orange25.png'></img>","Negative valence","158","gambleLoss","25","230",319,"39","undefined","undefined","undefined",423247
+"159",159,159,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/yellow25.png'></img>","Negative valence","159","gambleWin","25","270",584,"37","undefined","undefined","undefined",425103
+"160",160,160,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/green25.png'></img>","Negative valence","160","gambleWin","25","279",432,"37","undefined","undefined","undefined",426815
+"161",161,161,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/purple0.png'></img>","Negative valence","161","nonGamble","25","222",496,"40","undefined","undefined","undefined",428535
+"162",162,162,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/purple0.png'></img>","Negative valence","162","nonGamble","25","215",504,"40","undefined","undefined","undefined",430255
+"163",163,163,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/orange25.png'></img>","Negative valence","163","gambleLoss","25","367",440,"39","undefined","undefined","undefined",432063
+"164",164,164,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/purple0.png'></img>","Negative valence","164","nonGamble","25","238",440,"40","undefined","undefined","undefined",433743
+"165",165,165,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/blue25.png'></img>","Negative valence","165","gambleLoss","25","215",359,"37","undefined","undefined","undefined",435319
+"166",166,166,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/purple0.png'></img>","Negative valence","166","nonGamble","25","150",431,"40","undefined","undefined","undefined",436902
+"167",167,167,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/blue25.png'></img>","Negative valence","167","gambleWin","25","182",303,"39","undefined","undefined","undefined",438390
+"168",168,168,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/blue25.png'></img>","Negative valence","168","gambleLoss","25","166",519,"39","undefined","undefined","undefined",440078
+"169",169,169,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/blue25.png'></img>","Negative valence","169","gambleWin","25","254",487,"37","undefined","undefined","undefined",441822
+"170",170,170,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/green25.png'></img>","Negative valence","170","gambleLoss","25","71",896,"39","undefined","undefined","undefined",443790
+"171",171,171,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/purple0.png'></img>","Negative valence","171","nonGamble","25","122",423,"40","undefined","undefined","undefined",445342
+"172",172,172,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/orange25.png'></img>","Negative valence","172","gambleLoss","25","175",440,"37","undefined","undefined","undefined",446958
+"173",173,173,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/orange25.png'></img>","Negative valence","173","gambleWin","25","166",368,"39","undefined","undefined","undefined",448494
+"174",174,174,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/purple0.png'></img>","Negative valence","174","nonGamble","25","239",448,"40","undefined","undefined","undefined",450182
+"175",175,175,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/orange25.png'></img>","Negative valence","175","gambleWin","25","167",400,"39","undefined","undefined","undefined",451750
+"176",176,176,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/purple0.png'></img>","Negative valence","176","nonGamble","25","214",528,"40","undefined","undefined","undefined",453494
+"177",177,177,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/green25.png'></img>","Negative valence","177","gambleLoss","25","198",375,"37","undefined","undefined","undefined",455070
+"178",178,178,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/purple0.png'></img>","Negative valence","178","nonGamble","25","222",447,"40","undefined","undefined","undefined",456741
+"179",179,179,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/purple0.png'></img>","Negative valence","179","nonGamble","25","334",447,"40","undefined","undefined","undefined",458525
+"180",180,180,85,18,"Female","Belarusian","Somewhat unhappy","<img src='images/purple0.png'></img>","Negative valence","180","nonGamble","25","405",471,"40","undefined","undefined","undefined",460405
+"181",181,181,85,18,"Female","Belarusian","Somewhat unhappy","undefined","undefined","undefined","undefined","undefined","undefined",4999,"undefined","2","Perseverance","undefined",474172
+"182",182,182,85,18,"Female","Belarusian","Somewhat unhappy","undefined","undefined","undefined","undefined","undefined","undefined",4101,"undefined","3","Premeditation","undefined",478276
+"183",183,183,85,18,"Female","Belarusian","Somewhat unhappy","undefined","undefined","undefined","undefined","undefined","undefined",3964,"undefined","3","Positive Urgency","undefined",482242
+"184",184,184,85,18,"Female","Belarusian","Somewhat unhappy","undefined","undefined","undefined","undefined","undefined","undefined",3366,"undefined","2","Perseverance","undefined",485610
+"185",185,185,85,18,"Female","Belarusian","Somewhat unhappy","undefined","undefined","undefined","undefined","undefined","undefined",3646,"undefined","2","Premeditation","undefined",489258
+"186",186,186,85,18,"Female","Belarusian","Somewhat unhappy","undefined","undefined","undefined","undefined","undefined","undefined",8157,"undefined","2","Negative Urgency","undefined",497418
+"187",187,187,85,18,"Female","Belarusian","Somewhat unhappy","undefined","undefined","undefined","undefined","undefined","undefined",5132,"undefined","2","Perseverance","undefined",502552
+"188",188,188,85,18,"Female","Belarusian","Somewhat unhappy","undefined","undefined","undefined","undefined","undefined","undefined",4552,"undefined","3","Negative Urgency","undefined",507106
+"189",189,189,85,18,"Female","Belarusian","Somewhat unhappy","undefined","undefined","undefined","undefined","undefined","undefined",2592,"undefined","3","Sensation Seeking","undefined",509700
+"190",190,190,85,18,"Female","Belarusian","Somewhat unhappy","undefined","undefined","undefined","undefined","undefined","undefined",4604,"undefined","2","Positive Urgency","undefined",514306
+"191",191,191,85,18,"Female","Belarusian","Somewhat unhappy","undefined","undefined","undefined","undefined","undefined","undefined",3356,"undefined","2","Perseverance","undefined",517664
+"192",192,192,85,18,"Female","Belarusian","Somewhat unhappy","undefined","undefined","undefined","undefined","undefined","undefined",4584,"undefined","2","Premeditation","undefined",522250
+"193",193,193,85,18,"Female","Belarusian","Somewhat unhappy","undefined","undefined","undefined","undefined","undefined","undefined",4052,"undefined","2","Negative Urgency","undefined",526304
+"194",194,194,85,18,"Female","Belarusian","Somewhat unhappy","undefined","undefined","undefined","undefined","undefined","undefined",4478,"undefined","3","Sensation Seeking","undefined",530784
+"195",195,195,85,18,"Female","Belarusian","Somewhat unhappy","undefined","undefined","undefined","undefined","undefined","undefined",5164,"undefined","2","Negative Urgency","undefined",535950
+"196",196,196,85,18,"Female","Belarusian","Somewhat unhappy","undefined","undefined","undefined","undefined","undefined","undefined",4167,"undefined","2","Sensation Seeking","undefined",540120
+"197",197,197,85,18,"Female","Belarusian","Somewhat unhappy","undefined","undefined","undefined","undefined","undefined","undefined",5109,"undefined","3","Positive Urgency","undefined",545232
+"198",198,198,85,18,"Female","Belarusian","Somewhat unhappy","undefined","undefined","undefined","undefined","undefined","undefined",3821,"undefined","4","Sensation Seeking","undefined",549056
+"199",199,199,85,18,"Female","Belarusian","Somewhat unhappy","undefined","undefined","undefined","undefined","undefined","undefined",2939,"undefined","2","Premeditation","undefined",551998
+"200",200,200,85,18,"Female","Belarusian","Somewhat unhappy","undefined","undefined","undefined","undefined","undefined","undefined",3527,"undefined","3","Positive Urgency","undefined",555528

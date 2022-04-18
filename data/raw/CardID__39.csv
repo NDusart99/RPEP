@@ -1,0 +1,201 @@
+"","X.1","X","prolific_ID","Age","Gender","Nationality","Feelings","stimulus","block_number","trial_number","outcome","amount","startRT","RT","key_press","resp","factor","color","time_elapsed"
+"1",2,2,39,19,"Female","Japan","Somewhat happy","<img src='images/orange25.png'></img>","No music","1","gambleWin","25","1596",1009,"37","undefined","undefined","undefined",153186
+"2",3,3,39,19,"Female","Japan","Somewhat happy","<img src='images/green25.png'></img>","No music","2","gambleWin","25","1445",655,"39","undefined","undefined","undefined",156293
+"3",4,4,39,19,"Female","Japan","Somewhat happy","<img src='images/purple0.png'></img>","No music","3","nonGamble","25","164",1457,"38","undefined","undefined","undefined",158922
+"4",5,5,39,19,"Female","Japan","Somewhat happy","<img src='images/orange25.png'></img>","No music","4","gambleLoss","25","852",810,"37","undefined","undefined","undefined",161593
+"5",6,6,39,19,"Female","Japan","Somewhat happy","<img src='images/purple0.png'></img>","No music","5","nonGamble","25","305",547,"38","undefined","undefined","undefined",163452
+"6",7,7,39,19,"Female","Japan","Somewhat happy","<img src='images/blue25.png'></img>","No music","6","gambleWin","25","36",778,"39","undefined","undefined","undefined",165274
+"7",8,8,39,19,"Female","Japan","Somewhat happy","<img src='images/yellow25.png'></img>","No music","7","gambleWin","25","8",492,"37","undefined","undefined","undefined",166783
+"8",9,9,39,19,"Female","Japan","Somewhat happy","<img src='images/orange25.png'></img>","No music","8","gambleWin","25","54",738,"39","undefined","undefined","undefined",168584
+"9",10,10,39,19,"Female","Japan","Somewhat happy","<img src='images/purple0.png'></img>","No music","9","nonGamble","25","209",1066,"40","undefined","undefined","undefined",170865
+"10",11,11,39,19,"Female","Japan","Somewhat happy","<img src='images/purple0.png'></img>","No music","10","nonGamble","25","2283",841,"40","undefined","undefined","undefined",174996
+"11",12,12,39,19,"Female","Japan","Somewhat happy","<img src='images/green25.png'></img>","No music","11","gambleLoss","25","186",717,"37","undefined","undefined","undefined",176908
+"12",13,13,39,19,"Female","Japan","Somewhat happy","<img src='images/purple0.png'></img>","No music","12","nonGamble","25","570",926,"38","undefined","undefined","undefined",179410
+"13",14,14,39,19,"Female","Japan","Somewhat happy","<img src='images/yellow25.png'></img>","No music","13","gambleWin","25","781",681,"39","undefined","undefined","undefined",181876
+"14",15,15,39,19,"Female","Japan","Somewhat happy","<img src='images/green25.png'></img>","No music","14","gambleWin","25","68",603,"39","undefined","undefined","undefined",183555
+"15",16,16,39,19,"Female","Japan","Somewhat happy","<img src='images/purple0.png'></img>","No music","15","nonGamble","25","578",779,"38","undefined","undefined","undefined",185918
+"16",17,17,39,19,"Female","Japan","Somewhat happy","<img src='images/yellow25.png'></img>","No music","16","gambleWin","25","555",639,"39","undefined","undefined","undefined",188120
+"17",18,18,39,19,"Female","Japan","Somewhat happy","<img src='images/purple0.png'></img>","No music","17","nonGamble","25","94",739,"38","undefined","undefined","undefined",189962
+"18",19,19,39,19,"Female","Japan","Somewhat happy","<img src='images/purple0.png'></img>","No music","18","nonGamble","25","833",912,"40","undefined","undefined","undefined",192714
+"19",20,20,39,19,"Female","Japan","Somewhat happy","<img src='images/blue25.png'></img>","No music","19","gambleLoss","25","526",530,"39","undefined","undefined","undefined",194776
+"20",21,21,39,19,"Female","Japan","Somewhat happy","<img src='images/blue25.png'></img>","No music","20","gambleLoss","25","356",502,"37","undefined","undefined","undefined",196638
+"21",22,22,39,19,"Female","Japan","Somewhat happy","<img src='images/green25.png'></img>","No music","21","gambleWin","25","134",480,"37","undefined","undefined","undefined",198260
+"22",23,23,39,19,"Female","Japan","Somewhat happy","<img src='images/blue25.png'></img>","No music","22","gambleLoss","25","386",529,"37","undefined","undefined","undefined",200182
+"23",24,24,39,19,"Female","Japan","Somewhat happy","<img src='images/green25.png'></img>","No music","23","gambleLoss","25","269",474,"37","undefined","undefined","undefined",201933
+"24",25,25,39,19,"Female","Japan","Somewhat happy","<img src='images/purple0.png'></img>","No music","24","nonGamble","25","171",874,"38","undefined","undefined","undefined",203987
+"25",26,26,39,19,"Female","Japan","Somewhat happy","<img src='images/yellow25.png'></img>","No music","25","gambleLoss","25","487",795,"39","undefined","undefined","undefined",206277
+"26",27,27,39,19,"Female","Japan","Somewhat happy","<img src='images/blue25.png'></img>","No music","26","gambleWin","25","198",615,"37","undefined","undefined","undefined",208097
+"27",28,28,39,19,"Female","Japan","Somewhat happy","<img src='images/blue25.png'></img>","No music","27","gambleLoss","25","547",399,"39","undefined","undefined","undefined",210048
+"28",29,29,39,19,"Female","Japan","Somewhat happy","<img src='images/purple0.png'></img>","No music","28","nonGamble","25","356",617,"38","undefined","undefined","undefined",212027
+"29",30,30,39,19,"Female","Japan","Somewhat happy","<img src='images/green25.png'></img>","No music","29","gambleLoss","25","455",644,"37","undefined","undefined","undefined",214132
+"30",31,31,39,19,"Female","Japan","Somewhat happy","<img src='images/green25.png'></img>","No music","30","gambleLoss","25","143",472,"39","undefined","undefined","undefined",215754
+"31",32,32,39,19,"Female","Japan","Somewhat happy","<img src='images/orange25.png'></img>","No music","31","gambleLoss","25","278",563,"37","undefined","undefined","undefined",217601
+"32",33,33,39,19,"Female","Japan","Somewhat happy","<img src='images/orange25.png'></img>","No music","32","gambleWin","25","181",439,"37","undefined","undefined","undefined",219227
+"33",34,34,39,19,"Female","Japan","Somewhat happy","<img src='images/purple0.png'></img>","No music","33","nonGamble","25","3",748,"38","undefined","undefined","undefined",220983
+"34",35,35,39,19,"Female","Japan","Somewhat happy","<img src='images/purple0.png'></img>","No music","34","nonGamble","25","482",705,"38","undefined","undefined","undefined",223177
+"35",36,36,39,19,"Female","Japan","Somewhat happy","<img src='images/yellow25.png'></img>","No music","35","gambleWin","25","303",459,"37","undefined","undefined","undefined",224947
+"36",37,37,39,19,"Female","Japan","Somewhat happy","<img src='images/blue25.png'></img>","No music","36","gambleLoss","25","38",491,"37","undefined","undefined","undefined",226486
+"37",38,38,39,19,"Female","Japan","Somewhat happy","<img src='images/yellow25.png'></img>","No music","37","gambleLoss","25","346",355,"37","undefined","undefined","undefined",228192
+"38",39,39,39,19,"Female","Japan","Somewhat happy","<img src='images/orange25.png'></img>","No music","38","gambleWin","25","25",380,"37","undefined","undefined","undefined",229603
+"39",40,40,39,19,"Female","Japan","Somewhat happy","<img src='images/orange25.png'></img>","No music","39","gambleLoss","25","156",504,"37","undefined","undefined","undefined",231268
+"40",41,41,39,19,"Female","Japan","Somewhat happy","<img src='images/purple0.png'></img>","No music","40","nonGamble","25","62",830,"38","undefined","undefined","undefined",233167
+"41",42,42,39,19,"Female","Japan","Somewhat happy","<img src='images/green25.png'></img>","No music","41","gambleWin","25","952",578,"39","undefined","undefined","undefined",235704
+"42",43,43,39,19,"Female","Japan","Somewhat happy","<img src='images/green25.png'></img>","No music","42","gambleWin","25","331",340,"37","undefined","undefined","undefined",237381
+"43",44,44,39,19,"Female","Japan","Somewhat happy","<img src='images/purple0.png'></img>","No music","43","nonGamble","25","671",647,"38","undefined","undefined","undefined",239703
+"44",45,45,39,19,"Female","Japan","Somewhat happy","<img src='images/orange25.png'></img>","No music","44","gambleWin","25","78",676,"39","undefined","undefined","undefined",241461
+"45",46,46,39,19,"Female","Japan","Somewhat happy","<img src='images/blue25.png'></img>","No music","45","gambleWin","25","35",364,"39","undefined","undefined","undefined",242866
+"46",47,47,39,19,"Female","Japan","Somewhat happy","<img src='images/blue25.png'></img>","No music","46","gambleWin","25","259",516,"37","undefined","undefined","undefined",244645
+"47",48,48,39,19,"Female","Japan","Somewhat happy","<img src='images/blue25.png'></img>","No music","47","gambleWin","25","533",420,"37","undefined","undefined","undefined",246605
+"48",49,49,39,19,"Female","Japan","Somewhat happy","<img src='images/yellow25.png'></img>","No music","48","gambleLoss","25","294",421,"37","undefined","undefined","undefined",248329
+"49",50,50,39,19,"Female","Japan","Somewhat happy","<img src='images/purple0.png'></img>","No music","49","nonGamble","25","205",605,"38","undefined","undefined","undefined",250143
+"50",51,51,39,19,"Female","Japan","Somewhat happy","<img src='images/purple0.png'></img>","No music","50","nonGamble","25","187",485,"40","undefined","undefined","undefined",251821
+"51",52,52,39,19,"Female","Japan","Somewhat happy","<img src='images/orange25.png'></img>","No music","51","gambleLoss","25","118",520,"37","undefined","undefined","undefined",253468
+"52",53,53,39,19,"Female","Japan","Somewhat happy","<img src='images/yellow25.png'></img>","No music","52","gambleLoss","25","74",493,"39","undefined","undefined","undefined",255039
+"53",54,54,39,19,"Female","Japan","Somewhat happy","<img src='images/purple0.png'></img>","No music","53","nonGamble","25","252",536,"38","undefined","undefined","undefined",256834
+"54",55,55,39,19,"Female","Japan","Somewhat happy","<img src='images/yellow25.png'></img>","No music","54","gambleLoss","25","568",922,"39","undefined","undefined","undefined",259331
+"55",56,56,39,19,"Female","Japan","Somewhat happy","<img src='images/yellow25.png'></img>","No music","55","gambleWin","25","281",462,"39","undefined","undefined","undefined",261079
+"56",57,57,39,19,"Female","Japan","Somewhat happy","<img src='images/orange25.png'></img>","No music","56","gambleLoss","25","262",505,"37","undefined","undefined","undefined",262851
+"57",58,58,39,19,"Female","Japan","Somewhat happy","<img src='images/purple0.png'></img>","No music","57","nonGamble","25","111",625,"38","undefined","undefined","undefined",264595
+"58",59,59,39,19,"Female","Japan","Somewhat happy","<img src='images/purple0.png'></img>","No music","58","nonGamble","25","80",630,"40","undefined","undefined","undefined",266314
+"59",60,60,39,19,"Female","Japan","Somewhat happy","<img src='images/purple0.png'></img>","No music","59","nonGamble","25","142",469,"40","undefined","undefined","undefined",267931
+"60",61,61,39,19,"Female","Japan","Somewhat happy","<img src='images/green25.png'></img>","No music","60","gambleLoss","25","251",703,"39","undefined","undefined","undefined",269893
+"61",62,62,39,19,"Female","Japan","Somewhat happy","<img src='images/orange25.png'></img>","Negative valence","61","gambleWin","25","2646",710,"39","undefined","undefined","undefined",309373
+"62",63,63,39,19,"Female","Japan","Somewhat happy","<img src='images/green25.png'></img>","Negative valence","62","gambleWin","25","521",744,"37","undefined","undefined","undefined",311645
+"63",64,64,39,19,"Female","Japan","Somewhat happy","<img src='images/purple0.png'></img>","Negative valence","63","nonGamble","25","581",902,"40","undefined","undefined","undefined",314133
+"64",65,65,39,19,"Female","Japan","Somewhat happy","<img src='images/orange25.png'></img>","Negative valence","64","gambleLoss","25","62",584,"39","undefined","undefined","undefined",315788
+"65",66,66,39,19,"Female","Japan","Somewhat happy","<img src='images/purple0.png'></img>","Negative valence","65","nonGamble","25","33",927,"38","undefined","undefined","undefined",317755
+"66",67,67,39,19,"Female","Japan","Somewhat happy","<img src='images/blue25.png'></img>","Negative valence","66","gambleWin","25","10588",527,"39","undefined","undefined","undefined",329876
+"67",68,68,39,19,"Female","Japan","Somewhat happy","<img src='images/yellow25.png'></img>","Negative valence","67","gambleWin","25","169",467,"39","undefined","undefined","undefined",331519
+"68",69,69,39,19,"Female","Japan","Somewhat happy","<img src='images/orange25.png'></img>","Negative valence","68","gambleWin","25","121",519,"39","undefined","undefined","undefined",333168
+"69",70,70,39,19,"Female","Japan","Somewhat happy","<img src='images/purple0.png'></img>","Negative valence","69","nonGamble","25","398",858,"40","undefined","undefined","undefined",335431
+"70",71,71,39,19,"Female","Japan","Somewhat happy","<img src='images/purple0.png'></img>","Negative valence","70","nonGamble","25","394",711,"38","undefined","undefined","undefined",337542
+"71",72,72,39,19,"Female","Japan","Somewhat happy","<img src='images/green25.png'></img>","Negative valence","71","gambleLoss","25","242",643,"39","undefined","undefined","undefined",339434
+"72",73,73,39,19,"Female","Japan","Somewhat happy","<img src='images/purple0.png'></img>","Negative valence","72","nonGamble","25","47",781,"40","undefined","undefined","undefined",341270
+"73",74,74,39,19,"Female","Japan","Somewhat happy","<img src='images/yellow25.png'></img>","Negative valence","73","gambleWin","25","463",528,"39","undefined","undefined","undefined",343267
+"74",75,75,39,19,"Female","Japan","Somewhat happy","<img src='images/green25.png'></img>","Negative valence","74","gambleWin","25","158",505,"39","undefined","undefined","undefined",344939
+"75",76,76,39,19,"Female","Japan","Somewhat happy","<img src='images/purple0.png'></img>","Negative valence","75","nonGamble","25","79",758,"40","undefined","undefined","undefined",346783
+"76",77,77,39,19,"Female","Japan","Somewhat happy","<img src='images/yellow25.png'></img>","Negative valence","76","gambleWin","25","245",823,"39","undefined","undefined","undefined",348859
+"77",78,78,39,19,"Female","Japan","Somewhat happy","<img src='images/purple0.png'></img>","Negative valence","77","nonGamble","25","55",792,"40","undefined","undefined","undefined",350712
+"78",79,79,39,19,"Female","Japan","Somewhat happy","<img src='images/purple0.png'></img>","Negative valence","78","nonGamble","25","19",568,"40","undefined","undefined","undefined",352307
+"79",80,80,39,19,"Female","Japan","Somewhat happy","<img src='images/blue25.png'></img>","Negative valence","79","gambleLoss","25","109",455,"39","undefined","undefined","undefined",353882
+"80",81,81,39,19,"Female","Japan","Somewhat happy","<img src='images/blue25.png'></img>","Negative valence","80","gambleLoss","25","138",274,"39","undefined","undefined","undefined",355301
+"81",82,82,39,19,"Female","Japan","Somewhat happy","<img src='images/green25.png'></img>","Negative valence","81","gambleWin","25","100",221,"39","undefined","undefined","undefined",356630
+"82",83,83,39,19,"Female","Japan","Somewhat happy","<img src='images/blue25.png'></img>","Negative valence","82","gambleLoss","25","218",262,"39","undefined","undefined","undefined",358117
+"83",84,84,39,19,"Female","Japan","Somewhat happy","<img src='images/green25.png'></img>","Negative valence","83","gambleLoss","25","127",520,"37","undefined","undefined","undefined",359773
+"84",85,85,39,19,"Female","Japan","Somewhat happy","<img src='images/purple0.png'></img>","Negative valence","84","nonGamble","25","8",1457,"40","undefined","undefined","undefined",362242
+"85",86,86,39,19,"Female","Japan","Somewhat happy","<img src='images/yellow25.png'></img>","Negative valence","85","gambleLoss","25","255",257,"39","undefined","undefined","undefined",363759
+"86",87,87,39,19,"Female","Japan","Somewhat happy","<img src='images/blue25.png'></img>","Negative valence","86","gambleWin","25","19",500,"39","undefined","undefined","undefined",365285
+"87",88,88,39,19,"Female","Japan","Somewhat happy","<img src='images/blue25.png'></img>","Negative valence","87","gambleLoss","25","6",529,"37","undefined","undefined","undefined",366826
+"88",89,89,39,19,"Female","Japan","Somewhat happy","<img src='images/purple0.png'></img>","Negative valence","88","nonGamble","25","405",1274,"40","undefined","undefined","undefined",369512
+"89",90,90,39,19,"Female","Japan","Somewhat happy","<img src='images/green25.png'></img>","Negative valence","89","gambleLoss","25","105",407,"39","undefined","undefined","undefined",371034
+"90",91,91,39,19,"Female","Japan","Somewhat happy","<img src='images/green25.png'></img>","Negative valence","90","gambleLoss","25","282",502,"39","undefined","undefined","undefined",372824
+"91",92,92,39,19,"Female","Japan","Somewhat happy","<img src='images/orange25.png'></img>","Negative valence","91","gambleLoss","25","217",238,"39","undefined","undefined","undefined",374285
+"92",93,93,39,19,"Female","Japan","Somewhat happy","<img src='images/orange25.png'></img>","Negative valence","92","gambleWin","25","158",250,"39","undefined","undefined","undefined",375699
+"93",94,94,39,19,"Female","Japan","Somewhat happy","<img src='images/purple0.png'></img>","Negative valence","93","nonGamble","25","179",2375,"40","undefined","undefined","undefined",379261
+"94",95,95,39,19,"Female","Japan","Somewhat happy","<img src='images/purple0.png'></img>","Negative valence","94","nonGamble","25","214",240,"40","undefined","undefined","undefined",380719
+"95",96,96,39,19,"Female","Japan","Somewhat happy","<img src='images/yellow25.png'></img>","Negative valence","95","gambleWin","25","150",1998,"39","undefined","undefined","undefined",383875
+"96",97,97,39,19,"Female","Japan","Somewhat happy","<img src='images/blue25.png'></img>","Negative valence","96","gambleLoss","25","121",215,"39","undefined","undefined","undefined",385221
+"97",98,98,39,19,"Female","Japan","Somewhat happy","<img src='images/yellow25.png'></img>","Negative valence","97","gambleLoss","25","17",197,"39","undefined","undefined","undefined",386443
+"98",99,99,39,19,"Female","Japan","Somewhat happy","<img src='images/orange25.png'></img>","Negative valence","98","gambleWin","25","1124",208,"39","undefined","undefined","undefined",388780
+"99",100,100,39,19,"Female","Japan","Somewhat happy","<img src='images/orange25.png'></img>","Negative valence","99","gambleLoss","25","57",179,"39","undefined","undefined","undefined",390022
+"100",101,101,39,19,"Female","Japan","Somewhat happy","<img src='images/purple0.png'></img>","Negative valence","100","nonGamble","25","122",651,"40","undefined","undefined","undefined",391801
+"101",102,102,39,19,"Female","Japan","Somewhat happy","<img src='images/green25.png'></img>","Negative valence","101","gambleWin","25","13301",607,"39","undefined","undefined","undefined",406717
+"102",103,103,39,19,"Female","Japan","Somewhat happy","<img src='images/green25.png'></img>","Negative valence","102","gambleWin","25","63",454,"39","undefined","undefined","undefined",408242
+"103",104,104,39,19,"Female","Japan","Somewhat happy","<img src='images/purple0.png'></img>","Negative valence","103","nonGamble","25","18",680,"40","undefined","undefined","undefined",409944
+"104",105,105,39,19,"Female","Japan","Somewhat happy","<img src='images/orange25.png'></img>","Negative valence","104","gambleWin","25","53",509,"37","undefined","undefined","undefined",411516
+"105",106,106,39,19,"Female","Japan","Somewhat happy","<img src='images/blue25.png'></img>","Negative valence","105","gambleWin","25","95",588,"39","undefined","undefined","undefined",413206
+"106",107,107,39,19,"Female","Japan","Somewhat happy","<img src='images/blue25.png'></img>","Negative valence","106","gambleWin","25","274",309,"37","undefined","undefined","undefined",414796
+"107",108,108,39,19,"Female","Japan","Somewhat happy","<img src='images/blue25.png'></img>","Negative valence","107","gambleWin","25","255",628,"37","undefined","undefined","undefined",416685
+"108",109,109,39,19,"Female","Japan","Somewhat happy","<img src='images/yellow25.png'></img>","Negative valence","108","gambleLoss","25","92",1242,"39","undefined","undefined","undefined",419029
+"109",110,110,39,19,"Female","Japan","Somewhat happy","<img src='images/purple0.png'></img>","Negative valence","109","nonGamble","25","242",770,"40","undefined","undefined","undefined",421046
+"110",111,111,39,19,"Female","Japan","Somewhat happy","<img src='images/purple0.png'></img>","Negative valence","110","nonGamble","25","165",226,"40","undefined","undefined","undefined",422443
+"111",112,112,39,19,"Female","Japan","Somewhat happy","<img src='images/orange25.png'></img>","Negative valence","111","gambleLoss","25","53",536,"39","undefined","undefined","undefined",424039
+"112",113,113,39,19,"Female","Japan","Somewhat happy","<img src='images/yellow25.png'></img>","Negative valence","112","gambleLoss","25","150",228,"39","undefined","undefined","undefined",425426
+"113",114,114,39,19,"Female","Japan","Somewhat happy","<img src='images/purple0.png'></img>","Negative valence","113","nonGamble","25","109",589,"40","undefined","undefined","undefined",427135
+"114",115,115,39,19,"Female","Japan","Somewhat happy","<img src='images/yellow25.png'></img>","Negative valence","114","gambleLoss","25","30",251,"37","undefined","undefined","undefined",428423
+"115",116,116,39,19,"Female","Japan","Somewhat happy","<img src='images/yellow25.png'></img>","Negative valence","115","gambleWin","25","136",264,"37","undefined","undefined","undefined",429830
+"116",117,117,39,19,"Female","Japan","Somewhat happy","<img src='images/orange25.png'></img>","Negative valence","116","gambleLoss","25","240",231,"37","undefined","undefined","undefined",431308
+"117",118,118,39,19,"Female","Japan","Somewhat happy","<img src='images/purple0.png'></img>","Negative valence","117","nonGamble","25","3",594,"40","undefined","undefined","undefined",432910
+"118",119,119,39,19,"Female","Japan","Somewhat happy","<img src='images/purple0.png'></img>","Negative valence","118","nonGamble","25","235",530,"40","undefined","undefined","undefined",434685
+"119",120,120,39,19,"Female","Japan","Somewhat happy","<img src='images/purple0.png'></img>","Negative valence","119","nonGamble","25","177",261,"40","undefined","undefined","undefined",436130
+"120",121,121,39,19,"Female","Japan","Somewhat happy","<img src='images/green25.png'></img>","Negative valence","120","gambleLoss","25","199",863,"39","undefined","undefined","undefined",438197
+"121",122,122,39,19,"Female","Japan","Somewhat happy","<img src='images/orange25.png'></img>","Positive valence","121","gambleWin","25","12678",3587,"39","undefined","undefined","undefined",478427
+"122",123,123,39,19,"Female","Japan","Somewhat happy","<img src='images/green25.png'></img>","Positive valence","122","gambleWin","25","504",643,"39","undefined","undefined","undefined",480580
+"123",124,124,39,19,"Female","Japan","Somewhat happy","<img src='images/purple0.png'></img>","Positive valence","123","nonGamble","25","545",866,"40","undefined","undefined","undefined",483001
+"124",125,125,39,19,"Female","Japan","Somewhat happy","<img src='images/orange25.png'></img>","Positive valence","124","gambleLoss","25","1177",372,"39","undefined","undefined","undefined",485557
+"125",126,126,39,19,"Female","Japan","Somewhat happy","<img src='images/purple0.png'></img>","Positive valence","125","nonGamble","25","443",506,"40","undefined","undefined","undefined",487513
+"126",127,127,39,19,"Female","Japan","Somewhat happy","<img src='images/blue25.png'></img>","Positive valence","126","gambleWin","25","115",560,"39","undefined","undefined","undefined",489192
+"127",128,128,39,19,"Female","Japan","Somewhat happy","<img src='images/yellow25.png'></img>","Positive valence","127","gambleWin","25","125",280,"39","undefined","undefined","undefined",490606
+"128",129,129,39,19,"Female","Japan","Somewhat happy","<img src='images/orange25.png'></img>","Positive valence","128","gambleWin","25","15",109,"39","undefined","undefined","undefined",491738
+"129",130,130,39,19,"Female","Japan","Somewhat happy","<img src='images/purple0.png'></img>","Positive valence","129","nonGamble","25","130",125,"40","undefined","undefined","undefined",492997
+"130",131,131,39,19,"Female","Japan","Somewhat happy","<img src='images/purple0.png'></img>","Positive valence","130","nonGamble","25","83",254,"40","undefined","undefined","undefined",494341
+"131",132,132,39,19,"Female","Japan","Somewhat happy","<img src='images/green25.png'></img>","Positive valence","131","gambleLoss","25","121",259,"39","undefined","undefined","undefined",495728
+"132",133,133,39,19,"Female","Japan","Somewhat happy","<img src='images/purple0.png'></img>","Positive valence","132","nonGamble","25","51",846,"40","undefined","undefined","undefined",497631
+"133",134,134,39,19,"Female","Japan","Somewhat happy","<img src='images/yellow25.png'></img>","Positive valence","133","gambleWin","25","2",163,"39","undefined","undefined","undefined",498802
+"134",135,135,39,19,"Female","Japan","Somewhat happy","<img src='images/green25.png'></img>","Positive valence","134","gambleWin","25","7",104,"39","undefined","undefined","undefined",499921
+"135",136,136,39,19,"Female","Japan","Somewhat happy","<img src='images/purple0.png'></img>","Positive valence","135","nonGamble","25","16",415,"40","undefined","undefined","undefined",501362
+"136",137,137,39,19,"Female","Japan","Somewhat happy","<img src='images/yellow25.png'></img>","Positive valence","136","gambleWin","25","105",269,"39","undefined","undefined","undefined",502743
+"137",138,138,39,19,"Female","Japan","Somewhat happy","<img src='images/purple0.png'></img>","Positive valence","137","nonGamble","25","79",32,"40","undefined","undefined","undefined",503861
+"138",139,139,39,19,"Female","Japan","Somewhat happy","<img src='images/purple0.png'></img>","Positive valence","138","nonGamble","25","78",367,"40","undefined","undefined","undefined",505316
+"139",140,140,39,19,"Female","Japan","Somewhat happy","<img src='images/blue25.png'></img>","Positive valence","139","gambleLoss","25","32",181,"39","undefined","undefined","undefined",506536
+"140",141,141,39,19,"Female","Japan","Somewhat happy","<img src='images/blue25.png'></img>","Positive valence","140","gambleLoss","25","108",167,"39","undefined","undefined","undefined",507819
+"141",142,142,39,19,"Female","Japan","Somewhat happy","<img src='images/green25.png'></img>","Positive valence","141","gambleWin","25","870",150,"37","undefined","undefined","undefined",509845
+"142",143,143,39,19,"Female","Japan","Somewhat happy","<img src='images/blue25.png'></img>","Positive valence","142","gambleLoss","25","142",360,"37","undefined","undefined","undefined",511356
+"143",144,144,39,19,"Female","Japan","Somewhat happy","<img src='images/green25.png'></img>","Positive valence","143","gambleLoss","25","111",383,"37","undefined","undefined","undefined",512859
+"144",145,145,39,19,"Female","Japan","Somewhat happy","<img src='images/purple0.png'></img>","Positive valence","144","nonGamble","25","94",159,"40","undefined","undefined","undefined",514121
+"145",146,146,39,19,"Female","Japan","Somewhat happy","<img src='images/yellow25.png'></img>","Positive valence","145","gambleLoss","25","38",477,"37","undefined","undefined","undefined",515642
+"146",147,147,39,19,"Female","Japan","Somewhat happy","<img src='images/blue25.png'></img>","Positive valence","146","gambleWin","25","328",411,"37","undefined","undefined","undefined",517387
+"147",148,148,39,19,"Female","Japan","Somewhat happy","<img src='images/blue25.png'></img>","Positive valence","147","gambleLoss","25","48",428,"37","undefined","undefined","undefined",518868
+"148",149,149,39,19,"Female","Japan","Somewhat happy","<img src='images/purple0.png'></img>","Positive valence","148","nonGamble","25","150",146,"40","undefined","undefined","undefined",520171
+"149",150,150,39,19,"Female","Japan","Somewhat happy","<img src='images/green25.png'></img>","Positive valence","149","gambleLoss","25","16",162,"37","undefined","undefined","undefined",521356
+"150",151,151,39,19,"Female","Japan","Somewhat happy","<img src='images/green25.png'></img>","Positive valence","150","gambleLoss","25","66",860,"39","undefined","undefined","undefined",523287
+"151",152,152,39,19,"Female","Japan","Somewhat happy","<img src='images/orange25.png'></img>","Positive valence","151","gambleLoss","25","74",151,"39","undefined","undefined","undefined",524517
+"152",153,153,39,19,"Female","Japan","Somewhat happy","<img src='images/orange25.png'></img>","Positive valence","152","gambleWin","25","66",118,"39","undefined","undefined","undefined",525708
+"153",154,154,39,19,"Female","Japan","Somewhat happy","<img src='images/purple0.png'></img>","Positive valence","153","nonGamble","25","99",162,"40","undefined","undefined","undefined",526976
+"154",155,155,39,19,"Female","Japan","Somewhat happy","<img src='images/purple0.png'></img>","Positive valence","154","nonGamble","25","8",182,"40","undefined","undefined","undefined",528175
+"155",156,156,39,19,"Female","Japan","Somewhat happy","<img src='images/yellow25.png'></img>","Positive valence","155","gambleWin","25","68",239,"39","undefined","undefined","undefined",529486
+"156",157,157,39,19,"Female","Japan","Somewhat happy","<img src='images/blue25.png'></img>","Positive valence","156","gambleLoss","25","69",167,"39","undefined","undefined","undefined",530727
+"157",158,158,39,19,"Female","Japan","Somewhat happy","<img src='images/yellow25.png'></img>","Positive valence","157","gambleLoss","25","10",169,"39","undefined","undefined","undefined",531912
+"158",159,159,39,19,"Female","Japan","Somewhat happy","<img src='images/orange25.png'></img>","Positive valence","158","gambleWin","25","45",110,"39","undefined","undefined","undefined",533072
+"159",160,160,39,19,"Female","Japan","Somewhat happy","<img src='images/orange25.png'></img>","Positive valence","159","gambleLoss","25","58",126,"39","undefined","undefined","undefined",534263
+"160",161,161,39,19,"Female","Japan","Somewhat happy","<img src='images/purple0.png'></img>","Positive valence","160","nonGamble","25","80",159,"40","undefined","undefined","undefined",535510
+"161",162,162,39,19,"Female","Japan","Somewhat happy","<img src='images/green25.png'></img>","Positive valence","161","gambleWin","25","174",142,"39","undefined","undefined","undefined",536835
+"162",163,163,39,19,"Female","Japan","Somewhat happy","<img src='images/green25.png'></img>","Positive valence","162","gambleWin","25","46",126,"39","undefined","undefined","undefined",538013
+"163",164,164,39,19,"Female","Japan","Somewhat happy","<img src='images/purple0.png'></img>","Positive valence","163","nonGamble","25","141",358,"40","undefined","undefined","undefined",539518
+"164",165,165,39,19,"Female","Japan","Somewhat happy","<img src='images/orange25.png'></img>","Positive valence","164","gambleWin","25","82",343,"39","undefined","undefined","undefined",540950
+"165",166,166,39,19,"Female","Japan","Somewhat happy","<img src='images/blue25.png'></img>","Positive valence","165","gambleWin","25","162",112,"39","undefined","undefined","undefined",542230
+"166",167,167,39,19,"Female","Japan","Somewhat happy","<img src='images/blue25.png'></img>","Positive valence","166","gambleWin","25","119",119,"39","undefined","undefined","undefined",543478
+"167",168,168,39,19,"Female","Japan","Somewhat happy","<img src='images/blue25.png'></img>","Positive valence","167","gambleWin","25","151",113,"39","undefined","undefined","undefined",544748
+"168",169,169,39,19,"Female","Japan","Somewhat happy","<img src='images/yellow25.png'></img>","Positive valence","168","gambleLoss","25","112",54,"39","undefined","undefined","undefined",545924
+"169",170,170,39,19,"Female","Japan","Somewhat happy","<img src='images/purple0.png'></img>","Positive valence","169","nonGamble","25","74",187,"40","undefined","undefined","undefined",547190
+"170",171,171,39,19,"Female","Japan","Somewhat happy","<img src='images/purple0.png'></img>","Positive valence","170","nonGamble","25","18",387,"40","undefined","undefined","undefined",548604
+"171",172,172,39,19,"Female","Japan","Somewhat happy","<img src='images/orange25.png'></img>","Positive valence","171","gambleLoss","25","92",212,"39","undefined","undefined","undefined",549918
+"172",173,173,39,19,"Female","Japan","Somewhat happy","<img src='images/yellow25.png'></img>","Positive valence","172","gambleLoss","25","123",125,"39","undefined","undefined","undefined",551174
+"173",174,174,39,19,"Female","Japan","Somewhat happy","<img src='images/purple0.png'></img>","Positive valence","173","nonGamble","25","122",215,"40","undefined","undefined","undefined",552516
+"174",175,175,39,19,"Female","Japan","Somewhat happy","<img src='images/yellow25.png'></img>","Positive valence","174","gambleLoss","25","42",263,"39","undefined","undefined","undefined",553828
+"175",176,176,39,19,"Female","Japan","Somewhat happy","<img src='images/yellow25.png'></img>","Positive valence","175","gambleWin","25","72",197,"39","undefined","undefined","undefined",555104
+"176",177,177,39,19,"Female","Japan","Somewhat happy","<img src='images/orange25.png'></img>","Positive valence","176","gambleLoss","25","225",367,"39","undefined","undefined","undefined",556700
+"177",178,178,39,19,"Female","Japan","Somewhat happy","<img src='images/purple0.png'></img>","Positive valence","177","nonGamble","25","87",159,"40","undefined","undefined","undefined",557954
+"178",179,179,39,19,"Female","Japan","Somewhat happy","<img src='images/purple0.png'></img>","Positive valence","178","nonGamble","25","117",267,"40","undefined","undefined","undefined",559346
+"179",180,180,39,19,"Female","Japan","Somewhat happy","<img src='images/purple0.png'></img>","Positive valence","179","nonGamble","25","75",176,"40","undefined","undefined","undefined",560605
+"180",181,181,39,19,"Female","Japan","Somewhat happy","<img src='images/green25.png'></img>","Positive valence","180","gambleLoss","25","63",300,"39","undefined","undefined","undefined",561973
+"181",182,182,39,19,"Female","Japan","Somewhat happy","undefined","undefined","undefined","undefined","undefined","undefined",11070,"undefined","2","Perseverance","undefined",574267
+"182",183,183,39,19,"Female","Japan","Somewhat happy","undefined","undefined","undefined","undefined","undefined","undefined",8603,"undefined","3","Premeditation","undefined",582874
+"183",184,184,39,19,"Female","Japan","Somewhat happy","undefined","undefined","undefined","undefined","undefined","undefined",7171,"undefined","2","Positive Urgency","undefined",590049
+"184",185,185,39,19,"Female","Japan","Somewhat happy","undefined","undefined","undefined","undefined","undefined","undefined",8746,"undefined","2","Perseverance","undefined",598799
+"185",186,186,39,19,"Female","Japan","Somewhat happy","undefined","undefined","undefined","undefined","undefined","undefined",32730,"undefined","2","Premeditation","undefined",631532
+"186",187,187,39,19,"Female","Japan","Somewhat happy","undefined","undefined","undefined","undefined","undefined","undefined",9171,"undefined","2","Negative Urgency","undefined",640707
+"187",188,188,39,19,"Female","Japan","Somewhat happy","undefined","undefined","undefined","undefined","undefined","undefined",4958,"undefined","2","Perseverance","undefined",645669
+"188",189,189,39,19,"Female","Japan","Somewhat happy","undefined","undefined","undefined","undefined","undefined","undefined",9426,"undefined","3","Negative Urgency","undefined",655097
+"189",190,190,39,19,"Female","Japan","Somewhat happy","undefined","undefined","undefined","undefined","undefined","undefined",7221,"undefined","3","Sensation Seeking","undefined",662322
+"190",191,191,39,19,"Female","Japan","Somewhat happy","undefined","undefined","undefined","undefined","undefined","undefined",10094,"undefined","2","Positive Urgency","undefined",672418
+"191",192,192,39,19,"Female","Japan","Somewhat happy","undefined","undefined","undefined","undefined","undefined","undefined",2801,"undefined","2","Perseverance","undefined",675223
+"192",193,193,39,19,"Female","Japan","Somewhat happy","undefined","undefined","undefined","undefined","undefined","undefined",4084,"undefined","2","Premeditation","undefined",679311
+"193",194,194,39,19,"Female","Japan","Somewhat happy","undefined","undefined","undefined","undefined","undefined","undefined",21210,"undefined","2","Negative Urgency","undefined",700525
+"194",195,195,39,19,"Female","Japan","Somewhat happy","undefined","undefined","undefined","undefined","undefined","undefined",14757,"undefined","2","Sensation Seeking","undefined",715284
+"195",196,196,39,19,"Female","Japan","Somewhat happy","undefined","undefined","undefined","undefined","undefined","undefined",5010,"undefined","2","Negative Urgency","undefined",720298
+"196",197,197,39,19,"Female","Japan","Somewhat happy","undefined","undefined","undefined","undefined","undefined","undefined",4594,"undefined","2","Sensation Seeking","undefined",724894
+"197",198,198,39,19,"Female","Japan","Somewhat happy","undefined","undefined","undefined","undefined","undefined","undefined",8564,"undefined","1","Positive Urgency","undefined",733463
+"198",199,199,39,19,"Female","Japan","Somewhat happy","undefined","undefined","undefined","undefined","undefined","undefined",7134,"undefined","4","Sensation Seeking","undefined",740600
+"199",200,200,39,19,"Female","Japan","Somewhat happy","undefined","undefined","undefined","undefined","undefined","undefined",4181,"undefined","2","Premeditation","undefined",744785
+"200",201,201,39,19,"Female","Japan","Somewhat happy","undefined","undefined","undefined","undefined","undefined","undefined",8764,"undefined","2","Positive Urgency","undefined",753551
