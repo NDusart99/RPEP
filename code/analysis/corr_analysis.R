@@ -7,8 +7,8 @@ library(doBy)
 library(reshape2)
 
 #Loading data
-load(file = "/Users/nathaliedusart/Desktop/RPEP/experiment/Data/processed/input.Rdata")
-load(file = "/Users/nathaliedusart/Desktop/RPEP/experiment/Data/processed/UPPS.Rdata")
+load(file = "/Users/nathaliedusart/Desktop/RPEP/data/processed/input.Rdata")
+load(file = "/Users/nathaliedusart/Desktop/RPEP/data/processed/UPPS.Rdata")
 
 #melt the behavioral data and UPPS data
 input.melt <- melt(input,
@@ -44,7 +44,7 @@ rcorr(as.matrix(corr), type=c("pearson"))
 #ggplot(corr, aes(bet, diff)) + geom_point() + geom_smooth(method = 'lm', alpha = 0.1, fill = 'blue')
 
 exp.corr <- corr
-save(exp.corr, file = "/Users/nathaliedusart/Desktop/RPEP/experiment/Data/processed/exp_corr.Rdata")
+save(exp.corr, file = "/Users/nathaliedusart/Desktop/RPEP/data/processed/exp_corr.Rdata")
 
 
 
