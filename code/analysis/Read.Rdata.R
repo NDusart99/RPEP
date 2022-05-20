@@ -4,9 +4,9 @@ library(Hmisc)
 library(tidyverse)
 
 #open data files
-setwd("/Users/nathaliedusart/Desktop/RPEP")
+setwd("/Users/nathaliedusart/Desktop/RPEP/experiment")
 input <- data.frame()
-setwd("/Users/nathaliedusart/Desktop/RPEP/data/raw")
+setwd("/Users/nathaliedusart/Desktop/RPEP/experiment/data/raw")
 files <- dir(pattern = "CardID_")
 
 for (i in files) {
@@ -67,8 +67,8 @@ removed
 input$Participant <- droplevels(input$Participant)
 input$prevOut <- droplevels(input$prevOut)
 
-save(input, file = "/Users/nathaliedusart/Desktop/RPEP/data/processed/input.Rdata")
-save(UPPS, file = "/Users/nathaliedusart/Desktop/RPEP/data/processed/UPPS.Rdata")
+save(input, file = "/Users/nathaliedusart/Desktop/RPEP/experiment/data/processed/input.Rdata")
+save(UPPS, file = "/Users/nathaliedusart/Desktop/RPEP/experiment/data/processed/UPPS.Rdata")
 
 
 
